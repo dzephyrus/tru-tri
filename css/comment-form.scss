@@ -1,0 +1,188 @@
+/* Scss comment form */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+.comment-background{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:#dbe6f2;
+}
+.comment-container{
+	width: 100%;
+	padding: 20px;
+	border-left: 2px solid white;
+	position: relative;
+	margin-left: 40px;
+	animation: slide-bottom 1s forwards;
+	.circle-w{
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		border: 2px solid white;
+		position: absolute;
+		&:first-child{
+			top: -13px;
+			left: -8px;
+		}
+		&:nth-child(2){
+			left: -8px;
+			bottom: -13px;
+		}
+	}
+	.comment-detail{
+		position: relative;
+		padding: 10px 0;
+		left: -50px;
+//		min-height: 100px;
+		animation: slide-bottom2 0.5s forwards;
+		animation-delay: 1s;
+		.comment-detail-avatar{
+			border: 1.5px solid white;
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+			overflow: hidden;
+			position: absolute;
+			animation: scale-up-center 0.4s cubic-bezier(0, 0.575, 0.565, 1.000) both;
+			animation-delay: 0.3s;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.comment-detail-content{
+			position: relative;
+			top: 0px;
+			left: -100%;
+			width: 80%;
+			background-color: white;
+			border-radius: 5px;
+			z-index: 2;
+			animation: slide 1s forwards;
+ 	 		animation-delay: 0.5s;
+			p{
+				padding: 10px 15px;
+				
+			}
+			.triagle{
+				border-bottom: 10px solid white;
+				border-left: 19px solid transparent;
+				border-right: 25px solid transparent;
+				height: 0;
+				width: 100px;
+				top: 0px;
+				left: -15px;
+				z-index: -1;
+				position: absolute;
+			}
+		}
+		&:last-child{
+			
+			animation: slide-bottom2 5s forwards;
+			animation-delay: 15s;
+		}
+	}
+	
+	.first{
+			.comment-detail-content{
+				background-color:white;
+				border-radius: 5px;
+				
+				p{
+					background-color:white;
+					color: white;
+					border-radius: 5px;
+				}
+			}
+		}
+}
+.react-comment{
+    background-color:#dbe6f2; 
+}
+@keyframes drop-down{
+  0%{
+	  opacity: 0;
+    top:-100%;
+  }
+  50%{
+	  opacity: 0;
+    top:-50%;
+  }
+  100%{
+	  opacity: 1;
+    top:0%;
+  }
+} 
+
+@keyframes slide {
+	0%{
+	  opacity: 0;
+    left: 85px;
+  }
+  50%{
+	  opacity: 0;
+    left: 90px;
+  }
+  100% {
+	  opacity: 1;
+    left: 95px;
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes slide-bottom {
+//  0% {
+//    opacity: 0;
+//	  top: -100%;
+//  }
+//	50%{
+//		opacity: 0.5;
+//		top: -50%;
+//	}
+//  100% {
+//   opacity: 1;
+//	  top: 30%;
+//  }
+	0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(3.5%);
+            transform: translateY(3.5%);
+  }
+}
+@keyframes slide-bottom2 {
+	0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
+  }
+}
+@keyframes scale-up-center1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
