@@ -539,6 +539,7 @@ width: 212px;
 	content: "";
     width: 50px;
     height: 36px;
+	margin-left: -7px;
     display: inline-block;
     background-image: url("../images/icon/Lotus1.svg");
     background-repeat: no-repeat;
@@ -892,29 +893,6 @@ input[type="search"].sb-search-input {
     }
 }
 
-.owl-carousel2{
-    .owl-dots{
-        button:focus{
-            outline: none;
-        }
-        .owl-dot{
-            
-        }
-        .owl-dot.active span{
-            background: #E5B764;
-        }
-        .owl-dot span{
-            width: 15px;
-            height: 15px;
-            margin: 5px;
-            background: #828282;
-            display: block;
-            -webkit-backface-visibility: visible;
-            transition: opacity .2s ease;
-            border-radius: 30px;
-        }
-    }
-}
 .owl-carousel3{
 	.owl-nav-custom{
 		top: 245px;
@@ -1042,33 +1020,28 @@ input[type="search"].sb-search-input {
 		}
 	}
 }
-.gold-section{
-    background-image: url("../images/phap-am-bg.jpg");
-    background-size: 100%;
+.brown-section{
+    background-color: #2F1E06;
+	padding: 80px 0;
         .section-title{
             display: flex;
             align-items: center;
-            color: #ffffff;
-            @extend .h2-font;
-				&:before{
-				content: "";
-				width: 52px;
-				height: 36px;
-				display: inline-block;
-				background-image: url(../images/icon/white-lotus.svg);
-				background-repeat: no-repeat;
-				margin-right: 16px;
-			}
+            color: #ffffff;section-title
 			a{
 				color: #FFFFFF
 			}
     }
     .cate-list{
+		padding: 40px 0;
         .cate-list_item:first-child{
-            border-left: 1px solid #ffffff;
+            border-left: none;
+			padding-left: 0;
         }
         .cate-list_item{
-            padding: 0 25px;
+			@extend .sub-title-16;
+			line-height: 16px;
+            padding: 0 20px;
+			border-left: 1px solid #ffffff57;
         }
     }
 	.expand-menu{
@@ -1870,5 +1843,6 @@ border-radius: 7px;
 }
 .g-sm-5, .gx-sm-5 {
     --bs-gutter-x: 2.50rem;
+	--bs-gutter-y: 2.8rem;
 }
 
