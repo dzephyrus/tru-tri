@@ -1772,6 +1772,7 @@ input[type="search"].sb-search-input {
 	@extend .text-dark500;
 	position: relative;	
 	padding-left: 25px;
+	padding-top: 14px;
 	&::before{
 		content: "";
 		position: absolute;
@@ -1795,14 +1796,21 @@ input[type="search"].sb-search-input {
 }
 
 .section-cate{
+	padding: 36px 0 40px 0;
 	.section-cate-item{
 		padding: 0 20px;
-		border-left: 1px solid #797979;
+		border-left: 1px solid #79797982;
+		@extend .sub-title-16;
+		font-weight: 600;
 		&:first-child{
 			border-left: 3px solid #A46A14;
 			@extend .h4-font;
 		}
 	}
+}
+
+.date-news{
+	padding: 20px 0 8px 0
 }
 
 .footer-section{
