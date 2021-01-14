@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
@@ -31,32 +31,40 @@
   Tý</a>
   <button type="button" class="pb-1 pr-2 close position-absolute" style="right: 0" data-dismiss="toast" aria-label="Close"> <i class="fas fa-times text-white fs-18"></i> </button>
 </div>
-<header class="cd-auto-hide-header">
-  <div class="w-100 d-none d-lg-block bg-white">
-    <div class="w-1136 mx-auto row py-4 my-2 align-items-center">
+<header class="cd-auto-hide-header" style="background: linear-gradient(180deg, rgb(101 101 101) 0%, rgb(251 251 251 / 48%) 100%);">
+  <div class="w-100 d-none d-lg-block">
+    <div class="w-1136 mx-auto row py-4  align-items-center">
       <div class="col-4 d-flex align-items-center px-0">
-        <div class="d-flex align-items-center pr-2"> <img src="images/icon/england-flag.svg" alt=""> <a href="" class="h4-font text-brown pl-2 pr-3 text-nowrap">Tiếng anh</a> | </div>
-        <div class=" text-brown">
-          <p class="fs-12"><span class="font-weight-bold">Thứ Sáu,</span> <span>15/11/2019</span></p>
-          <p class="fs-12">10:25 (GTM +7)</p>
-        </div>
+        <div class="d-flex align-items-center pr-2 col-1"><a href=""><img src="images/icon/XMLID.svg" alt="">	</a> </div>
+		  <div class="d-flex flex-wrap ps-2 pt-1">
+		  		<a href="" class="sub-title-16 text-white pl-2 pr-3 text-nowrap ">Thầy<br>
+					Thích Trúc Thái Minh
+			  </a>	
+		  </div>
       </div>
-      <div class="col-4 px-0">
-        <p class="text-uppercase"></p>
-        <h2 class="text-uppercase text-center h1-font"><a href="" class=" text-brown">chùa ba vàng.</a></h2>
-      </div>
-      <div class="col-4 px-0">
+      <div class="col-8 px-0">
         <div class="d-flex justify-content-end">
-          <div class="d-flex align-items-center pr-3"> <a href="" class="text-brown fs-14"><i class="fab fa-facebook-f"></i></a> <a href="" class="text-brown fs-16 px-3"><i class="fab fa-instagram"></i></a> <a href="" class="text-brown fs-16"><i class="fab fa-youtube"></i></a> </div>
-          <div class="">
-            <form action="" class="search-bar d-flex overflow-hidden">
-              <input type="text" class="border-0 col-10 pr-0 pl-2">
-              <button class="col-2 px-0 bg-white border-0 text-brown" ><i class="fas fa-search"></i></button>
-            </form>
+          	 <ul class="d-flex nav_desktop bg-transparent justify-content-between w-100">
+			  <li class="nav_item active"> <a href="" class="">Giới thiệu</a>
+				<ul class="dropdown-menu fade-up">
+				  <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+				  <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+				  <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+				</ul>
+			  </li>
+			  <li class="nav_item "><a href="" class="">Tin tức</a></li>
+			  <li class="nav_item "><a href="" class="">Pháp âm</a></li>
+			  <li class="nav_item "><a href="" class="">Bài cúng</a></li>
+			  <li class="nav_item "><a href="" class="">Đạo tràng</a></li>
+			  
+			  <li class="nav_item bg-transparent text-white"><a href="" class="pb-1 pe-2"><img src="images/icon/menu.svg" alt=""></a>Danh mục</li>
+			</ul>
           </div>
         </div>
       </div>
     </div>
+<!-- menu cũ
+
     <div class="">
       <div class="w-1136 mx-auto d-flex pt-xl-1 justify-content-between">
         <ul class="d-flex nav_desktop bg-transparent justify-content-between w-100">
@@ -77,26 +85,10 @@
           <li class="nav_item h3-font"><a href="" class="">E-Magazine</a></li>
           <li class="nav_item bg-transparent"><a href="" class="pb-1"><img src="images/icon/Hamburger.svg" alt=""></a></li>
         </ul>
-        <!--
-                    <div class="">
-                        <div class="btn-group mt-1" style="z-index: 15">
-						  <button type="button" class="btn shadow-none text-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-search text-white fs-20"></i>
-						  </button>
-						  <div class="dropdown-menu dropdown-menu-right shadow-none bg-transparent border-0" style="width: 300px!important; left: -184px!important;">
-							<div class="input-group dropdown-item search-bar bg-transparent" style="top:-54px; right:-25px;">
-                              <input type="text" class="form-control shadow-none" placeholder="..." aria-label="Recipient's username">
-                              <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" style="background-color: #21C9F6"><i class="fas fa-search text-white fs-20"></i></button>
-                              </div>
-                            </div>
-						  </div>
-						</div>
-                    </div>
---> 
       </div>
-    </div>
-  </div>
+    </div></div>
+-->
+  
   <!--
         <div class="" id="header">
             <img src="images/Ad.png" alt="">
@@ -187,11 +179,11 @@
     </div>
   </div>
 </div>
-<article class="bg-white pt-md-0 px-md-0 container-fluid position-relative"> 
+<!--<article class="bg-white pt-md-0 px-md-0 container-fluid position-relative"> -->
   
   <!--		<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>-->
   <div class="position-absolute h-100 d-none d-xl-block" style="right: 330px"> <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top p-0" role="button"> <span class="d-flex justify-content-center align-items-center h-100"> <i class="fas fa-arrow-up fs-14"></i> </span> </a> </div>
-  <div class="">
+  <div class="" style="margin-top: -155px">
     <img src="images/CNH05003 5.png" alt="">
   </div>
   <div class="bg-lightgray d-flex align-items-center position-relative overflow-hidden lightgray-section " >
@@ -305,7 +297,7 @@
 		  </div>
 		</div>
 	</div>
-	<div class="bg-white">
+	<div class="bg-white container-fluid">
 		<div class="w-1136 mx-auto py-sm-5">
 			<div class="d-flex justify-content-between align-items-center mx-n2 mx-xl-n3 pb-4 pb-xl-0">
               <p class="section-title">Từ thiện</p>
@@ -353,7 +345,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-3 g-sm-5 pt-sm-4">
+			<div class="row row-cols-1 row-cols-sm-3 g-sm-5 mt-0">
 				<div class="">
 					<div class="">
 						<p class="thumb-img"> 
@@ -429,7 +421,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-white">
+  <div class="bg-white container-fluid">
 		<div class="w-1136 mx-auto py-sm-5">
 			<div class="d-flex justify-content-between align-items-center mx-n2 mx-xl-n3 pb-4 pb-xl-0">
               <p class="section-title">Từ thiện</p>
@@ -476,7 +468,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5 pt-sm-4">
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5 mt-0">
 				<div class="">
 					<div class="">
 						<p class="thumb-img"> 
@@ -558,7 +550,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="bg-white">
+	<div class="bg-white container-fluid">
 		<div class="w-1136 mx-auto py-sm-5 border-bottom">
 			<div class="d-flex justify-content-between align-items-center mx-n2 mx-xl-n3 pb-4 pb-xl-0">
               <p class="section-title">Phật pháp ứng dụng</p>
@@ -605,7 +597,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5 pt-sm-4">
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5 mt-0">
 				<div class="">
 					<div class="">
 						<p class="thumb-img"> 
@@ -678,7 +670,7 @@
 			
 		</div>
 	</div>
-	<div class="bg-white">
+	<div class="bg-white container-fluid">
 		<div class="w-1136 mx-auto pb-sm-5 pt-2">
 			<div class="section-cate d-flex ">
 				<a href="" class="section-cate-item">Bộ kinh</a>
@@ -721,7 +713,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5 pt-sm-4">
+			
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5 mt-0">
 				<div class="">
 					<div class="">
 						<p class="thumb-img"> 
@@ -794,135 +787,16 @@
 			
 		</div>
 	</div>
-  <div class="bg-base">
-    <div class="w-1136 bg-base mx-auto">
-      <div class="row pt-3 flex-wrap bg-base">
-        <div class="col-lg-12 px-md-3 px-0">
-          <div class="w-100 overflow-hidden d-block d-xl-block bg-white p-4">
-            <div class="d-flex justify-content-between align-items-center mx-n2 mx-xl-n3 pb-4 pb-xl-0">
-              <p class="section-title">Từ thiện</p>
-              <a href="" class="d-none d-xl-block text-gold font-weight-bold fs-16 text-uppercase">xem thêm</a> </div>
-            <div class=" position-relative carousel2 pt-4 d-none d-xl-block">
-              <div class="owl-carousel2 owl-carousel owl-theme owl-loaded ">
-                <div class="owl-stage-outer">
-                  <div class="owl-stage d-flex" style="height: 100%">
-                    <div class="owl-stage_item">
-                      <div class="owl-item h-100 pl-1">
-                        <div class="d-flex flex-wrap">
-                          <div class="col-lg-12 px-0">
-                            <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="images/news_14.png" class="" alt="..."> </a> </p>
-                          </div>
-                          <div class="col-12 pt-2 px-0">
-                            <h2 class="h3-font text-darkblue"><a href=""> Cùng nhìn lại chương trình sớt bát cúng dường chư Tăng báo đền ân Tổ quốc của các Phật tử CLB Cúc Vàng</a></h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="owl-stage_item">
-                      <div class="owl-item h-100 pl-1">
-                        <div class="d-flex flex-wrap">
-                          <div class="col-lg-12 px-0">
-                            <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 61.png" class="" alt="..."> </a> </p>
-                          </div>
-                          <div class="col-12 pt-2 px-0">
-                            <h2 class="h3-font text-darkblue"><a href="">Câu chuyện người Phật tử Đồng Nai về chùa sớt bát cúng dường chư Tăng.</a></h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="owl-stage_item">
-                      <div class="owl-item h-100 pl-1">
-                        <div class="d-flex flex-wrap">
-                          <div class="col-lg-12 px-0">
-                            <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 63.png" class="" alt="..."> </a> </p>
-                          </div>
-                          <div class="col-12 pt-2 px-0">
-                            <h2 class="h3-font text-darkblue"><a href="">Câu chuyện về những chú ong và bài học ý nghĩa</a></h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="owl-stage_item">
-                      <div class="owl-item h-100 pl-1">
-                        <div class="d-flex flex-wrap">
-                          <div class="col-lg-12 px-0">
-                            <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 62.png" class="" alt="..."> </a> </p>
-                          </div>
-                          <div class="col-12 pt-2 px-0">
-                            <h2 class="h3-font text-darkblue"><a href="">Giáo hội khuyến khích tụng kinh tại gia, tránh tụ tập dịp Phật Đản</a></h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="owl-stage_item">
-                      <div class="owl-item h-100 pl-1">
-                        <div class="d-flex flex-wrap">
-                          <div class="col-lg-12 px-0">
-                            <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 61.png" class="" alt="..."> </a> </p>
-                          </div>
-                          <div class="col-12 pt-2 px-0">
-                            <h2 class="h3-font text-darkblue"><a href="">Ca Sĩ Hồ Quang Hiếu: “Khóa Tu Mùa Hè Chùa Ba Vàng Môi Trường Tốt Để Rèn Luyện Đạo Đức”</a></h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--
-                        <div class="owl-nav position-absolute w-100" >
-                            <div class="owl-prev position-absolute " ><i class="fas fa-angle-left"></i></div>
-                            <div class="owl-next position-absolute" ><i class="fas fa-angle-right"></i></div>
-                        </div>
---> 
-                
-              </div>
-            </div>
-            <div class="d-block d-xl-none mx-n2">
-              <div class="row pt-sm-3 mt-xl-1 flex-col3 mx-n2 mx-lg-n3">
-                <div class="col-sm-4 col-6 pb-3 pb-lg-0 flex-col3-item px-2 px-lg-3">
-                  <div class="">
-                    <p class="overflow-hidden position-relative mb-0 h-100"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 63.png" class="" alt="..."> </a> </p>
-                  </div>
-                  <div class=" pt-2">
-                    <h2 class="h4-font"><a href="">Chùa Ba Vàng là một trong những điểm đến tâm linh của Tp. Uông Bí</a></h2>
-                    <p class="sub-title-14 text-lightgray pt-2 d-none d-lg-block"> Chùa có rồng khổng lồ quấn quanh, nằm trên tảng đá vàng hay ngôi đền vàng giữa hồ nước thiên </p>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-6 pb-3 pb-lg-0 flex-col3-item px-2 px-lg-3">
-                  <div class="">
-                    <p class="overflow-hidden position-relative mb-0 h-100"> <a href="" class="thumb-item thumb-5x3"> <img src="images/news_03.png" class="" alt="..."> </a> </p>
-                  </div>
-                  <div class=" pt-2">
-                    <h2 class="h4-font"><a href="">Cùng ngắm chùa Ba Vàng bình yên trong ráng chiều hoàng hôn nơi núi rừng Thành Đẳng</a></h2>
-                    <p class="sub-title-14 text-lightgray pt-2 d-none d-lg-block"> Đền Borobudur là công trình kiến trúc Phật giáo tinh xảo và nổi tiếng ở Indonesia, từng được UNESCO công nhận là Di sản Văn hóa thế giới </p>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-6 pb-3 pb-lg-0 flex-col3-item px-2 px-lg-3">
-                  <div class="">
-                    <p class="overflow-hidden position-relative mb-0 h-100"> <a href="" class="thumb-item thumb-5x3"> <img src="images/news_05.png" class="" alt="..."> </a> </p>
-                  </div>
-                  <div class=" pt-2">
-                    <h2 class="h4-font"><a href="">Hướng dẫn cách ngồi thiền đúng phương pháp để giúp tâm an định </a></h2>
-                    <p class="sub-title-14 text-lightgray pt-2 d-none d-lg-block"> Những công trình tôn giáo luôn thu hút tín đồ xê dịch khám phá. Nơi có tượng Phật dưới đáy biển hay </p>
-                  </div>
-                </div>
-              </div>
-              <div class="d-block mx-auto w-100">
-                <button class="d-block mx-auto seemore-button btn btn-warning px-4 py-2" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> <span class="fs-16 font-weight-bold text-uppercase text-white px-2">xem thêm</span> </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="gold-section mx-n3 mx-sm-0">
-    <div class="w-1136 mx-auto py-4 px-0 px-md-3 px-0 px-xl-0">
+  <div class="brown-section container-fluid">
+    <div class="w-1136 mx-auto px-0 px-md-3 px-0 px-xl-0">
       <div class="mx-sm-n3 mx-lg-0">
-        <div class="d-flex flex-wrap align-items-center pb-3 px-3 px-md-0 justify-content-between">
+        <div class="d-flex flex-wrap align-items-center px-3 px-md-0 justify-content-between">
+			<div class="d-flex justify-content-between align-items-center pb-4 pb-xl-0 w-100">
+              <p class="section-title">Phật pháp ứng dụng</p>
+              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pe-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right ps-2 icon-right"></i></a> 
+			</div>
           <div class="d-flex flex-wrap">
-            <h4 class="section-title pr-4"><a href="">Pháp âm</a></h4>
-            <div class="d-none d-md-flex align-items-center flex-wrap cate-list pl-2 pt-sm-2 ml-sm-n3"> <a href="" class="cate-list_item text-white h4-font">Phật pháp ứng dụng</a> <a href="" class="cate-list_item text-white h4-font">Phật pháp với tuổi trẻ</a> <a href="" class="cate-list_item text-white h4-font">Phật pháp theo chủ đề</a> <a href="" class="cate-list_item text-white h4-font">Kinh pháp cú</a> </div>
+            <div class="d-none d-md-flex align-items-center flex-wrap cate-list"> <a href="" class="cate-list_item text-white h4-font">Phật pháp ứng dụng</a> <a href="" class="cate-list_item text-white h4-font">Phật pháp với tuổi trẻ</a> <a href="" class="cate-list_item text-white h4-font">Phật pháp theo chủ đề</a> <a href="" class="cate-list_item text-white h4-font">Kinh pháp cú</a> </div>
           </div>
           <div class="d-flex align-items-center flex-wrap px-3 px-md-0 w-100 d-sm-none"> 
             <!--
@@ -945,1049 +819,459 @@
                 </div>
               </div>
             </div>
-          </div>
-          <a class="d-none d-xl-block btn bg-white py-1" href=""> <span class="h4-font text-uppercase text-brown px-1 bg-white">Lịch giảng pháp</span> </a> </div>
-        <div class="row mx-0 mx-xl-n3">
-          <div class="col-md-8 px-0 px-sm-3">
-            <p class="overflow-hidden position-relative mb-0 px-3 px-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w480/Uploaded/ofh_hmzpgazs/2020_05_14/96823972_546126216275170_7247665300915617792_n.jpg" class="" alt="..."> </a> </p>
-          </div>
-          <div class="col-md-4">
-            <div class="pl-xl-2">
-              <div class="text-white">
-                <h2 class="pt-3 pt-md-0 h2-font"><a href="" class="text-white">Sự nguy hiểm của việc phạm giới tà dâm và cách chiến thắng cảm thọ ham thích ái dục</a></h2>
-                <p class="fs-14 py-3 sub-title-18"> Lần đầu tiên Sở Công Thương TP.HCM tổ chức chương trình 60 ngày vàng khuyến mại, cho phép doanh nghiệp thực hiện khuyến mại lên đến 100% giá trị hàng hóa, dịch vụ. </p>
-                <div class="d-flex pb-4">
-                  <p class="fs-12 pr-4"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                  <p class="fs-12 pr-4"><i class="far fa-eye pr-1"></i>16/1/2020</p>
-                </div>
-                <div class="d-flex justify-content-xl-end pt-2"> <a href="" class="social-icon mr-2"><i class="fas fa-link text-white fs-13"></i></a> <a href="" class="social-icon mr-2 ml-1"><i class="fas fa-bookmark text-white fs-13" ></i></a> <a href="" class="social-icon mr-2 ml-1"><i class="fab fa-facebook-f text-white fs-13"></i></a> <a href="" class="social-icon mr-2 ml-1"><i class="fab fa-twitter text-white fs-13"></i></a> </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-col3 py-4 mt-2 px-3 px-xl-0">
-          <div class="">
-            <div class="d-flex flex-wrap mb-3 mb-xl-0">
-              <div class="col-3 col-sm-12 px-0">
-                <p class="overflow-hidden position-relative mb-0 pr-1 pr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 63.png" class="" alt="..."> <span class="play-button"> <span>&#9655;</span> </span> <span class="play-time fs-14"> 11:20 </span> </a> </p>
-              </div>
-              <div class="col-9 col-sm-12 pl-2 px-sm-0">
-                <h2 class="h4-font pt-sm-3 pb-xl-4"><a href="" class="d-block mini-video-title text-white">Những chiếc bánh chưng chay đặc biệt đón chào các Phật tử trở về ngôi nhà chung!</a></h2>
-                <div class="mini-video-info d-none d-lg-flex align-items-center">
-                  <p class="fs-12 text-white"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                  <div class="d-flex pl-4 align-items-center">
-                    <div class=""> <img src="images/icon/comment.svg" alt=""> </div>
-                    <p class="fs-12 pl-1 text-white">12</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex flex-wrap mb-3 mb-xl-0">
-              <div class="col-3 col-sm-12 px-0">
-                <p class="overflow-hidden position-relative mb-0 pr-1 pr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2020/04/25115224/28-loi-ich-cua-thien-duoc-ca-vi-thanh-tang-phat-giao-na-tien-giai-dap-968x547.jpg" class="" alt="..."> </a> <span class="position-absolute text-white play-button d-flex justify-content-between align-items-center"> <span class="mx-auto"><i class="far fa-image"></i></span> </span> </p>
-              </div>
-              <div class="col-9 col-sm-12 pl-2 px-sm-0">
-                <h2 class="h4-font pt-sm-3 pb-xl-4"><a href="" class="d-block mini-video-title text-white">Tại rừng thiền nơi chư Tăng chùa Ba Vàng tu tập – Phật tử sớt bát cúng dường báo Tứ trọng ân</a></h2>
-                <div class="mini-video-info d-none d-lg-flex align-items-center">
-                  <p class="fs-12 text-white"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                  <div class="d-flex pl-4 align-items-center">
-                    <div class=""> <img src="images/icon/comment.svg" alt=""> </div>
-                    <p class="fs-12 pl-1 text-white">12</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex flex-wrap mb-3 mb-xl-0">
-              <div class="col-3 col-sm-12 px-0">
-                <p class="overflow-hidden position-relative mb-0 pr-1 pr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2019/09/16100552/tan-nuong-lang-nghe-su-phu-giang-ve-bon-phan-cua-nguoi-lam-vo-trong-le-hang-thuan-968x547.jpg" class="" alt="..."> </a> <span class="position-absolute text-white play-button d-flex justify-content-between align-items-center"> <span class="mx-auto"><i class="far fa-image"></i></span> </span> </p>
-              </div>
-              <div class="col-9 col-sm-12 pl-2 px-sm-0">
-                <h2 class="h4-font pt-sm-3 pb-xl-4"><a href="" class="d-block mini-video-title text-white">Tại rừng thiền nơi chư Tăng chùa Ba Vàng tu tập – Phật tử sớt bát cúng dường báo Tứ trọng ân</a></h2>
-                <div class="mini-video-info d-none d-lg-flex align-items-center">
-                  <p class="fs-12 text-white"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                  <div class="d-flex pl-4 align-items-center">
-                    <div class=""> <img src="images/icon/comment.svg" alt=""> </div>
-                    <p class="fs-12 pl-1 text-white">12</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex flex-wrap mb-3 mb-xl-0">
-              <div class="col-3 col-sm-12 px-0">
-                <p class="overflow-hidden position-relative mb-0 pr-1 pr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2019/07/15130004/cau-chuyen-luu-binh-duong-le-968x547.jpg" class="" alt="..."> </a> <span class="position-absolute text-white play-button d-flex justify-content-between align-items-center"> <span class="mx-auto"><i class="far fa-image"></i></span> </span> </p>
-              </div>
-              <div class="col-9 col-sm-12 pl-2 px-sm-0">
-                <h2 class="h4-font pt-sm-3 pb-xl-4"><a href="" class="d-block mini-video-title text-white">Tại rừng thiền nơi chư Tăng chùa Ba Vàng tu tập – Phật tử sớt bát cúng dường báo Tứ trọng ân</a></h2>
-                <div class="mini-video-info d-none d-lg-flex align-items-center">
-                  <p class="fs-12 text-white"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                  <div class="d-flex pl-4 align-items-center">
-                    <div class=""> <img src="images/icon/comment.svg" alt=""> </div>
-                    <p class="fs-12 pl-1 text-white">12</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex flex-wrap mb-3 mb-xl-0">
-              <div class="col-3 col-sm-12 px-0">
-                <p class="overflow-hidden position-relative mb-0 pr-1 pr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2019/06/21023055/thanh-dang-son-ky-vi.jpg" class="" alt="..."> </a> <span class="position-absolute text-white play-button d-flex justify-content-between align-items-center"> <span class="mx-auto"><i class="far fa-image"></i></span> </span> </p>
-              </div>
-              <div class="col-9 col-sm-12 pl-2 px-sm-0">
-                <h2 class="h4-font pt-sm-3 pb-xl-4"><a href="" class="d-block mini-video-title text-white">Tại rừng thiền nơi chư Tăng chùa Ba Vàng tu tập – Phật tử sớt bát cúng dường báo Tứ trọng ân</a></h2>
-                <div class="mini-video-info d-none d-lg-flex align-items-center">
-                  <p class="fs-12 text-white"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                  <div class="d-flex pl-4 align-items-center">
-                    <div class=""> <img src="images/icon/comment.svg" alt=""> </div>
-                    <p class="fs-12 pl-1 text-white">12</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-block mx-auto w-100">
-          <button class="d-block mx-auto seemore-button btn bg-white px-4  border-0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> <span class="h4-font text-uppercase text-brown px-1 bg-white">Lịch giảng pháp</span> </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-base mx-n3 px-3 mx-xl-0 px-xl-0">
-    <div class="w-1136 mx-auto pt-5 px-md-3 px-0">
-      <div class="row">
-        <div class="overflow-hidden">
-          <div class="d-flex align-items-center pb-3 flex-wrap px-3 px-md-0">
-            <h3 class="section-title col-lg-4 px-0">Nghi thức cũng lễ</h3>
-            <div class="align-items-center justify-content-xl-between d-none d-sm-flex col-lg-8 px-0 pt-2 pt-lg-0"> <a href="" class="h4-font text-lightgray pl-3 pl-xl-0">Tu Chuyên Nghiệp</a> <a href="" class="h4-font text-lightgray pl-3 pl-xl-0">Cầu Siêu</a> <a href="" class="h4-font text-lightgray pl-3 pl-xl-0">Cúng - Giỗ - Rằm - Mùng 1</a> <a href="" class="h4-font text-lightgray pl-3 pl-xl-0">Động Thổ</a> <a href="" class="h4-font text-lightgray pl-3 pl-xl-0">Bốc Mộ</a> <a href="" class="h4-font text-lightgray pl-3 pl-xl-0">Giao Thừa</a> </div>
-            <div class="w-100 expand-menu d-block d-sm-none">
-              <div class="btn-group dropright w-100">
-                <div class="d-flex position-relative align-items-center justify-content-between py-3 mx-n3" style="overflow-x: scroll"> <a href="" class="h4-font text-lightgray pl-3 expand-menu-cate-name">Tu Chuyên Nghiệp</a> <a href="" class="h4-font text-lightgray pl-3 expand-menu-cate-name">Cầu Siêu</a> <a href="" class="h4-font text-lightgray pl-3 expand-menu-cate-name">Cúng - Giỗ - Rằm - Mùng 1</a> <a href="" class="h4-font text-lightgray pl-3 expand-menu-cate-name">Động Thổ</a> <a href="" class="h4-font text-lightgray pl-3 expand-menu-cate-name">Bốc Mộ</a> <a href="" class="h4-font text-lightgray pl-3 expand-menu-cate-name">Giao Thừa</a> </div>
-                <button type="button" class="btn dropdown-toggle-split mr-n3 px-4 border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-arrow-right"></i> </button>
-                <div class="dropdown-menu bg-base">
-                  <div class="d-flex flex-wrap"> <a href="" class="h4-font text-lightgray pl-3 text-nowrap" style=" display: inline-table">Tu Chuyên Nghiệp</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Cầu Siêu</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Cúng - Giỗ - Rằm - Mùng 1</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Động Thổ</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Bốc Mộ</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Giao Thừa</a> </div>
-                  <!-- Dropdown menu links --> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row ">
-            <div class="col-lg-6 col-12 ">
-              <div class="">
-                <div class="card border-0 card-col6 bg-transparent">
-                  <div class="card border-0 card-col6 position-relative px-3 px-xl-0">
-                    <p class="overflow-hidden position-relative mb-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w210/Uploaded/bpivpbbp/2020_05_22/tin1thumb.jpg" class="" alt="..."> </a> </p>
-                  </div>
-                  <div class="px-0 pt-3 px-3 px-md-3 px-lg-0">
-                    <h2 class="card-title fix-text3 mb-sm-0 text-dark pb-0 pb-sm-3 h2-font"><a href=""> Nghi thức tuần lễ tu tập kính mừng Phật đản </a></h2>
-                    <p class="sub-title-14 text-lightgray">Bagan (Myanmar) nổi tiếng với số lượng đền, chùa khổng lồ dù đã sụt giảm rất nhiều sau hàng nghìn năm.</p>
-                  </div>
-                  <div class="d-flex d-xl-none text-lightgray pb-2 pt-3 mx-3 mb-3 border-bottom">
-                    <p class="fs-12 pr-4"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                    <p class="fs-12 pl-4"><i class="far fa-eye pr-1"></i>8k3 Lượt xem</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-12">
-              <div class="row mx-sm-0 mx-md-2 mx-xl-n3  ">
-                <div class="col-12 col-sm-6 pb-3 pb-sm-2 pb-xl-3 px-lg-3 px-sm-0 px-md-2">
-                  <div class="border-0 mini-news bg-transparent d-flex flex-wrap">
-                    <div class="col-3 col-sm-12 pr-0 px-sm-3 px-md-0">
-                      <p class="overflow-hidden position-relative mb-0 mr-n1 mr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w210/Uploaded/pirr/2020_05_26/caydo2.jpg" class="" alt="..."> </a> </p>
-                    </div>
-                    <div class="pl-3 pb-0 pt-sm-2 pt-xl-2 col-9 col-sm-12 px-md-0"> <a href="">
-                      <h5 class="card-title h3-font h4-sm-mon fix-text3">Nghi thức thọ trai tại nhà của quý Phật tử ngày lễ Phật đản</h5>
-                      </a> </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 pb-3 pb-sm-2 pb-xl-3 px-lg-3 px-sm-0 px-md-2">
-                  <div class="border-0 mini-news bg-transparent d-flex flex-wrap">
-                    <div class="col-3 col-sm-12 pr-0 px-sm-3 px-md-0">
-                      <p class="overflow-hidden position-relative mb-0 mr-n1 mr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w210/Uploaded/pirr/2020_05_26/caydo2.jpg" class="" alt="..."> </a> </p>
-                    </div>
-                    <div class="pl-3 pb-0 pt-sm-2 col-9 col-sm-12 px-md-0"> <a href="">
-                      <h5 class="card-title h3-font h4-sm-mon fix-text3">Nghi thức thọ trai tại nhà của quý Phật tử ngày lễ Phật đản</h5>
-                      </a> </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 pb-3 pb-sm-2 pb-xl-3 px-lg-3 px-sm-0 px-md-2">
-                  <div class="border-0 mini-news bg-transparent d-flex flex-wrap">
-                    <div class="col-3 col-sm-12 pr-0 px-sm-3 px-md-0">
-                      <p class="overflow-hidden position-relative mb-0 mr-n1 mr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w210/Uploaded/pirr/2020_05_26/caydo2.jpg" class="" alt="..."> </a> </p>
-                    </div>
-                    <div class="pl-3 pb-0 pt-sm-2 col-9 col-sm-12 px-md-0"> <a href="">
-                      <h5 class="card-title h3-font h4-sm-mon fix-text3">Nghi thức thọ trai tại nhà của quý Phật tử ngày lễ Phật đản</h5>
-                      </a> </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 pb-3 pb-sm-2 pb-xl-3 px-lg-3 px-sm-0 px-md-2">
-                  <div class="border-0 mini-news bg-transparent d-flex flex-wrap">
-                    <div class="col-3 col-sm-12 pr-0 px-sm-3 px-md-0">
-                      <p class="overflow-hidden position-relative mb-0 mr-n1 mr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w210/Uploaded/pirr/2020_05_26/caydo2.jpg" class="" alt="..."> </a> </p>
-                    </div>
-                    <div class="pl-3 pb-0 pt-sm-2 col-9 col-sm-12 px-md-0"> <a href="">
-                      <h5 class="card-title h3-font h4-sm-mon fix-text3">Nghi thức thọ trai tại nhà của quý Phật tử ngày lễ Phật đản</h5>
-                      </a> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-block mx-auto col-12">
-          <div class="border-top pt-3 d-block d-xl-none"></div>
-          <button class="d-block mx-auto seemore-button btn btn-warning px-4 py-2"> <span class="fs-16 font-weight-bold text-uppercase text-white px-2">xem thêm</span> </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-base mx-n3 px-3 mx-xl-0 px-xl-0">
-    <div class="w-1136 mx-auto pt-3 px-3">
-      <div class="row mx-md-0 mx-lg-n3">
-        <div class="d-flex justify-content-between align-items-center w-100">
-          <h4 class="section-title pb-3">Giải đáp thắc mắc </h4>
-          <a href="" class="d-none d-xl-block text-gold font-weight-bold fs-16 text-uppercase">xem thêm</a> </div>
-        <div class="row">
-          <div class="col-lg-4 col-6">
-            <div class="">
-              <p class="overflow-hidden position-relative mb-0 h-100"> <a href="" class="thumb-item thumb-5x3"> <img src="images/news_16.png" class="" alt="..."> </a> </p>
-            </div>
-            <div class="">
-              <h2 class="h3-font h4-sm-mon pt-2 text-darkblue"><a href="">Tại Sao Có Chiêm Bao? – Kinh Mi Tiên Vấn Đáp Câu 168</a></h2>
-            </div>
-          </div>
-          <div class="col-lg-4 col-6">
-            <div class="">
-              <p class="overflow-hidden position-relative mb-0 h-100"> <a href="" class="thumb-item thumb-5x3"> <img src="images/news_12.png" class="" alt="..."> </a> </p>
-            </div>
-            <div class="">
-              <h2 class="h3-font h4-sm-mon pt-2 text-darkblue"><a href="">Có Phật Không? – Kinh Mi Tiên Vấn Đáp Câu 49</a></h2>
-            </div>
-          </div>
-          <div class="col-lg-4 pt-4 pt-xl-0">
-            <div class="mini-news">
-              <div class="d-flex mini-news_item align-items-xl-center">
-                <div class="col-3 col-ls-14 px-0 pl-sm-0 px-md-0">
-                  <div class="mr-lg-n1 pr-1 pr-sm-0">
-                    <p class="overflow-hidden position-relative mb-0 mr-lg-n4"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 38.png" class="" alt="..."> </a> </p>
-                  </div>
-                </div>
-                <div class="col-9 col-lg-8 pr-0 pl-lg-4 pl-2">
-                  <p><a href="" class="h4-font text-darkblue pl-xl-3 d-block">Kiếp Trước Làm Gì Mà Kiếp Này Lại Là Anh Em Sinh Đôi – Vấn Đáp Phật Pháp</a></p>
-                </div>
-              </div>
-              <div class="d-flex mini-news_item align-items-xl-center">
-                <div class="col-3 col-ls-14 px-0">
-                  <div class="mr-lg-n1 pr-1 pr-sm-0">
-                    <p class="overflow-hidden position-relative mb-0 mr-lg-n4"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 38.png" class="" alt="..."> </a> </p>
-                  </div>
-                </div>
-                <div class="col-9 col-lg-8 pr-0 pl-lg-4 pl-2"> <a href="" class="h4-font text-darkblue pl-xl-3 d-block">Kiếp Trước Làm Gì Mà Kiếp Này Lại Là Anh Em Sinh Đôi – Vấn Đáp Phật Pháp</a> </div>
-              </div>
-            </div>
-          </div>
-          <div class="collapse" >
-            <div class="d-flex flex-wrap pt-3">
-              <div class="col-lg-4 pb-3">
-                <div class="">
-                  <p class="overflow-hidden position-relative mb-0 h-100"> <a href="" class="thumb-item thumb-5x3"> <img src="images/news_05.png" class="" alt="..."> </a> </p>
-                </div>
-                <div class="">
-                  <h2 class="h3-font pt-3"><a href="">Chư Tăng Khánh Tuế Sư Phụ Thích Trúc Thái Minh Sau Mùa An Cư Kiết Hạ</a></h2>
-                </div>
-              </div>
-              <div class="col-lg-4 pb-3">
-                <div class="">
-                  <p class="overflow-hidden position-relative mb-0 h-100"> <a href="" class="thumb-item thumb-5x3"> <img src="images/news_07.png" class="" alt="..."> </a> </p>
-                </div>
-                <div class="">
-                  <h2 class="h3-font pt-3"><a href="">Ý nghĩa xúc động lễ Hằng thuận của 5 đôi bạn trẻ tại chùa Ba Vàng</a></h2>
-                </div>
-              </div>
-              <div class="col-lg-4 pb-3">
-                <div class="">
-                  <p class="overflow-hidden position-relative mb-0 h-100"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 61.png" class="" alt="..."> </a> </p>
-                </div>
-                <div class="">
-                  <h2 class="h3-font pt-3"><a href="">Đoàn cán bộ Trung Quốc tại nhà máy Regina Miracle International Việt Nam Factory A thăm chùa</a></h2>
-                </div>
-              </div>
-              <div class="col-lg-4 pb-3">
-                <div class="">
-                  <p class="overflow-hidden position-relative mb-0 h-100"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 61.png" class="" alt="..."> </a> </p>
-                </div>
-                <div class="">
-                  <h2 class="h3-font pt-3"><a href="">Đoàn cán bộ Trung Quốc tại nhà máy Regina Miracle International Việt Nam Factory A thăm chùa</a></h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-block mx-auto pt-4 mb-3 w-100">
-            <button class="d-block mx-auto seemore-button btn btn-warning px-xl-4 py-2 col-11 col-xl-auto"> <span class="fs-16 font-weight-bold text-uppercase text-white px-2"><i class="fas fa-envelope pr-3"></i> Gửi thắc mắc tại đây</span> </button>
-          </div>
-          <a href="" class="d-block d-xl-none text-gold font-weight-bold fs-16 text-uppercase mx-auto">xem thêm</a> </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-base">
-    <div class="w-1136 mx-auto px-md-3 px-0">
-      <div class="row row bg-base px-3 px-sm-0">
-        <div class="d-flex flex-wrap">
-          <div class="w-1136 mx-auto pt-3 px-0 px-sm-3 px-0 px-xl-0">
-            <div class="d-flex align-items-center py-3 pt-sm-0 flex-wrap px-md-0">
-              <h3 class="section-title px-0">Tu học của tăng chúng</h3>
-              <div class="align-items-center flex-wrap d-flex pl-xl-3 pt-2 pt-sm-0"> <a href="" class="h4-font text-lightgray pr-3 px-sm-3">Tu Tập Trong Rừng</a> <a href="" class="h4-font text-lightgray pr-3 px-sm-3">Khất Thực</a> </div>
-            </div>
-            <div class="row mx-lg-n3 mx-sm-n2 mx-0">
-              <div class="col-md-8 px-0 px-sm-2 px-lg-3">
-                <p class="overflow-hidden position-relative mb-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w480/Uploaded/ofh_hmzpgazs/2020_05_14/96823972_546126216275170_7247665300915617792_n.jpg" class="" alt="..."> </a> </p>
-              </div>
-              <div class="col-md-4 px-0 px-sm-2 px-lg-3">
-                <div class="pl-xl-2">
-                  <div class="">
-                    <h2 class="pt-3 pt-md-0 h2-font"><a href="" class="text-darkblue text-sm-brown">Sự nguy hiểm của việc phạm giới tà dâm và cách chiến thắng cảm thọ ham thích ái dục</a></h2>
-                    <p class="fs-14 py-3 sub-title-18 text-lightgray"> Lần đầu tiên Sở Công Thương TP.HCM tổ chức chương trình 60 ngày vàng khuyến mại, cho phép doanh nghiệp thực hiện khuyến mại lên đến 100% giá trị hàng hóa, dịch vụ. </p>
-                    <div class="d-flex">
-                      <p class="fs-12 pr-4"><i class="far fa-clock pr-1"></i>16 / 1 / 2020</p>
-                      <p class="fs-12 pr-4"><i class="far fa-eye pr-1"></i>16 / 1 / 2020</p>
-                    </div>
-                    <div class="d-flex justify-content-xl-end pt-xl-2 pt-3"> <a href="" class="social-icon mr-2"><i class="fas fa-link text-white fs-13"></i></a> <a href="" class="social-icon mr-2 ml-1"><i class="fas fa-bookmark text-white fs-13" ></i></a> <a href="" class="social-icon mr-2 ml-1"><i class="fab fa-facebook-f text-white fs-13"></i></a> <a href="" class="social-icon ml-1"><i class="fab fa-twitter text-white fs-13"></i></a> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row pt-4 mt-1 mb-news-border mx-lg-n3 mx-sm-n2 mx-0">
-              <div class="col-sm-4 mb-news-border_items px-0 px-sm-2 px-lg-3">
-                <div class="d-flex flex-wrap">
-                  <div class="col-3 col-sm-12 px-0">
-                    <div class="pr-1 pr-sm-0">
-                      <p class="overflow-hidden position-relative mb-0 h-100"> <a href="" class=""> <img src="images/news_12.png" class="" alt="..."> </a> </p>
-                    </div>
-                  </div>
-                  <div class="col-9 col-sm-12 pt-sm-2 px-sm-0">
-                    <h2 class="h3-font pt-xl-2 mt-xl-1 text-darkblue h4-sm-mon ml-n1 ml-sm-0"><a href="">Chư Tăng Khánh Tuế Sư Phụ Thích Trúc Thái Minh Sau Mùa An Cư Kiết Hạ</a></h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 mb-news-border_items px-0 px-sm-2 px-lg-3">
-                <div class="d-flex flex-wrap">
-                  <div class="col-3 col-sm-12 px-0">
-                    <div class="pr-1 pr-sm-0">
-                      <p class="overflow-hidden position-relative mb-0 h-100"> <a href="" class="thumb-item thumb-5x3"> <img src="images/news_05.png" class="" alt="..."> </a> </p>
-                    </div>
-                  </div>
-                  <div class="col-9 col-sm-12 pt-sm-2 px-sm-0">
-                    <h2 class="h3-font pt-xl-2 mt-xl-1 text-darkblue h4-sm-mon ml-n1 ml-sm-0"><a href="">Chư Tăng Khánh Tuế Sư Phụ Thích Trúc Thái Minh Sau Mùa An Cư Kiết Hạ</a></h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 mb-news-border_items px-0 px-sm-2 px-lg-3">
-                <div class="d-flex flex-wrap">
-                  <div class="col-3 col-sm-12 px-0">
-                    <div class="pr-1 pr-sm-0">
-                      <p class="overflow-hidden position-relative mb-0 h-100"> <a href="" class=""> <img src="images/news_12.png" class="" alt="..."> </a> </p>
-                    </div>
-                  </div>
-                  <div class="col-9 col-sm-12 pt-sm-2 px-sm-0">
-                    <h2 class="h3-font pt-xl-2 mt-xl-1 text-darkblue h4-sm-mon ml-n1 ml-sm-0"><a href="">Chư Tăng Khánh Tuế Sư Phụ Thích Trúc Thái Minh Sau Mùa An Cư Kiết Hạ</a></h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="d-block mx-auto mt-3 pt-3 pb-3 mb-3 w-100 mb-border-top">
-              <button class="d-block mx-auto seemore-button btn btn-warning px-4 py-2"> <span class="fs-16 font-weight-bold text-uppercase text-white px-2">xem thêm</span> </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-base">
-    <div class="w-1136 mx-auto pt-3 px-md-3 px-0">
-      <div class="row">
-        <div class="d-flex flex-wrap bg-base">
-          <div class="row mx-0 mx-xl-n3">
-            <div class="col-lg-6  row mx-0 ">
-              <div class="d-flex justify-content-between align-items-center pb-3 w-100">
-                <h4 class="section-title">Đạo tràng - Phật tử </h4>
-                <a href="" class="d-none d-sm-block text-gold font-weight-bold fs-16 text-uppercase">xem thêm</a> </div>
-              <div class="mini-news mini-news-mb row mx-0 mx-sm-n2 mx-lg-0">
-                <div class="mini-news_item d-flex flex-wrap px-sm-2 px-lg-0">
-                  <div class="pb-3 col-12 px-0">
-                    <p class="overflow-hidden position-relative mb-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w480/Uploaded/sgtnrb/2020_07_13/taumychay_REU_1_.JPG" class="" alt="..."> </a> </p>
-                  </div>
-                  <div class="col-12 px-0">
-                    <h2 class="h2-font text-darkblue"><a href="">Nghi thức tuần lễ tu tập kính mừng Phật đản</a></h2>
-                    <div class="">
-                      <p class="pt-3 sub-title-14"> xin lỗi dù muộn màng. Đó mới là thứ cần phải nói trên truyền thông, thay vì cần một lời cảm ơn hay một vài câu tôi yêu Việt Nam gì đó từ ông ta!</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="mini-news_item col-sm-4 col-lg-12 px-0 px-sm-2 px-lg-0 px-xl-3">
-                  <div class="row">
-                    <div class="col-3 col-sm-12 col-lg-3 pr-0 px-sm-3 pl-xl-0">
-                      <p class="overflow-hidden position-relative mb-0 mr-n1 mr-sm-0 pr-xl-1"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w480/Uploaded/dqvpxpck/2020_05_21/E_200_Exclusive_IMGP1234.jpg" class="" alt="..."> </a> </p>
-                    </div>
-                    <div class="col-9 col-sm-12 col-lg-9 pl-xl-0 pr-2 px-sm-3 pt-2 ml-lg-n3"> <a href="" class="font-weight-bold fs-15 fix-text3 pl-1 pl-sm-0">Xe cứu thương kẹt giữa dòng phương tiện trong mưa</a> </div>
-                  </div>
-                </div>
-                <div class="mini-news_item col-sm-4 col-lg-12 px-0 px-sm-2 px-lg-0 px-xl-3">
-                  <div class="row">
-                    <div class="col-3 col-sm-12 col-lg-3 pr-0 px-sm-3 pl-xl-0">
-                      <p class="overflow-hidden position-relative mb-0 mr-n1 mr-sm-0 pr-xl-1"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w480/Uploaded/dqvpxpck/2020_05_21/E_200_Exclusive_IMGP1234.jpg" class="" alt="..."> </a> </p>
-                    </div>
-                    <div class="col-9 col-sm-12 col-lg-9 pl-xl-0 pr-2 px-sm-3 pt-2 ml-lg-n3"> <a href="" class="font-weight-bold fs-15 fix-text3 pl-1 pl-sm-0">Xe cứu thương kẹt giữa dòng phương tiện trong mưa</a> </div>
-                  </div>
-                </div>
-                <div class="mini-news_item col-sm-4 col-lg-12 px-0 px-sm-2 px-lg-0 px-xl-3">
-                  <div class="row">
-                    <div class="col-3 col-sm-12 col-lg-3 pr-0 px-sm-3 pl-xl-0">
-                      <p class="overflow-hidden position-relative mb-0 mr-n1 mr-sm-0 pr-xl-1"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w480/Uploaded/dqvpxpck/2020_05_21/E_200_Exclusive_IMGP1234.jpg" class="" alt="..."> </a> </p>
-                    </div>
-                    <div class="col-9 col-sm-12 col-lg-9 pl-xl-0 pr-2 px-sm-3 pt-2 ml-lg-n3"> <a href="" class="font-weight-bold fs-15 fix-text3 pl-1 pl-sm-0">Xe cứu thương kẹt giữa dòng phương tiện trong mưa</a> </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-none mx-auto mt-3 pt-3 pb-3 mb-3 w-100">
-                <button class="d-block mx-auto seemore-button btn btn-warning px-4 py-2"> <span class="fs-16 font-weight-bold text-uppercase text-white px-2">xem thêm</span> </button>
-              </div>
-            </div>
-            <div class="col-lg-6 row mx-0 ">
-              <div class="d-flex justify-content-between align-items-center pb-3 w-100">
-                <h4 class="section-title">Đạo tràng - Phật tử </h4>
-                <a href="" class="d-none d-sm-block text-gold font-weight-bold fs-16 text-uppercase">xem thêm</a> </div>
-              <div class="mini-news mini-news-mb row mx-0 mx-sm-n2 mx-lg-0">
-                <div class="mini-news_item d-flex flex-wrap px-sm-2 px-lg-0">
-                  <div class="pb-3 col-12 px-0">
-                    <p class="overflow-hidden position-relative mb-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w480/Uploaded/sgtnrb/2020_07_13/taumychay_REU_1_.JPG" class="" alt="..."> </a> </p>
-                  </div>
-                  <div class="col-12 px-0">
-                    <h2 class="h2-font text-darkblue"><a href="">Nghi thức tuần lễ tu tập kính mừng Phật đản</a></h2>
-                    <div class="">
-                      <p class="pt-3 sub-title-14"> xin lỗi dù muộn màng. Đó mới là thứ cần phải nói trên truyền thông, thay vì cần một lời cảm ơn hay một vài câu tôi yêu Việt Nam gì đó từ ông ta!</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="mini-news_item col-sm-4 col-lg-12 px-0 px-sm-2 px-lg-0 px-xl-3">
-                  <div class="row">
-                    <div class="col-3 col-sm-12 col-lg-3 pr-0 px-sm-3 pl-xl-0">
-                      <p class="overflow-hidden position-relative mb-0 mr-n1 mr-sm-0 pr-xl-1"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w480/Uploaded/dqvpxpck/2020_05_21/E_200_Exclusive_IMGP1234.jpg" class="" alt="..."> </a> </p>
-                    </div>
-                    <div class="col-9 col-sm-12 col-lg-9 pl-xl-0 pr-2 px-sm-3 pt-2 ml-lg-n3"> <a href="" class="font-weight-bold fs-15 fix-text3 pl-1 pl-sm-0">Xe cứu thương kẹt giữa dòng phương tiện trong mưa</a> </div>
-                  </div>
-                </div>
-                <div class="mini-news_item col-sm-4 col-lg-12 px-0 px-sm-2 px-lg-0 px-xl-3">
-                  <div class="row">
-                    <div class="col-3 col-sm-12 col-lg-3 pr-0 px-sm-3 pl-xl-0">
-                      <p class="overflow-hidden position-relative mb-0 mr-n1 mr-sm-0 pr-xl-1"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w480/Uploaded/dqvpxpck/2020_05_21/E_200_Exclusive_IMGP1234.jpg" class="" alt="..."> </a> </p>
-                    </div>
-                    <div class="col-9 col-sm-12 col-lg-9 pl-xl-0 pr-2 px-sm-3 pt-2 ml-lg-n3"> <a href="" class="font-weight-bold fs-15 fix-text3 pl-1 pl-sm-0">Xe cứu thương kẹt giữa dòng phương tiện trong mưa</a> </div>
-                  </div>
-                </div>
-                <div class="mini-news_item col-sm-4 col-lg-12 px-0 px-sm-2 px-lg-0 px-xl-3">
-                  <div class="row">
-                    <div class="col-3 col-sm-12 col-lg-3 pr-0 px-sm-3 pl-xl-0">
-                      <p class="overflow-hidden position-relative mb-0 mr-n1 mr-sm-0 pr-xl-1"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w480/Uploaded/dqvpxpck/2020_05_21/E_200_Exclusive_IMGP1234.jpg" class="" alt="..."> </a> </p>
-                    </div>
-                    <div class="col-9 col-sm-12 col-lg-9 pl-xl-0 pr-2 px-sm-3 pt-2 ml-lg-n3"> <a href="" class="font-weight-bold fs-15 fix-text3 pl-1 pl-sm-0">Xe cứu thương kẹt giữa dòng phương tiện trong mưa</a> </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-none mx-auto mt-3 pt-3 pb-3 mb-3 w-100">
-                <button class="d-block mx-auto seemore-button btn btn-warning px-4 py-2"> <span class="fs-16 font-weight-bold text-uppercase text-white px-2">xem thêm</span> </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-base">
-    <div class="w-1136 mx-auto py-4 px-md-3 px-0 ">
-      <div class="row py-3 mt-2 bg-base">
-        <div class="d-flex flex-wrap">
-          <h3 class="section-title pb-3">Nội Quy Hoạt Động </h3>
-          <div class="row operation-rules mx-1 mx-xl-n3">
-            <div class="col-6 mb-2 mb-xl-3 pb-2 pb-xl-3 px-2 px-xl-3">
-              <div class="operation-rules-item bg-gradient"> <img src="images/icon/leaf3.svg" class="position-absolute lead-thumb" alt="">
-                <div class="col-lg-4">
-                  <div class="d-flex justify-content-center h-100"> <img src="images/icon/Pagoda.svg" class="operation-rules-item-icon" alt="..."> </div>
-                </div>
-                <div class="col-lg-8 d-flex align-items-center flex-wrap pl-0 pr-2 pl-1 justify-content-center justify-content-xl-start">
-                  <h2 class="h2-font h3-sm-mon"><a href="" class="text-white">Thanh quy Chùa Ba Vàng</a></h2>
-                  <p class="text-white sub-title-12 pt-3 d-none d-lg-block">Ý thức được sự tối quan trọng của Giới luật và để giúp cho toàn chúng có cương lĩnh trong việc tu hành, chùa Ba Vàng đã cho biên soạn THANH QUY</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 mb-2 mb-xl-3 pb-2 pb-xl-3 px-2 px-xl-3">
-              <div class="operation-rules-item bg-gradient"> <img src="images/icon/leaf3.svg" class="position-absolute lead-thumb" alt="">
-                <div class="col-lg-4">
-                  <div class="d-flex justify-content-center h-100"> <img src="images/icon/Frame.svg" class="operation-rules-item-icon" alt="..."> </div>
-                </div>
-                <div class="col-lg-8 d-flex align-items-center flex-wrap pl-0 pr-2 pl-1 justify-content-center justify-content-xl-start">
-                  <h2 class="h2-font h3-sm-mon"><a href="" class="text-white">Lịch tu học - Giảng Pháp</a></h2>
-                  <p class="text-white sub-title-12 pt-3 d-none d-lg-block">Thiền Đường là trọng tâm của ngôi Chùa, là một trong những nơi “Sinh ra lịch đại Tổ Sư, sinh ra các bậc Hiền Thánh”. Thiền đường có quy củ, chúng Tăng tinh tấn tu hành là điều kiện quyết định sự tồn tại và phát triển của Phật môn</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 mb-2 mb-xl-3 pb-2 pb-xl-3 px-2 px-xl-3">
-              <div class="operation-rules-item bg-gradient"> <img src="images/icon/leaf3.svg" class="position-absolute lead-thumb" alt="">
-                <div class="col-lg-4">
-                  <div class="d-flex justify-content-center h-100"> <img src="images/icon/Frame (1).svg" class="operation-rules-item-icon" alt="..."> </div>
-                </div>
-                <div class="col-lg-8 d-flex align-items-center flex-wrap pl-0 pr-2 pl-1 justify-content-center justify-content-xl-start">
-                  <h2 class="h2-font h3-sm-mon"><a href="" class="text-white">Nội quy cho quan khách</a></h2>
-                  <p class="text-white sub-title-12 pt-3 d-none d-lg-block" >Chùa Ba Vàng hoan hỉ đón chào Phật tử cùng du khách thập phương! Nhằm bảo tồn, tôn vinh những giá trị tinh thần của Đạo Phật và phát huy bản sắc văn hóa truyền thống ...</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 mb-2 mb-xl-3 pb-2 pb-xl-3 px-2 px-xl-3">
-              <div class="operation-rules-item bg-gradient"> <img src="images/icon/leaf3.svg" class="position-absolute lead-thumb" alt="">
-                <div class="col-lg-4">
-                  <div class="d-flex justify-content-center h-100"> <img src="images/icon/Location.svg" class="operation-rules-item-icon" alt="..."> </div>
-                </div>
-                <div class="col-lg-8 d-flex align-items-center flex-wrap pl-0 pr-2 pl-1 justify-content-center justify-content-xl-start">
-                  <h2 class="h2-font h3-sm-mon"><a href="" class="text-white">Hướng dẫn tham quan</a></h2>
-                  <p class="text-white sub-title-12 pt-3 d-none d-lg-block">Bạn cần chuẩn bị gì khi đến Chùa Ba Vàng</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="gold-section mx-n3 mx-sm-0">
-    <div class="w-1136 mx-auto py-4 px-0 px-md-3 px-0 px-xl-0">
-      <div class="mx-sm-n3 mx-lg-0">
-        <div class="d-flex flex-wrap align-items-center pb-3 px-3 px-md-0 justify-content-between">
-          <div class="d-flex">
-            <h4 class="section-title pr-4">video</h4>
-            <div class="d-none d-md-flex align-items-center flex-wrap cate-list pl-2"> <a href="" class="cate-list_item text-white h4-font">Phật pháp ứng dụng</a> <a href="" class="cate-list_item text-white h4-font">Phật pháp với tuổi trẻ</a> <a href="" class="cate-list_item text-white h4-font">Phật pháp theo chủ đề</a> <a href="" class="cate-list_item text-white h4-font">Kinh pháp cú</a> </div>
-          </div>
-        </div>
-        <div class="row mx-0 mx-xl-n3">
-          <div class="col-md-8 px-0 px-sm-3">
-            <p class="overflow-hidden position-relative mb-0 px-3 px-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w480/Uploaded/ofh_hmzpgazs/2020_05_14/96823972_546126216275170_7247665300915617792_n.jpg" class="" alt="..."> </a> </p>
-          </div>
-          <div class="col-md-4">
-            <div class="pl-xl-2">
-              <div class="text-white">
-                <h2 class="pt-3 pt-md-0 h2-font"><a href="" class="text-white">Sự nguy hiểm của việc phạm giới tà dâm và cách chiến thắng cảm thọ ham thích ái dục</a></h2>
-                <p class="fs-14 py-3 sub-title-18"> Lần đầu tiên Sở Công Thương TP.HCM tổ chức chương trình 60 ngày vàng khuyến mại, cho phép doanh nghiệp thực hiện khuyến mại lên đến 100% giá trị hàng hóa, dịch vụ. </p>
-                <div class="d-flex pb-4">
-                  <p class="fs-12 pr-4"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                  <p class="fs-12 pr-4"><i class="far fa-eye pr-1"></i>16/1/2020</p>
-                </div>
-                <div class="d-flex justify-content-xl-end pt-2"> <a href="" class="social-icon mr-2"><i class="fas fa-link text-white fs-13"></i></a> <a href="" class="social-icon mr-2 ml-1"><i class="fas fa-bookmark text-white fs-13" ></i></a> <a href="" class="social-icon mr-2 ml-1"><i class="fab fa-facebook-f text-white fs-13"></i></a> <a href="" class="social-icon mr-2 ml-1"><i class="fab fa-twitter text-white fs-13"></i></a> </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-col3 py-4 mt-2 px-3 px-xl-0">
-          <div class="">
-            <div class="d-flex flex-wrap mb-3 mb-xl-0">
-              <div class="col-3 col-sm-12 px-0">
-                <p class="overflow-hidden position-relative mb-0 pr-1 pr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 63.png" class="" alt="..."> <span class="play-button"> <span>&#9655;</span> </span> <span class="play-time fs-14"> 11:20 </span> </a> </p>
-              </div>
-              <div class="col-9 col-sm-12 pl-2 px-sm-0">
-                <h2 class="h4-font pt-sm-3 pb-xl-4"><a href="" class="d-block mini-video-title text-white">Những chiếc bánh chưng chay đặc biệt đón chào các Phật tử trở về ngôi nhà chung!</a></h2>
-                <div class="mini-video-info d-none d-lg-flex align-items-center">
-                  <p class="fs-12 text-white"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                  <div class="d-flex pl-4 align-items-center">
-                    <div class=""> <img src="images/icon/comment.svg" alt=""> </div>
-                    <p class="fs-12 pl-1 text-white">12</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex flex-wrap mb-3 mb-xl-0">
-              <div class="col-3 col-sm-12 px-0">
-                <p class="overflow-hidden position-relative mb-0 pr-1 pr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2020/04/25115224/28-loi-ich-cua-thien-duoc-ca-vi-thanh-tang-phat-giao-na-tien-giai-dap-968x547.jpg" class="" alt="..."> </a> <span class="position-absolute text-white play-button d-flex justify-content-between align-items-center"> <span class="mx-auto"><i class="far fa-image"></i></span> </span> </p>
-              </div>
-              <div class="col-9 col-sm-12 pl-2 px-sm-0">
-                <h2 class="h4-font pt-sm-3 pb-xl-4"><a href="" class="d-block mini-video-title text-white">Tại rừng thiền nơi chư Tăng chùa Ba Vàng tu tập – Phật tử sớt bát cúng dường báo Tứ trọng ân</a></h2>
-                <div class="mini-video-info d-none d-lg-flex align-items-center">
-                  <p class="fs-12 text-white"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                  <div class="d-flex pl-4 align-items-center">
-                    <div class=""> <img src="images/icon/comment.svg" alt=""> </div>
-                    <p class="fs-12 pl-1 text-white">12</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex flex-wrap mb-3 mb-xl-0">
-              <div class="col-3 col-sm-12 px-0">
-                <p class="overflow-hidden position-relative mb-0 pr-1 pr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2019/09/16100552/tan-nuong-lang-nghe-su-phu-giang-ve-bon-phan-cua-nguoi-lam-vo-trong-le-hang-thuan-968x547.jpg" class="" alt="..."> </a> <span class="position-absolute text-white play-button d-flex justify-content-between align-items-center"> <span class="mx-auto"><i class="far fa-image"></i></span> </span> </p>
-              </div>
-              <div class="col-9 col-sm-12 pl-2 px-sm-0">
-                <h2 class="h4-font pt-sm-3 pb-xl-4"><a href="" class="d-block mini-video-title text-white">Tại rừng thiền nơi chư Tăng chùa Ba Vàng tu tập – Phật tử sớt bát cúng dường báo Tứ trọng ân</a></h2>
-                <div class="mini-video-info d-none d-lg-flex align-items-center">
-                  <p class="fs-12 text-white"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                  <div class="d-flex pl-4 align-items-center">
-                    <div class=""> <img src="images/icon/comment.svg" alt=""> </div>
-                    <p class="fs-12 pl-1 text-white">12</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex flex-wrap mb-3 mb-xl-0">
-              <div class="col-3 col-sm-12 px-0">
-                <p class="overflow-hidden position-relative mb-0 pr-1 pr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2019/07/15130004/cau-chuyen-luu-binh-duong-le-968x547.jpg" class="" alt="..."> </a> <span class="position-absolute text-white play-button d-flex justify-content-between align-items-center"> <span class="mx-auto"><i class="far fa-image"></i></span> </span> </p>
-              </div>
-              <div class="col-9 col-sm-12 pl-2 px-sm-0">
-                <h2 class="h4-font pt-sm-3 pb-xl-4"><a href="" class="d-block mini-video-title text-white">Tại rừng thiền nơi chư Tăng chùa Ba Vàng tu tập – Phật tử sớt bát cúng dường báo Tứ trọng ân</a></h2>
-                <div class="mini-video-info d-none d-lg-flex align-items-center">
-                  <p class="fs-12 text-white"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                  <div class="d-flex pl-4 align-items-center">
-                    <div class=""> <img src="images/icon/comment.svg" alt=""> </div>
-                    <p class="fs-12 pl-1 text-white">12</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex flex-wrap mb-3 mb-xl-0">
-              <div class="col-3 col-sm-12 px-0">
-                <p class="overflow-hidden position-relative mb-0 pr-1 pr-sm-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2019/06/21023055/thanh-dang-son-ky-vi.jpg" class="" alt="..."> </a> <span class="position-absolute text-white play-button d-flex justify-content-between align-items-center"> <span class="mx-auto"><i class="far fa-image"></i></span> </span> </p>
-              </div>
-              <div class="col-9 col-sm-12 pl-2 px-sm-0">
-                <h2 class="h4-font pt-sm-3 pb-xl-4"><a href="" class="d-block mini-video-title text-white">Tại rừng thiền nơi chư Tăng chùa Ba Vàng tu tập – Phật tử sớt bát cúng dường báo Tứ trọng ân</a></h2>
-                <div class="mini-video-info d-none d-lg-flex align-items-center">
-                  <p class="fs-12 text-white"><i class="far fa-clock pr-1"></i>16/1/2020</p>
-                  <div class="d-flex pl-4 align-items-center">
-                    <div class=""> <img src="images/icon/comment.svg" alt=""> </div>
-                    <p class="fs-12 pl-1 text-white">12</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-block mx-auto w-100">
-          <button class="d-block mx-auto seemore-button btn bg-white px-4  border-0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> <span class="h4-font text-uppercase text-brown px-1 bg-white">Lịch giảng pháp</span> </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-base">
-    <div class="w-1136 mx-auto px-md-3 px-0 ">
-      <div class="row px-xl-0 bg-base py-4">
-        <div class="px-xl-0 ">
-          <div class="d-flex align-items-center pb-3 flex-wrap px-3 px-md-0">
-            <h3 class="section-title">Chương trình trực tuyến</h3>
-          </div>
-          <div class="row px-3 px-sm-3 px-lg-0">
-            <div class="col-sm-6 col-12 px-0 px-sm-3">
-              <div class="">
-                <div class="card border-0 card-col6 bg-transparent ">
-                  <div class="card border-0 card-col6 position-relative px-3 px-sm-0 bg-base">
-                    <p class="overflow-hidden position-relative mb-0"> <a href="" class="thumb-item thumb-5x3"> <img src="https://znews-photo.zadn.vn/w210/Uploaded/bpivpbbp/2020_05_22/tin1thumb.jpg" class="" alt="..."> </a> <span class="play-button"> <span>&#9655;</span> </span> </p>
-                  </div>
-                  <div class="card-body px-0 py-3 px-3 px-sm-0">
-                    <h2 class=" fix-text3 text-dark pb-0 pb-md-3 pb-sm-2 h2-font"><a href=""> Nghi thức tuần lễ tu tập kính mừng Phật đản </a></h2>
-                    <p class="sub-title-14 text-lightgray">Bagan (Myanmar) nổi tiếng với số lượng đền, chùa khổng lồ dù đã sụt giảm rất nhiều sau hàng nghìn năm.</p>
-                    <div class="d-flex d-sm-none text-lightgray py-3 border-bottom">
-                      <p class="fs-12 pr-4"><i class="far fa-clock pr-1"></i>23 phút trước</p>
-                      <p class="fs-12 pr-4"><i class="far fa-eye pr-1"></i>8.3k lượt xem</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-12 ">
-              <div class="">
-                <div class="row mx-sm-n3 mx-xl-0 mini-news mini-news-mb">
-                  <div class="col-sm-12 px-sm-2 pr-lg-3 pl-lg-0 pr-xl-0 mini-news_item">
-                    <div class="d-flex flex-wrap">
-                      <div class="col-3 col-sm-5 col-lg-6 px-0 pl-lg-0 pr-lg-3">
-                        <p class="overflow-hidden position-relative mb-0"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 65.png" class="" alt="..."> </a> <span class="play-button"> <span>&#9655;</span> </span> </p>
-                      </div>
-                      <div class="col-9 col-sm-7 col-lg-6 pr-0 ml-n1 ml-lg-0 pl-lg-0 pl-xl-3 pr-sm-3 d-flex align-items-center"> <a href="" class="h3-font text-darkblue d-block h4-md-mon ">Phật tử chùa Ba Vàng rộn ràng cờ hoa – đón Tết Phật đản!</a> </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 px-sm-2 pr-lg-3 pl-lg-0 pr-xl-0 mini-news_item">
-                    <div class="d-flex flex-wrap">
-                      <div class="col-3 col-sm-5 col-lg-6 px-0 pl-lg-0 pr-lg-3">
-                        <p class="overflow-hidden position-relative mb-0"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Mask Group.png" class="" alt="..."> </a> <span class="play-button"> <span>&#9655;</span> </span> </p>
-                      </div>
-                      <div class="col-9 col-sm-7 col-lg-6 pr-0 ml-n1 ml-lg-0 pl-lg-0 pl-xl-3 pr-sm-3 d-flex align-items-center"> <a href="" class="h3-font text-darkblue d-block h4-md-mon">Phật tử chùa Ba Vàng thực hành thiện pháp báo đền ân quốc gia trong buổi khất thực đặc biệt</a> </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 px-sm-2 pr-lg-3 pl-lg-0 pr-xl-0 mini-news_item">
-                    <div class="d-flex flex-wrap">
-                      <div class="col-3 col-sm-5 col-lg-6 px-0 pl-lg-0 pr-lg-3">
-                        <p class="overflow-hidden position-relative mb-0"> <a href="" class="thumb-item thumb-5x3"> <img src="images/news_02.png" class="" alt="..."> </a> <span class="play-button"> <span>&#9655;</span> </span> </p>
-                      </div>
-                      <div class="col-9 col-sm-7 col-lg-6 pr-0 ml-n1 ml-lg-0 pl-lg-0 pl-xl-3 pr-sm-3 d-flex align-items-center"> <a href="" class="h3-font text-darkblue d-block h4-md-mon">Rước hoa đăng cúng dường Đức Thế Tôn – niềm tự hào của Tăng Ni, Phật tử chùa Ba Vàng</a> </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-block mx-auto mt-5 w-100">
-          <button class="d-block mx-auto seemore-button btn btn-warning px-4 py-2" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> <span class="fs-16 font-weight-bold text-uppercase text-white px-2">xem thêm</span> </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row mx-md-0 bg-base">
-    <div class="w-1136 mx-auto px-xl-0 px-3">
-      <div class="d-flex align-items-center py-3 flex-wrap">
-        <h3 class="section-title">Thư viện sách</h3>
-        <!--
-                      <div class="d-md-flex d-none align-items-center pl-xl-3 fs-18 flex-wrap">
-                          <a href="" class="px-2">Sản phẩm </a>
-                          &#10072;
-                          <a href="" class="px-2 ">Ứng dụng</a>
-                          &#10072;
-                          <a href="" class="px-2 ">Diễn đàn khoa học</a>
-                      </div>
---> 
-      </div>
-      <div class="row">
-        <div class="col-sm-5 col-lg-4">
-          <div class="operation-rules-item bg-gradient h-100"> <img src="images/icon/leaf3.svg" class="position-absolute lead-thumb" style="top: 0; right: 15px; width: 55%" alt=""> 
-            
-            <!--
-								  <div class="d-flex flex-wrap">
-									  <div class="col-6">
-										  <img src="images/KINH VU LAN_sach.png" class="operation-rules-item-icon" alt="...">
-									  </div>
-									  <div class="col-lg-6 d-flex flex-wrap px-1 position-relative">
-										  <div class=" pt-2">
-										  	<h3 class="h3-font"><a href="" class="text-white">Thanh quy Chùa Ba Vàng</a></h3>
-										  	<p class="text-white fs-8 pt-3 d-none d-lg-block" style="line-height: 15px">Ý thức được sự tối quan trọng của Giới luật và để giúp cho toàn chúng có cương lĩnh trong việc tu hành, chùa Ba Vàng đã cho biên soạn THANH QUY</p>
-										  </div>
-										  <a href="" class="h4-font text-uppercase text-white position-absolute bottom-left-0 pb-1">chi tiết <i class="fas fa-long-arrow-alt-right pl-2"></i></a>
-									  </div>
-								  </div>
--->
-            <div class=" position-relative carousel2 h-100 d-flex align-items-center">
-              <div class="owl-carousel5 owl-carousel owl-theme owl-loaded ">
-                <div class="owl-stage-outer">
-                  <div class="owl-stage d-flex">
-                    <div class="owl-stage_item">
-                      <div class="owl-item h-100 pl-1">
-                        <div class="d-flex flex-wrap">
-                          <div class="col-6"> <img src="images/Rectangle 250.png" alt="..."> </div>
-                          <div class="col-6 d-flex flex-wrap px-1 position-relative">
-                            <div class=" pt-2">
-                              <h3 class="h3-font"><a href="" class="text-white">Thanh quy Chùa Ba Vàng</a></h3>
-                              <p class="text-white fs-8 pt-3 d-none d-sm-block" style="line-height: 15px">Ý thức được sự tối quan trọng của Giới luật và để giúp cho toàn chúng có cương lĩnh trong việc tu hành, chùa Ba Vàng đã cho biên soạn THANH QUY</p>
-                            </div>
-                            <a href="" class="h4-font text-uppercase text-white position-absolute bottom-left-0 pb-1">chi tiết <i class="fas fa-long-arrow-alt-right pl-2"></i></a> </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="owl-stage_item">
-                      <div class="owl-item h-100 pl-1">
-                        <div class="d-flex flex-wrap">
-                          <div class="col-6"> <img src="images/Rectangle 250.png (1)" alt="..."> </div>
-                          <div class="col-6 d-flex flex-wrap px-1 position-relative">
-                            <div class=" pt-2">
-                              <h3 class="h3-font"><a href="" class="text-white">Thanh quy Chùa Ba Vàng</a></h3>
-                              <p class="text-white fs-8 pt-3 d-none d-sm-block" style="line-height: 15px">Ý thức được sự tối quan trọng của Giới luật và để giúp cho toàn chúng có cương lĩnh trong việc tu hành, chùa Ba Vàng đã cho biên soạn THANH QUY</p>
-                            </div>
-                            <a href="" class="h4-font text-uppercase text-white position-absolute bottom-left-0 pb-1">chi tiết <i class="fas fa-long-arrow-alt-right pl-2"></i></a> </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--
-												<div class="owl-nav position-absolute w-100 owl-nav-custom" >
-													<div class="owl-prev-custom-4 position-absolute owl-prev" ><i class="fas fa-chevron-left"></i></div>
-													<div class="owl-prev-custom-4 position-absolute ml-5 owl-next" ><i class="fas fa-chevron-right"></i></div>
-												</div>
---> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-7 col-lg-8">
-          <div class=" position-relative carousel2 pt-3 pt-lg-4">
-            <div class="owl-carousel4 owl-carousel owl-theme owl-loaded ">
-              <div class="owl-stage-outer">
-                <div class="owl-stage d-flex" style="height: 100%">
-                  <div class="owl-stage_item">
-                    <div class="owl-item h-100 pl-lg-1">
-                      <div class="d-flex flex-wrap">
-                        <div class="col-lg-12 px-0"> <a href="" class="d-none d-lg-block"> <img src="images/Rectangle 250.png" class="" alt="..."> </a> <img src="images/Rectangle 250.png" class="d-block d-lg-none" onclick="myFunction(this);" alt="..."> </div>
-                        <div class="col-12 pt-2 px-0">
-                          <h2 class="h3-font"><a href="" class="text-brown">Sách Dòng Sông Bên Chùa</a></h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="owl-stage_item">
-                    <div class="owl-item h-100 pl-lg-1">
-                      <div class="d-flex flex-wrap">
-                        <div class="col-lg-12 px-0"> <a href="" class=""> <img src="images/Rectangle 250 (1).png" class="" alt="..."> </a> </div>
-                        <div class="col-12 pt-2 px-0">
-                          <h2 class="h3-font"><a href="" class="text-brown">Sách Dòng Sông Bên Chùa</a></h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="owl-stage_item">
-                    <div class="owl-item h-100 pl-lg-1">
-                      <div class="d-flex flex-wrap">
-                        <div class="col-lg-12 px-0"> <a href="" class=""> <img src="images/Rectangle 250 (2).png" class="" alt="..."> </a> </div>
-                        <div class="col-12 pt-2 px-0">
-                          <h2 class="h3-font"><a href="" class="text-brown">Sách Dòng Sông Bên Chùa</a></h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="owl-stage_item">
-                    <div class="owl-item h-100 pl-lg-1">
-                      <div class="d-flex flex-wrap">
-                        <div class="col-lg-12 px-0"> <a href="" class=""> <img src="images/Rectangle 250 (3).png" class="" alt="..."> </a> </div>
-                        <div class="col-12 pt-2 px-0">
-                          <h2 class="h3-font"><a href="" class="text-brown">Sách Dòng Sông Bên Chùa</a></h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="owl-stage_item">
-                    <div class="owl-item h-100 pl-lg-1">
-                      <div class="d-flex flex-wrap">
-                        <div class="col-lg-12 px-0"> <a href="" class=""> <img src="images/Rectangle 250 (1).png" class="" alt="..."> </a> </div>
-                        <div class="col-12 pt-2 px-0">
-                          <h2 class="h3-font"><a href="" class="text-brown">Sách Dòng Sông Bên Chùa</a></h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-nav position-absolute w-100 owl-nav-custom  d-none d-lg-block" >
-                <div class="owl-prev-custom-4 position-absolute owl-prev" ><i class="fas fa-chevron-left"></i></div>
-                <div class="owl-next-custom-4 position-absolute ml-5 owl-next" ><i class="fas fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!--
-  <div class="bg-base">
-    <div class="w-1136 mx-auto">
-      <div class="d-flex flex-wrap mx-n3 bg-base mx-sm-0">
-        <div class="pt-3 px-xl-0 ">
-          <div class="d-flex align-items-center pb-3 flex-wrap">
-            <h3 class="section-title px-3 px-md-0">Thư viện ảnh </h3>
-          </div>
-        </div>
-        <div class="w-100">
-          <div class=" position-relative carousel2 pt-0 pt-xl-4">
-            <div class="owl-carousel3 owl-carousel owl-theme owl-loaded">
-              <div class="owl-stage-outer">
-                <div class="owl-stage d-flex" style="height: 100%">
-                  <div class="owl-stage_item">
-                    <div class="owl-item h-100 pl-1">
-                      <div class="row d-flex flex-wrap mx-2 mx-sm-5 mx-lg-2 mx-xl-n1 px-4 px-sm-5 px-lg-0">
-                        <div class="col-lg-12 px-1 pb-2">
-                          <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2020/08/27020329/pham-vat-cung-duong-su-phu-va-chu-ton-duc-tang-968x547.jpg" class="" alt="..."> </a> </p>
-                        </div>
-                        <div class="col-6 col-lg-6 px-1">
-                          <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2020/08/30050019/cung-duong-chu-tang-khi-khong-ve-chua-duoc-968x547.jpg" class="" alt="..."> </a> </p>
-                        </div>
-                        <div class="col-6 col-lg-6 px-1">
-                          <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2020/08/31032948/chung-ta-co-the-tu-cung-co-hon-tai-nha-968x547.jpg" class="" alt="..."> </a> </p>
-                        </div>
-                        <div class="col-12 pt-2 pt-sm-3 px-1">
-                          <h2 class="h2-font text-darkblue h4-sm-mon"><a href="">Thời khắc bình minh Ba Vàng tuyệt đẹp khi nhìn từ trên cao</a></h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="owl-stage_item">
-                    <div class="owl-item h-100 pl-1">
-                      <div class="row d-flex flex-wrap mx-2 mx-sm-5 mx-lg-2 mx-xl-n1 px-4 px-sm-5 px-lg-0">
-                        <div class="col-lg-12 px-1 pb-2">
-                          <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Mask Group (1).png" class="" alt="..."> </a> </p>
-                        </div>
-                        <div class="col-6 col-lg-6 px-1">
-                          <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 65.png" class="" alt="..."> </a> </p>
-                        </div>
-                        <div class="col-6 col-lg-6 px-1">
-                          <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="images/Rectangle 63.png" class="" alt="..."> </a> </p>
-                        </div>
-                        <div class="col-12 pt-2 pt-sm-3 px-1">
-                          <h2 class="h2-font text-darkblue h4-sm-mon"><a href="">Hình ảnh ấn tượng đêm hoa đăng kính mừng Phật đản 2020 tại chùa Ba Vàng</a></h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="owl-stage_item">
-                    <div class="owl-item h-100 pl-1">
-                      <div class="row d-flex flex-wrap mx-2 mx-sm-5 mx-lg-2 mx-xl-n1 px-4 px-sm-5 px-lg-0">
-                        <div class="col-lg-12 px-1 pb-2">
-                          <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2020/08/31075032/phat-tu-bay-tri-mam-cung-co-hon-968x547.jpg" class="" alt="..."> </a> </p>
-                        </div>
-                        <div class="col-6 col-lg-6 px-1">
-                          <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2020/08/27034354/su-phu-thich-truc-thai-minh-trong-buoi-le-cau-sieu-pha-do-gia-tien-968x547.jpg" class="" alt="..."> </a> </p>
-                        </div>
-                        <div class="col-6 col-lg-6 px-1">
-                          <p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2019/12/19081343/ba-cu-gia-cung-duong-toi-tang-doan-tri-binh-khat-thuc-968x547.jpg" class="" alt="..."> </a> </p>
-                        </div>
-                        <div class="col-12 pt-2 pt-sm-3 px-1">
-                          <h2 class="h2-font text-darkblue h4-sm-mon"><a href="">Hình ảnh ấn tượng đêm hoa đăng kính mừng Phật đản 2020 tại chùa Ba Vàng</a></h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-nav position-absolute w-100 owl-nav-custom" >
-                <div class="owl-prev-custom position-absolute owl-prev" ><i class="fas fa-chevron-left"></i></div>
-                <div class="owl-next-custom position-absolute owl-next" ><i class="fas fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-block mx-auto mt-4 mt-xl-5 w-100">
-          <button class="d-block mx-auto seemore-button btn btn-warning px-4 py-2"> <span class="fs-16 font-weight-bold text-uppercase text-white px-2">xem thêm</span> </button>
-        </div>
-      </div>
-    </div>
-  </div>
--->
-  <div class="bg-base">
-    <div class="w-1136 mx-auto ">
-      <div class="d-flex flex-wrap mx-n3 bg-base mx-sm-0">
-        <div class="pt-3 px-xl-0 ">
-          <div class="d-flex align-items-center pb-3 flex-wrap">
-            <h3 class="section-title px-3 px-md-0">Thư viện ảnh </h3>
-          </div>
-        </div>
-      </div>
-	<div class="slick-image-lib">
-		<div class="slick-carousel-2 mx-n3 mx-lg-0 mx-xl-n3">
-			<div class="slide px-lg-3 bg-base">
-			  <div class=" h-100">
-				<div class="row d-flex flex-wrap mx-2 mx-sm-5 mx-lg-2 mx-xl-n1 px-4 px-sm-5 px-lg-0">
-				  <div class="col-lg-12 px-1 pb-2">
-					<p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2020/08/31075032/phat-tu-bay-tri-mam-cung-co-hon-968x547.jpg" class="" alt="..."> </a> </p>
-				  </div>
-				  <div class="col-6 col-lg-6 px-1">
-					<p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2020/08/27034354/su-phu-thich-truc-thai-minh-trong-buoi-le-cau-sieu-pha-do-gia-tien-968x547.jpg" class="" alt="..."> </a> </p>
-				  </div>
-				  <div class="col-6 col-lg-6 px-1">
-					<p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2019/12/19081343/ba-cu-gia-cung-duong-toi-tang-doan-tri-binh-khat-thuc-968x547.jpg" class="" alt="..."> </a> </p>
-				  </div>
-				  <div class="col-12 pt-2 pt-sm-3 px-1">
-					<h2 class="h2-font text-darkblue h4-sm-mon"><a href="">Hình ảnh ấn tượng đêm hoa đăng kính mừng Phật đản 2020 tại chùa Ba Vàng</a></h2>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<div class="slide px-lg-3 bg-base">
-			  <div class=" h-100">
-				<div class="row d-flex flex-wrap mx-2 mx-sm-5 mx-lg-2 mx-xl-n1 px-4 px-sm-5 px-lg-0">
-				  <div class="col-lg-12 px-1 pb-2">
-					<p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2020/08/31075032/phat-tu-bay-tri-mam-cung-co-hon-968x547.jpg" class="" alt="..."> </a> </p>
-				  </div>
-				  <div class="col-6 col-lg-6 px-1">
-					<p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2020/08/27034354/su-phu-thich-truc-thai-minh-trong-buoi-le-cau-sieu-pha-do-gia-tien-968x547.jpg" class="" alt="..."> </a> </p>
-				  </div>
-				  <div class="col-6 col-lg-6 px-1">
-					<p class="overflow-hidden position-relative"> <a href="" class="thumb-item thumb-5x3"> <img src="https://d276ta3q58mk0b.cloudfront.net/2019/12/19081343/ba-cu-gia-cung-duong-toi-tang-doan-tri-binh-khat-thuc-968x547.jpg" class="" alt="..."> </a> </p>
-				  </div>
-				  <div class="col-12 pt-2 pt-sm-3 px-1">
-					<h2 class="h2-font text-darkblue h4-sm-mon"><a href="">Hình ảnh ấn tượng đêm hoa đăng kính mừng Phật đản 2020 tại chùa Ba Vàng</a></h2>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<div class="slide px-lg-3 bg-base">Slide Three</div>
+          </div> 
 		  </div>
-		  <div class="slick-controls position-absolute w-100">
-			<button class="next position-absolute"><i class="fas fa-chevron-right text-white"></i></button>
-			<button class="previous position-absolute"><i class="fas fa-chevron-left text-white"></i></button>
-		  </div>
+		  <div class="row row-cols-1 row-cols-sm-3 g-sm-5">
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_16.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_15.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_13.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+			  <div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_16.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_15.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_13.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+			</div>
+      </div>
+    </div>
+  </div>
+	<div class="bg-lightgray container-fluid">
+		<div class="w-1136 mx-auto py-sm-5 border-bottom">
+			<div class="d-flex justify-content-between align-items-center mx-n2 mx-xl-n3 pb-4 pb-xl-0">
+              <p class="section-title">Tâm linh và nghi lễ phật giáo</p>
+              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pe-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right ps-2 icon-right"></i></a> 
+			</div>
+			<div class="section-cate d-flex ">
+				<a href="" class="section-cate-item">Bộ kinh</a>
+				<a href="" class="section-cate-item">Bộ kinh</a>
+				<a href="" class="section-cate-item">Bộ kinh</a>
+			</div>
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5">
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_14.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_16.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_15.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_13.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
-    </div>
-  </div>
-  <div class="w-100 bg-base">
-    <div class="w-1136 mx-auto py-4 pb-lg-4 px-xl-0 px-3 ">
-      <div class="d-flex align-items-center flex-wrap">
-        <h3 class="section-title pb-3">Chùa Ba Vàng 360 </h3>
-      </div>
-      <div class="">
-        <p><img src="https://d276ta3q58mk0b.cloudfront.net/2019/04/01213508/background_calender.png" alt=""></p>
-      </div>
-    </div>
-  </div>
-</article>
+	</div>
+	<div class="bg-lightgray container-fluid">
+		<div class="w-1136 mx-auto pb-sm-5 pt-2">
+			<div class="section-cate d-flex ">
+				<a href="" class="section-cate-item">Bộ kinh</a>
+				<a href="" class="section-cate-item">Bộ kinh</a>
+				<a href="" class="section-cate-item">Bộ kinh</a>
+			</div>
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5">
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_14.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_16.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_15.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_13.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="sub-title-14 text-secondary date-news">31 T10</p>
+						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						<div class="d-flex">
+							<span class="count-cmt">24</span>
+							<span class="count-view">24</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+  <div class="container-fluid bg-white">
+		<div class="w-1136 mx-auto pb-sm-5 pt-5">
+			<p class="section-title pb-5">Xem thêm chủ đề</p>
+			<div class="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-sm-5">
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_14.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="h5-font pt-4">Hiếu đạo</p>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_16.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="h5-font pt-4">Tình bạn</p>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_15.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="h5-font pt-4">Tâm thức</p>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_13.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="h5-font pt-4">Xã hội</p>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_12.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="h5-font pt-4">Tuổi trẻ	</p>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_11.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="h5-font pt-4">Gia đình</p>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_14.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="h5-font pt-4">Hiếu đạo</p>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_16.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="h5-font pt-4">Tình bạn</p>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_15.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="h5-font pt-4">Tâm thức</p>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_13.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="h5-font pt-4">Xã hội</p>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_12.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="h5-font pt-4">Tuổi trẻ	</p>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<p class="thumb-img"> 
+							<a href="" class="thumb-item thumb-5x3"> 
+								<img src="images/news_11.png" class="" alt="..."> 
+							</a> 
+						</p>
+					</div>
+					<div class="">
+						<p class="h5-font pt-4">Gia đình</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="position-relative">
+		<div class="position-absolute w-100 h-100 bg-darkgold" style="mix-blend-mode: soft-light;"></div>
+		<img src="images/Rectangle 347.png" alt="">
+	</div>
 <footer>
-  <div class="position-relative"> <img src="images/Group 1034.png" class="position-absolute footer-bg" alt=""> </div>
-  <div class="w-1136 mx-auto p-4 footer-section position-relative">
-    <div class="d-none d-xl-flex flex-wrap mx-auto align-items-center py-4 border-bottom text-uppercase justify-content-md-center justify-content-xl-between mb-3"> <a href="" class="text-brown h4-font pl-3 pl-md-0 pr-lg-2 pb-2 pb-lg-0 ">Sự kiện</a> <a href="" class="text-brown h4-font pl-3 px-lg-2 pb-2 pb-lg-0 ">Khoa học-công nghệ</a> <a href="" class="text-brown h4-font pl-3 px-lg-2 pb-2 pb-lg-0 ">Pháp luật giao thông</a> <a href="" class="text-brown h4-font pl-3 px-lg-2 pb-2 pb-lg-0 ">Diễn đàn</a> <a href="" class="text-brown h4-font pl-3 px-lg-2 pb-2 pb-lg-0 ">Nghề báo</a> <a href="" class="text-brown h4-font pl-3 px-lg-2 pb-2 pb-lg-0 ">Công tác hội</a> <a href="" class="text-brown h4-font pl-3 px-lg-2 pb-2 pb-lg-0 ">Kinh tế</a> <a href="" class="text-brown h4-font pl-3 px-lg-2 pb-2 pb-lg-0 ">Pháp luật</a> <a href="" class="text-brown h4-font pl-3 px-lg-2 pb-2 pb-lg-0 ">Đời sống xã hội</a> <a href="" class="text-brown h4-font pl-3 pr-xl-0 px-lg-2 pb-2 pb-lg-0 ">Văn hóa</a> </div>
-    <div class="d-flex flex-wrap justify-content-between pt-1">
-      <div class="footer-logo"> chùa ba vàng </div>
-      <div class="footer-info">
-        <div class="row flex-xl-row-reverse">
-          <div class="col-4 px-0 d-block d-xl-none">
-            <button class="btn btn-primary px-1">chùa ba vàng</button>
-          </div>
-          <div class="col-8 col-xl-6">
-            <div class=""></div>
-            <h3 class="section-title h3-font">Thông báo</h3>
-            <div class="pl-3">
-              <ul class="h4-font text-uppercase media-list noti-list">
-                <li class="media-list-icon">Thông báo chương trình trực tuyến Thứ 7, ngày 08 tháng 4 (nhuận) năm Canh Tý (tức 30/5/2020)</li>
-                <li class="media-list-icon">Thông báo lịch tu học định kỳ tháng 6 năm 2020 tại chùa Ba Vàng</li>
-                <li class="media-list-icon">Thông báo chương trình tu Bát quan trai, lễ cầu siêu sám hối, giảng Pháp</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-xl-6">
-            <h3 class="section-title h3-font">Kênh truyền thông liên quan</h3>
-            <div class="pl-3">
-              <ul class="h4-font text-uppercase media-list">
-                <li class="media-list-icon">Thầy thích trúc thái minh</li>
-                <li class="media-list-icon">clb tuổi trẻ ba vàng</li>
-                <li class="media-list-icon">ba vang pagoda</li>
-                <li class="media-list-icon">facebook thầy thích trúc thái minh</li>
-                <li class="media-list-icon">facebook clb tuổi trẻ ba vàng</li>
-                <li class="media-list-icon">facebook ba vang pagoda</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 text-center pt-xl-4 px-0 px-lg-3">
-      <p class="border my-2 d-block d-lg-none"></p>
-      <p class="h4-font font-weight-normal"><strong>Địa chỉ:</strong> CHÙA BA VÀNG, Phường Quang Trung, Thành phố Uông Bí, Tỉnh Quảng Ninh</p>
-      <p class="h4-font font-weight-normal"><strong>Điện thoại:</strong> 0203 655 77 99 | <strong>Tổng đài:</strong> 19008968</p>
-      <p class="border my-2 d-block d-lg-none"></p>
-      <p class="h4-font pt-2 mt-1">Copyright © 2019 Chùa Ba Vàng . Powered by Chùa Ba Vàng</p>
-    </div>
-    <a href="" class="btn btn-warning position-absolute h4-font py-2 d-none d-sm-block" style="bottom: 0; right: 0">Đánh giá phiên bản mới <i class="fas fa-arrow-right pl-4"></i></a> </div>
-  <div class="w-100 d-flex d-sm-none">
-    <button class="col-10 border-0 btn-warning py-3 d-flex justify-content-center align-items-center">đánh giá phiên bản mới <i class="fas fa-arrow-right pl-5"></i></button>
-    <button class="col-2 border-0 d-flex justify-content-center align-items-center" style="background: #7A3E0C"><i class="fas fa-arrow-up text-white fs-20"></i></button>
-  </div>
+	<div class="w-1136 mx-auto d-flex justify-content-center flex-wrap">
+		<div class="col-1 px-4">
+			<img src="images/icon/XMLID.svg" class="px-2" alt="">
+		</div>	
+		<p class="w-100 text-center sub-title-16 fw-bold pt-2">Thầy Thích Trúc Thái Minh</p>
+		<div class=" footer-cate">
+			<ul class="d-flex justify-content-around">
+				<li><a href="" >Trang chủ</a></li>
+				<li><a href="" >Giới thiệu</a></li>	
+				<li><a href="" >Hạnh đầu đà</a></li>	
+				<li><a href="" >Phật pháp ứng dụng</a></li>	
+				<li><a href="" >Tâm linh</a></li>	
+				<li><a href="" >Tin tức</a></li>	
+			</ul>
+		</div>
+		<p class="text-center sub-title-14 pt-2 fw-light text-dark500 pb-1">Nếu thích những bài chia sẻ của Thầy Thích Trúc Thái Minh, quý đạo hữu hãy theo dõi các kênh sau để không bị bỏ lỡ!</p>
+		<p class="w-100 d-flex align-items-center justify-content-center pt-5 pb-3">
+			<a href=""><i class="fab fa-youtube px-3"></i></a>
+			<a href=""><i class="fab fa-facebook-f px-3"></i></a>
+			<a href=""><i class="fab fa-soundcloud px-3"></i></a>
+			<a href=""><i class="fab fa-instagram px-3"></i></a>
+		</p>
+		<p class="text-dark500 sub-title-12 pt-4">© 2020 Thich truc thai minh</p>
+	</div>
 </footer>
 <!--
     <script>
