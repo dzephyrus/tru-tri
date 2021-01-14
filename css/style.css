@@ -1,4 +1,5 @@
 @import url("sunset.css/dist/sunset.min.css");
+@import url("bootstrap.min.css");
 img {
   width: 100%;
   height: auto; }
@@ -41,6 +42,9 @@ a:active {
   transition-timing-function: ease, ease;
   -webkit-transition-delay: 0s, 0s;
   transition-delay: 0s, 0s; }
+
+a:hover {
+  color: #A46A14; }
 
 html {
   scroll-behavior: smooth; }
@@ -291,7 +295,7 @@ p {
   font-size: 16px;
   line-height: 24px; }
 
-.sub-title-14, .count-cmt, .count-view {
+.sub-title-14, .nav_desktop .nav_item a, .count-cmt, .count-view {
   font-family: SVN-Gilroy;
   font-style: normal;
   font-weight: 600;
@@ -348,7 +352,7 @@ p {
     position: relative;
     padding: 0 13px 3px; }
     .nav_desktop .nav_item a {
-      color: #828282; }
+      color: #FFFFFF; }
     .nav_desktop .nav_item .dropdown-menu .dropdown-item {
       transition: all .15s ease-in-out;
       padding-left: 12px;
@@ -363,9 +367,9 @@ p {
     padding-left: 17px;
     padding-right: 25px; }
   .nav_desktop .nav_item.active {
-    border-bottom: 3px solid #7A3E0C; }
+    border-bottom: 2px solid #FFFFFF; }
     .nav_desktop .nav_item.active a {
-      color: #7A3E0C; }
+      color: #FFFFFF; }
 
 @media all and (min-width: 992px) {
   .nav_desktop .nav_item .dropdown-menu {
@@ -573,11 +577,6 @@ p {
 
 .side-news {
   overflow: hidden; }
-
-.grid-col3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(178px, 1fr));
-  grid-gap: 0px 20px; }
 
 .flex-col3 .flex-col3-item {
   border-right: 1px solid #dee2e6; }
@@ -888,20 +887,6 @@ input[type="search"].sb-search-input {
       border-left: 1px solid #ffffff57; }
   .brown-section .expand-menu .dropdown-toggle-split {
     background: linear-gradient(90deg, rgba(251, 251, 251, 0) 0%, rgba(255, 255, 255, 0.5774684874) 100%); }
-
-.operation-rules .operation-rules-item {
-  height: 156px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  flex-wrap: wrap; }
-  .operation-rules .operation-rules-item .lead-thumb {
-    right: 0;
-    top: 0;
-    width: auto; }
-  .operation-rules .operation-rules-item .operation-rules-item-icon {
-    width: auto;
-    height: 100%; }
 
 .social-icon {
   width: 32px;
@@ -1351,6 +1336,7 @@ input[type="search"].sb-search-input {
 .section-cate {
   padding: 36px 0 40px 0; }
   .section-cate .section-cate-item {
+    color: black;
     padding: 0 20px;
     border-left: 1px solid #79797982;
     font-weight: 600; }
@@ -1360,22 +1346,22 @@ input[type="search"].sb-search-input {
 .date-news {
   padding: 20px 0 8px 0; }
 
-.footer-section {
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #ffffff99;
-  border-radius: 7px; }
-  .footer-section .footer-logo {
-    width: 347px; }
-  .footer-section .footer-info {
-    width: 668px; }
-    .footer-section .footer-info .media-list {
-      list-style-type: disc; }
-      .footer-section .footer-info .media-list .media-list-icon {
-        padding: 7px 0;
-        color: #555555; }
+footer {
+  background: url("../images/Footer.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 60px 0 80px; }
 
-.footer-bg {
-  top: -600px;
-  z-index: -1; }
+.footer-cate {
+  width: 602px;
+  padding: 36px 0 24px; }
+  .footer-cate a {
+    font-family: SVN-Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em; }
 
 .cd-auto-hide-header {
   position: sticky;
@@ -1384,7 +1370,7 @@ input[type="search"].sb-search-input {
   left: 0;
   width: 100%;
   height: auto;
-  background-color: #ffffff;
+  background-color: #00000026;
   /* Force Hardware Acceleration */
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -1400,9 +1386,9 @@ input[type="search"].sb-search-input {
   display: block; }
 
 .cd-auto-hide-header.is-hidden {
-  -webkit-transform: translateY(-80%);
-  -ms-transform: translateY(-80%);
-  transform: translateY(-80%); }
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%); }
 
 .g-sm-5, .gx-sm-5 {
   --bs-gutter-x: 2.50rem;
