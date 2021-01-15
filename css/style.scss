@@ -407,6 +407,7 @@ width: 212px;
 		a{
 			color:#FFFFFF;
 			@extend .sub-title-14;
+			text-shadow: 0px 2px 4px #000000e0;
 		}
 		.dropdown-menu{
 			.dropdown-item{
@@ -415,12 +416,13 @@ width: 212px;
 				padding-right: 30px;
 				color:#828282;
 				font-weight: bold;
+				text-shadow: none;
 			}
 		}
     }
     .nav_item:hover{
         a{
-            color:$brown;
+           color: #ffb74c;
         }
 		.dropdown-menu{
 			.dropdown-item:hover{
