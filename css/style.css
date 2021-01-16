@@ -1,5 +1,3 @@
-@import url("sunset.css/dist/sunset.min.css");
-@import url("bootstrap.min.css");
 img {
   width: 100%;
   height: auto; }
@@ -484,14 +482,8 @@ p {
 .card-col6 .card-col6_image {
   height: 315px; }
 
-.mini-news .mini-news_item {
-  padding-bottom: 14px;
-  margin-bottom: 14px;
-  border-bottom: 1px solid #0000001b; }
-  .mini-news .mini-news_item:last-child {
-    border: none;
-    margin-bottom: 0;
-    padding-bottom: 0; }
+.mini-news .mini-news-item {
+  padding-top: 44px; }
 
 .card-news-normal_image {
   height: 204px; }
@@ -889,6 +881,8 @@ input[type="search"].sb-search-input {
       border-left: 1px solid #ffffff57; }
   .brown-section .expand-menu .dropdown-toggle-split {
     background: linear-gradient(90deg, rgba(251, 251, 251, 0) 0%, rgba(255, 255, 255, 0.5774684874) 100%); }
+  .brown-section .mini-news {
+    margin-top: -37px; }
 
 .social-icon {
   width: 32px;
@@ -1344,6 +1338,8 @@ input[type="search"].sb-search-input {
     font-weight: 600; }
     .section-cate .section-cate-item:first-child {
       border-left: 3px solid #A46A14; }
+  .section-cate.section-cate-p-0 {
+    padding-bottom: 0 !important; }
 
 .date-news {
   padding: 20px 0 8px 0; }
