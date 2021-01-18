@@ -34,9 +34,9 @@
   <div class="w-100 d-none d-lg-block position-relative" style="z-index: 3; background: linear-gradient(180deg, rgb(0 0 0 / 48%) 0%, rgb(251 251 251 / 0%) 100%);">
     <div class="w-1136 mx-auto row py-4  align-items-center">
       <div class="col-4 d-flex align-items-center px-0">
-        <div class="d-flex align-items-center pr-2 col-1"><a href=""><img src="images/icon/XMLID.svg" alt="">	</a> </div>
-		  <div class="d-flex flex-wrap ps-2 pt-1">
-		  		<a href="" class="sub-title-16 text-white pl-2 pr-3 text-nowrap ">Thầy<br>
+        <div class="d-flex align-items-center px-sm-3 col-2"><a href=""><img src="images/icon/XMLID.svg" alt="">	</a> </div>
+		  <div class="d-flex flex-wrap pl-2 pt-1 ml-sm-n1">
+		  		<a href="" class="sub-title-16 text-white text-nowrap ">Thầy<br>
 					Thích Trúc Thái Minh
 			  </a>	
 		  </div>
@@ -44,29 +44,196 @@
       <div class="col-8 px-0">
         <div class="d-flex justify-content-end">
           	 <ul class="d-flex nav_desktop bg-transparent justify-content-between w-100">
-			  <li class="nav_item active"> <a href="" class="">Giới thiệu</a>
+			  <li class="nav_item active"> <a href="" class="">Trang chủ</a>
 				<ul class="dropdown-menu fade-up">
 				  <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
 				  <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
 				  <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
 				</ul>
 			  </li>
-			  <li class="nav_item "><a href="" class="">Tin tức</a></li>
-			  <li class="nav_item "><a href="" class="">Pháp âm</a></li>
-			  <li class="nav_item "><a href="" class="">Bài cúng</a></li>
-			  <li class="nav_item "><a href="" class="">Đạo tràng</a></li>
-<!--
-			  <li class="nav_item "><a class="btn btn-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    <i class="fas fa-search"></i>
-  </a></li>
--->
-				 
-			  <li class="nav_item bg-transparent text-white"><span class="pb-1 pe-2"><img src="images/icon/menu.svg" alt=""></span><a href="">Danh mục</a></li>
+			  <li class="nav_item "><a href="" class="">Giới thiệu</a></li>
+			  <li class="nav_item "><a href="" class="">Hạnh đầu đà</a></li>
+			  <li class="nav_item "><a href="" class="">Phật pháp ứng dụng</a></li>
+			  <li class="nav_item "><a href="" class="">Tâm linh</a></li>
+<!--			  <li class="nav_item "><a href="" class=""><i class="fas fa-search"></i></a></li>-->
+				 <li class="nav_item ">
+					 <button class="btn btn-none px-0 focus-none" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+						<i class="fas fa-search text-white"></i>
+					  </button>
+				 </li>
+			  <li class="nav_item bg-transparent text-white">
+				  <span class="pb-1 pr-2"><img src="images/icon/menu.svg" alt=""></span><span>Danh mục</span>
+				  <button class="btn btn-none px-0 focus-none position-absolute w-100 h-100" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+					  </button>
+			  </li>
 			</ul>
           </div>
         </div>
       </div>
-	  
+	  <div class="position-absolute w-100 bg-white accordion" id="accordionExample">
+	  	<div class="collapse" id="collapseExample" data-parent="#accordionExample">
+		  <div class="w-1136 mx-auto py-5">
+			  <button class="btn btn-none float-right fs-10 d-flex align-items-center focus-none" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				Đóng <i class="fas fa-times fs-18 pl-2"></i>
+			  </button>
+			<div class="input-group col-sm-7 mx-auto border-bottom px-0 my-5">
+			  <input type="text" class="form-control focus-none border-0 h4-font" placeholder="Tìm bài viết" aria-label="Recipient's username" aria-describedby="button-addon2">
+			  <div class="input-group-append">
+				<button class="btn border-0" type="button"><i class="fas fa-search fs-20 text-secondary"></i></button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 <div class="collapse" id="collapseExample2" data-parent="#accordionExample">
+		  <div class="w-1136 mx-auto py-5">
+			  <button class="btn btn-none float-right fs-10 d-flex align-items-center focus-none" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+				Đóng <i class="fas fa-times fs-18 pl-2"></i>
+			  </button>
+			  <div class="w-100 float-left pb-5">
+			  	<div class="row">
+				  <div class="col-sm-3 pb-3">
+					  <div class="header-section-cate d-flex pt-0">
+						<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+					</div>
+					  <ul class="header-cate-menu">
+						<li class="header-cate-menu-item">
+							<a href="" class="sub-title-16">
+								Bài viết mới nhất
+							</a>
+						  </li>
+						  <li class="header-cate-menu-item">
+							  <a href="" class="sub-title-16">
+								Bài viết mới nhất
+							</a>
+						  </li>
+					  </ul>
+				  </div>
+					<div class="col-sm-3 pb-3">
+						<div class="header-section-cate d-flex pt-0">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<ul class="header-cate-menu">
+						  <li class="header-cate-menu-item">
+							  <a href="" class="sub-title-16">
+								  Bài viết mới nhất
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  Bài viết mới nhất
+							  </a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 pb-3">
+						<div class="header-section-cate d-flex pt-0">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<ul class="header-cate-menu">
+						  <li class="header-cate-menu-item">
+							  <a href="" class="sub-title-16">
+								  Bài viết mới nhất
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  Thế giới tâm linh
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  video
+							  </a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 pb-3">
+						<div class="header-section-cate d-flex pb-2">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<div class="header-section-cate d-flex pb-2">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<div class="header-section-cate d-flex pb-2">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<div class="header-section-cate d-flex pb-2">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+					</div>
+					<div class="col-sm-3 pb-3">
+						<div class="header-section-cate d-flex pt-0">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<ul class="header-cate-menu">
+						  <li class="header-cate-menu-item">
+							  <a href="" class="sub-title-16">
+								  Bài viết mới nhất
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  Thế giới tâm linh
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  video
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  Giảng Pháp thường kỳ
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  video
+							  </a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 pb-3">
+						<div class="header-section-cate d-flex pb-2">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-3">
+							<p class="sub-title-14">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
+					</div>
+					<div class="col-sm-3 pb-3">
+						<div class="header-section-cate d-flex pb-2">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Video mới nhất</a>
+						</div>
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-3">
+							<p class="sub-title-14">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
+					</div>
+				</div>
+			  </div>
+			
+		  </div>
+		</div>
+	  </div>
+<!--
+	  <div class="position-absolute w-100 bg-white">
+	  	
+	  </div>
+-->
     </div>
 	
 	
@@ -208,128 +375,25 @@
 		  	<h2 class="h2-font pt-3">Hành trình của niềm tin</h2>
 			  <p class="sub-title-18 pt-4">Những trăn trở về bản chất của sự sống, cái chết và niềm tin vào Phật Pháp đã đưa đường chỉ lối cho Đại Đức Thích Trúc Thái Minh đến một hành trình mà có lẽ, khi bước chân vào cửa Phật, Người cũng không bao giờ nghĩ đến. Đó, là hành trình của niềm tin, hành trình đem giáo lý của nhà phật đến với mọi người.</p>
 			  <p class="sub-title-18 pt-4">Những ngày đầu tháng 3/2014, con đường dẫn lên chùa Ba Vàng lất phất mưa bay. Người lái xe mỉm cười, nhẹ nhàng nói, cách đây chưa lâu, chẳng có đường lên đẹp đẽ như vậy đâu.</p>
-			  <p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
-  </a>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-target
-  </button>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  </div>
-</div>
+			  
 		  </div>
       </div>
     </div>
   </div>
-	
-	<div class="">
-		<div class="container">
-		  <div class="row justify-content-lg-center">
-			<div class="col col-lg-3 bg-base">
-			  1 of 3
-			</div>
-			<div class="col-md-auto bg-blue">
-			  Variable width content
-			</div>
-			<div class="col col-lg-2 bg-danger">
-			  3 of 3
-			</div>
-		  </div>
-		  <div class="row row-cols-3">
-			<div class="col">
-			  1 of 3
-			</div>
-			<div class="col-md-auto">
-			  Variable width content
-			</div>
-			<div class="col col-lg-2">
-			  3 of 3
-			</div>
-			  <div class="col col-lg-2">
-			  3 of 3
-			</div>
-		  </div>
-		</div>
-		<div class="container">
-		  <div class="row row-cols-4">
-			<div class="col bg-base">Column</div>
-			<div class="col bg-blue">Column</div>
-			<div class="col-6 bg-danger">Column</div>
-			<div class="col bg-dark">Column</div>
-		  </div>
-		</div>
-		<div class="container pt-5">
-		  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-		  <div class="row">
-			<div class="col-md-8 bg-danger">.col-md-8</div>
-			<div class="col-6 col-md-4 bg-blue">.col-6 .col-md-4</div>
-		  </div>
-	    </div>
-		
-		<div class="container pt-5">
-		  <div class="row row-cols-3">
-			<div class="col bg-blue">Column</div>
-			<div class="col bg-danger">Column</div>
-			<div class="col bg-dark">Column</div>
-			<div class="col bg-darkgold">Column</div>
-		  </div>
-		</div>
-		
-		<div class="container pt-5">
-		  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-			<div class="col bg-blue">Column</div>
-			<div class="col bg-danger">Column</div>
-			<div class="col bg-dark">Column</div>
-			<div class="col bg-darkgold">Column</div>
-		  </div>
-		</div>
-		
-		<div class="container pt-5">
-		  <div class="row">
-			<div class="col-sm-5 col-md-6 bg-base">.col-sm-5 .col-md-6</div>
-			<div class="col-sm-5 offset-sm-2 bg-blue col-md-6 offset-md-0">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
-		  </div>
-		  <div class="row pt-4">
-			<div class="col-md-4 bg-blue">.col-md-4</div>
-			<div class="col-md-4 ms-auto bg-danger">.col-md-4 .ms-auto</div>
-		  </div>
-  		</div>
-		
-		<div class="container">
-		  <div class="row g-2">
-			<div class="col-6">
-			  <div class="p-3 border bg-light">Custom column padding</div>
-			</div>
-			<div class="col-6">
-			  <div class="p-3 border bg-light">Custom column padding</div>
-			</div>
-			<div class="col-6">
-			  <div class="p-3 border bg-light">Custom column padding</div>
-			</div>
-			<div class="col-6">
-			  <div class="p-3 border bg-light">Custom column padding</div>
-			</div>
-		  </div>
-		</div>
-	</div>
 	<div class="bg-white container-fluid">
 		<div class="w-1136 mx-auto py-sm-5">
 			<div class="d-flex justify-content-between align-items-center">
               <p class="section-title">Từ thiện</p>
-              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pe-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right ps-2 icon-right"></i></a> 
+              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pr-xl-4">Xem thêm <i class="fas fa-arrow-right object move-right pl-2 icon-right"></i> </a> 
 			</div>
-			<p class="sub-title-18 col-9 col-sm-8 pt-4">Vâng theo lời chỉ dạy của Đức Thế Tôn, Sư Phụ và chư Tăng chùa Ba Vàng đang hàng ngày chân thật thực hành hạnh thiểu dục tri túc với các pháp đầu đà khổ hạnh. Các quý Thầy luôn nhẫn nhục để thực hành Pháp viễn ly dục lạc tầm thường của thế gian.</p>
-			<div class=" py-4 my-3">
+			<p class="sub-title-18 col-sm-8 pt-4 px-0">Vâng theo lời chỉ dạy của Đức Thế Tôn, Sư Phụ và chư Tăng chùa Ba Vàng đang hàng ngày chân thật thực hành hạnh thiểu dục tri túc với các pháp đầu đà khổ hạnh. Các quý Thầy luôn nhẫn nhục để thực hành Pháp viễn ly dục lạc tầm thường của thế gian.</p>
+			<div class=" pt-4 mt-3">
 				<a href="" class="sub-title-16 fw-bold">Videos</a>
 				<span class="px-3 text-secondary">|</span>
 				<a href="" class="sub-title-16 fw-bold">Bài viết</a>
 			</div>
-			<div class="row mx-xl-n4 px-xl-1">
-				<div class="col-sm-6 px-xl-4">
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-6 px-xl-4 mini-news-item">
 					<div class="mx-xl-n1">
 						<div class="">
 							<p class="thumb-img"> 
@@ -348,7 +412,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 px-xl-4">
+				<div class="col-sm-6 px-xl-4 mini-news-item">
 					<div class="mx-xl-n1">
 						<div class="">
 							<p class="thumb-img"> 
@@ -428,7 +492,7 @@
 				</div>
 			</div>
 			
-			<button class="d-flex align-items-center mx-auto btn btn-outline-secondary px-4 py-2 mt-5 mb-4 bg-white pwa-element pwa-borders-bottomLeftCornerTopRightCorner seemore-button">Xem thêm hạnh đầu đà <i class="fas fa-arrow-right ps-3 text-dark"></i></button>
+			<button class="d-flex align-items-center mx-auto btn btn-outline-secondary px-4 py-2 mt-5 mb-4 bg-white pwa-element pwa-borders-bottomLeftCornerTopRightCorner seemore-button">Xem thêm hạnh đầu đà <i class="fas fa-arrow-right pl-3 text-dark"></i></button>
 		</div>
 	</div>
   
@@ -454,15 +518,15 @@
 		<div class="w-1136 mx-auto py-sm-5">
 			<div class="d-flex justify-content-between align-items-center">
               <p class="section-title">Từ thiện</p>
-              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pe-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right ps-2 icon-right"></i></a> 
+              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pr-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right pl-2 icon-right"></i></a> 
 			</div>
-			<div class=" py-4 my-3">
+			<div class=" pt-4 mt-3">
 				<a href="" class="sub-title-16 fw-bold">Videos</a>
 				<span class="px-3 text-secondary">|</span>
 				<a href="" class="sub-title-16 fw-bold">Bài viết</a>
 			</div>
-			<div class="row mx-xl-n4 px-xl-1">
-				<div class="col-sm-6 px-xl-4">
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-6 px-xl-4 mini-news-item">
 					<div class="mx-xl-n1">
 						<div class="">
 							<p class="thumb-img"> 
@@ -481,7 +545,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 px-xl-4">
+				<div class="col-sm-6 px-xl-4 mini-news-item">
 					<div class="mx-xl-n1">
 						<div class="">
 							<p class="thumb-img"> 
@@ -580,7 +644,7 @@
 				</div>
 			</div>
 			
-			<button class="d-flex align-items-center mx-auto btn btn-outline-secondary px-4 py-2 mt-5 mb-4 bg-white pwa-element pwa-borders-bottomLeftCornerTopRightCorner seemore-button">Xem thêm hạnh đầu đà <i class="fas fa-arrow-right ps-3 text-dark"></i></button>
+			<button class="d-flex align-items-center mx-auto btn btn-outline-secondary px-4 py-2 mt-5 mb-4 bg-white pwa-element pwa-borders-bottomLeftCornerTopRightCorner seemore-button">Xem thêm hạnh đầu đà <i class="fas fa-arrow-right pl-3 text-dark"></i></button>
 		</div>
 	</div>
 	<div class="">
@@ -595,15 +659,15 @@
 		<div class="w-1136 mx-auto py-sm-5 border-bottom">
 			<div class="d-flex justify-content-between align-items-center">
               <p class="section-title">Phật pháp ứng dụng</p>
-              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pe-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right ps-2 icon-right"></i></a> 
+              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pr-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right pl-2 icon-right"></i></a> 
 			</div>
 			<div class="section-cate d-flex ">
 				<a href="" class="section-cate-item">Bộ kinh</a>
 				<a href="" class="section-cate-item">Bộ kinh</a>
 				<a href="" class="section-cate-item">Bộ kinh</a>
 			</div>
-			<div class="row mx-xl-n4 px-xl-1">
-				<div class="col-sm-6 px-xl-4">
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-6 px-xl-4 mini-news-item">
 					<div class="mx-xl-n1">
 						<div class="">
 							<p class="thumb-img"> 
@@ -622,7 +686,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 px-xl-4">
+				<div class="col-sm-6 px-xl-4 mini-news-item">
 					<div class="mx-xl-n1">
 						<div class="">
 							<p class="thumb-img"> 
@@ -730,8 +794,8 @@
 				<a href="" class="section-cate-item">Bộ kinh</a>
 				<a href="" class="section-cate-item">Bộ kinh</a>
 			</div>
-			<div class="row mx-xl-n4 px-xl-1">
-				<div class="col-sm-6 px-xl-4">
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-6 px-xl-4 mini-news-item">
 					<div class="mx-xl-n1">
 						<div class="">
 							<p class="thumb-img"> 
@@ -750,7 +814,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 px-xl-4">
+				<div class="col-sm-6 px-xl-4 mini-news-item">
 					<div class="mx-xl-n1">
 						<div class="">
 							<p class="thumb-img"> 
@@ -857,7 +921,7 @@
         <div class="d-flex flex-wrap align-items-center px-3 px-md-0 justify-content-between">
 			<div class="d-flex justify-content-between align-items-center w-100">
               <p class="section-title">Phật pháp ứng dụng</p>
-              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pe-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right ps-2 icon-right"></i></a> 
+              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pr-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right pl-2 icon-right"></i></a> 
 			</div>
           <div class="d-flex flex-wrap">
             <div class="d-none d-md-flex align-items-center flex-wrap cate-list"> <a href="" class="cate-list_item text-white h4-font">Phật pháp ứng dụng</a> <a href="" class="cate-list_item text-white h4-font">Phật pháp với tuổi trẻ</a> <a href="" class="cate-list_item text-white h4-font">Phật pháp theo chủ đề</a> <a href="" class="cate-list_item text-white h4-font">Kinh pháp cú</a> </div>
@@ -1003,7 +1067,7 @@
 		<div class="w-1136 mx-auto py-sm-5 border-bottom">
 			<div class="d-flex justify-content-between align-items-center">
               <p class="section-title">Tâm linh và nghi lễ phật giáo</p>
-              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pe-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right ps-2 icon-right"></i></a> 
+              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pr-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right pl-2 icon-right"></i></a> 
 			</div>
 			<div class="section-cate section-cate-p-0 d-flex ">
 				<a href="" class="section-cate-item">Bộ kinh</a>
