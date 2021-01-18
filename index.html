@@ -9,12 +9,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 -->
-<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="css/sunset.css/dist/sunset.min.css"/>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 <!--
@@ -31,13 +29,14 @@
   Tý</a>
   <button type="button" class="pb-1 pr-2 close position-absolute" style="right: 0" data-dismiss="toast" aria-label="Close"> <i class="fas fa-times text-white fs-18"></i> </button>
 </div>
-<header class="cd-auto-hide-header" style="background: linear-gradient(180deg, rgb(101 101 101) 0%, rgb(251 251 251 / 48%) 100%);">
-  <div class="w-100 d-none d-lg-block">
+<header class="cd-auto-hide-header" >
+<!--	<div class="position-absolute w-100 h-100 bg-white" style="z-index: 1"></div>-->
+  <div class="w-100 d-none d-lg-block position-relative" style="z-index: 3; background: linear-gradient(180deg, rgb(0 0 0 / 48%) 0%, rgb(251 251 251 / 0%) 100%);">
     <div class="w-1136 mx-auto row py-4  align-items-center">
       <div class="col-4 d-flex align-items-center px-0">
-        <div class="d-flex align-items-center pr-2 col-1"><a href=""><img src="images/icon/XMLID.svg" alt="">	</a> </div>
-		  <div class="d-flex flex-wrap ps-2 pt-1">
-		  		<a href="" class="sub-title-16 text-white pl-2 pr-3 text-nowrap ">Thầy<br>
+        <div class="d-flex align-items-center px-sm-3 col-2"><a href=""><img src="images/icon/XMLID.svg" alt="">	</a> </div>
+		  <div class="d-flex flex-wrap pl-2 pt-1 ml-sm-n1">
+		  		<a href="" class="sub-title-16 text-white text-nowrap ">Thầy<br>
 					Thích Trúc Thái Minh
 			  </a>	
 		  </div>
@@ -45,24 +44,199 @@
       <div class="col-8 px-0">
         <div class="d-flex justify-content-end">
           	 <ul class="d-flex nav_desktop bg-transparent justify-content-between w-100">
-			  <li class="nav_item active"> <a href="" class="">Giới thiệu</a>
+			  <li class="nav_item active"> <a href="" class="">Trang chủ</a>
 				<ul class="dropdown-menu fade-up">
 				  <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
 				  <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
 				  <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
 				</ul>
 			  </li>
-			  <li class="nav_item "><a href="" class="">Tin tức</a></li>
-			  <li class="nav_item "><a href="" class="">Pháp âm</a></li>
-			  <li class="nav_item "><a href="" class="">Bài cúng</a></li>
-			  <li class="nav_item "><a href="" class="">Đạo tràng</a></li>
-			  
-			  <li class="nav_item bg-transparent text-white"><a href="" class="pb-1 pe-2"><img src="images/icon/menu.svg" alt=""></a>Danh mục</li>
+			  <li class="nav_item "><a href="" class="">Giới thiệu</a></li>
+			  <li class="nav_item "><a href="" class="">Hạnh đầu đà</a></li>
+			  <li class="nav_item "><a href="" class="">Phật pháp ứng dụng</a></li>
+			  <li class="nav_item "><a href="" class="">Tâm linh</a></li>
+<!--			  <li class="nav_item "><a href="" class=""><i class="fas fa-search"></i></a></li>-->
+				 <li class="nav_item ">
+					 <button class="btn btn-none px-0 focus-none" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+						<i class="fas fa-search text-white"></i>
+					  </button>
+				 </li>
+			  <li class="nav_item bg-transparent text-white">
+				  <span class="pb-1 pr-2"><img src="images/icon/menu.svg" alt=""></span><span>Danh mục</span>
+				  <button class="btn btn-none px-0 focus-none position-absolute w-100 h-100" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+					  </button>
+			  </li>
 			</ul>
           </div>
         </div>
       </div>
+	  <div class="position-absolute w-100 bg-white accordion" id="accordionExample">
+	  	<div class="collapse" id="collapseExample" data-parent="#accordionExample">
+		  <div class="w-1136 mx-auto py-5">
+			  <button class="btn btn-none float-right fs-10 d-flex align-items-center focus-none" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				Đóng <i class="fas fa-times fs-18 pl-2"></i>
+			  </button>
+			<div class="input-group col-sm-7 mx-auto border-bottom px-0 my-5">
+			  <input type="text" class="form-control focus-none border-0 h4-font" placeholder="Tìm bài viết" aria-label="Recipient's username" aria-describedby="button-addon2">
+			  <div class="input-group-append">
+				<button class="btn border-0" type="button"><i class="fas fa-search fs-20 text-secondary"></i></button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 <div class="collapse" id="collapseExample2" data-parent="#accordionExample">
+		  <div class="w-1136 mx-auto py-5">
+			  <button class="btn btn-none float-right fs-10 d-flex align-items-center focus-none" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+				Đóng <i class="fas fa-times fs-18 pl-2"></i>
+			  </button>
+			  <div class="w-100 float-left pb-5">
+			  	<div class="row">
+				  <div class="col-sm-3 pb-3">
+					  <div class="header-section-cate d-flex pt-0">
+						<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+					</div>
+					  <ul class="header-cate-menu">
+						<li class="header-cate-menu-item">
+							<a href="" class="sub-title-16">
+								Bài viết mới nhất
+							</a>
+						  </li>
+						  <li class="header-cate-menu-item">
+							  <a href="" class="sub-title-16">
+								Bài viết mới nhất
+							</a>
+						  </li>
+					  </ul>
+				  </div>
+					<div class="col-sm-3 pb-3">
+						<div class="header-section-cate d-flex pt-0">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<ul class="header-cate-menu">
+						  <li class="header-cate-menu-item">
+							  <a href="" class="sub-title-16">
+								  Bài viết mới nhất
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  Bài viết mới nhất
+							  </a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 pb-3">
+						<div class="header-section-cate d-flex pt-0">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<ul class="header-cate-menu">
+						  <li class="header-cate-menu-item">
+							  <a href="" class="sub-title-16">
+								  Bài viết mới nhất
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  Thế giới tâm linh
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  video
+							  </a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 pb-3">
+						<div class="header-section-cate d-flex pb-2">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<div class="header-section-cate d-flex pb-2">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<div class="header-section-cate d-flex pb-2">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<div class="header-section-cate d-flex pb-2">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+					</div>
+					<div class="col-sm-3 pb-3">
+						<div class="header-section-cate d-flex pt-0">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<ul class="header-cate-menu">
+						  <li class="header-cate-menu-item">
+							  <a href="" class="sub-title-16">
+								  Bài viết mới nhất
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  Thế giới tâm linh
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  video
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  Giảng Pháp thường kỳ
+							  </a>
+							</li>
+							<li class="header-cate-menu-item">
+								<a href="" class="sub-title-16">
+								  video
+							  </a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 pb-3">
+						<div class="header-section-cate d-flex pb-2">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Hạnh đầu đà</a>
+						</div>
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-3">
+							<p class="sub-title-14">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
+					</div>
+					<div class="col-sm-3 pb-3">
+						<div class="header-section-cate d-flex pb-2">
+							<a href="" class="px-2 sub-title-18 font-weight-bold">Video mới nhất</a>
+						</div>
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-3">
+							<p class="sub-title-14">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
+					</div>
+				</div>
+			  </div>
+			
+		  </div>
+		</div>
+	  </div>
+<!--
+	  <div class="position-absolute w-100 bg-white">
+	  	
+	  </div>
+-->
     </div>
+	
+	
 <!-- menu cũ
 
     <div class="">
@@ -182,8 +356,8 @@
 <!--<article class="bg-white pt-md-0 px-md-0 container-fluid position-relative"> -->
   
   <!--		<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>-->
-  <div class="position-absolute h-100 d-none d-xl-block" style="right: 330px"> <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top p-0" role="button"> <span class="d-flex justify-content-center align-items-center h-100"> <i class="fas fa-arrow-up fs-14"></i> </span> </a> </div>
-  <div class="" style="margin-top: -155px">
+
+  <div class="" style="margin-top: -155px; z-index: 2">
     <img src="images/CNH05003 5.png" alt="">
   </div>
   <div class="bg-lightgray d-flex align-items-center position-relative overflow-hidden lightgray-section " >
@@ -206,200 +380,119 @@
       </div>
     </div>
   </div>
-	
-	<div class="">
-		<div class="container">
-		  <div class="row justify-content-lg-center">
-			<div class="col col-lg-3 bg-base">
-			  1 of 3
-			</div>
-			<div class="col-md-auto bg-blue">
-			  Variable width content
-			</div>
-			<div class="col col-lg-2 bg-danger">
-			  3 of 3
-			</div>
-		  </div>
-		  <div class="row row-cols-3">
-			<div class="col">
-			  1 of 3
-			</div>
-			<div class="col-md-auto">
-			  Variable width content
-			</div>
-			<div class="col col-lg-2">
-			  3 of 3
-			</div>
-			  <div class="col col-lg-2">
-			  3 of 3
-			</div>
-		  </div>
-		</div>
-		<div class="container">
-		  <div class="row row-cols-4">
-			<div class="col bg-base">Column</div>
-			<div class="col bg-blue">Column</div>
-			<div class="col-6 bg-danger">Column</div>
-			<div class="col bg-dark">Column</div>
-		  </div>
-		</div>
-		<div class="container pt-5">
-		  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-		  <div class="row">
-			<div class="col-md-8 bg-danger">.col-md-8</div>
-			<div class="col-6 col-md-4 bg-blue">.col-6 .col-md-4</div>
-		  </div>
-	    </div>
-		
-		<div class="container pt-5">
-		  <div class="row row-cols-3">
-			<div class="col bg-blue">Column</div>
-			<div class="col bg-danger">Column</div>
-			<div class="col bg-dark">Column</div>
-			<div class="col bg-darkgold">Column</div>
-		  </div>
-		</div>
-		
-		<div class="container pt-5">
-		  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-			<div class="col bg-blue">Column</div>
-			<div class="col bg-danger">Column</div>
-			<div class="col bg-dark">Column</div>
-			<div class="col bg-darkgold">Column</div>
-		  </div>
-		</div>
-		
-		<div class="container pt-5">
-		  <div class="row">
-			<div class="col-sm-5 col-md-6 bg-base">.col-sm-5 .col-md-6</div>
-			<div class="col-sm-5 offset-sm-2 bg-blue col-md-6 offset-md-0">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
-		  </div>
-		  <div class="row pt-4">
-			<div class="col-md-4 bg-blue">.col-md-4</div>
-			<div class="col-md-4 ms-auto bg-danger">.col-md-4 .ms-auto</div>
-		  </div>
-  		</div>
-		
-		<div class="container">
-		  <div class="row g-2">
-			<div class="col-6">
-			  <div class="p-3 border bg-light">Custom column padding</div>
-			</div>
-			<div class="col-6">
-			  <div class="p-3 border bg-light">Custom column padding</div>
-			</div>
-			<div class="col-6">
-			  <div class="p-3 border bg-light">Custom column padding</div>
-			</div>
-			<div class="col-6">
-			  <div class="p-3 border bg-light">Custom column padding</div>
-			</div>
-		  </div>
-		</div>
-	</div>
 	<div class="bg-white container-fluid">
 		<div class="w-1136 mx-auto py-sm-5">
-			<div class="d-flex justify-content-between align-items-center mx-n2 mx-xl-n3 pb-4 pb-xl-0">
+			<div class="d-flex justify-content-between align-items-center">
               <p class="section-title">Từ thiện</p>
-              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pe-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right ps-2 icon-right"></i></a> 
+              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pr-xl-4">Xem thêm <i class="fas fa-arrow-right object move-right pl-2 icon-right"></i> </a> 
 			</div>
-			<p class="sub-title-18 col-9 col-sm-8 pt-4">Vâng theo lời chỉ dạy của Đức Thế Tôn, Sư Phụ và chư Tăng chùa Ba Vàng đang hàng ngày chân thật thực hành hạnh thiểu dục tri túc với các pháp đầu đà khổ hạnh. Các quý Thầy luôn nhẫn nhục để thực hành Pháp viễn ly dục lạc tầm thường của thế gian.</p>
-			<div class=" py-4 my-3">
+			<p class="sub-title-18 col-sm-8 pt-4 px-0">Vâng theo lời chỉ dạy của Đức Thế Tôn, Sư Phụ và chư Tăng chùa Ba Vàng đang hàng ngày chân thật thực hành hạnh thiểu dục tri túc với các pháp đầu đà khổ hạnh. Các quý Thầy luôn nhẫn nhục để thực hành Pháp viễn ly dục lạc tầm thường của thế gian.</p>
+			<div class=" pt-4 mt-3">
 				<a href="" class="sub-title-16 fw-bold">Videos</a>
 				<span class="px-3 text-secondary">|</span>
 				<a href="" class="sub-title-16 fw-bold">Bài viết</a>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-2 g-sm-5 ">
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-6 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì </p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-6 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_15.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì </p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-3 g-sm-5 mt-0">
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-4 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-4 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_17.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_13.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-4 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			
-			<button class="d-flex align-items-center mx-auto btn btn-outline-secondary px-4 py-2 mt-5 mb-4 bg-white pwa-element pwa-borders-bottomLeftCornerTopRightCorner seemore-button">Xem thêm hạnh đầu đà <i class="fas fa-arrow-right ps-3 text-dark"></i></button>
+			<button class="d-flex align-items-center mx-auto btn btn-outline-secondary px-4 py-2 mt-5 mb-4 bg-white pwa-element pwa-borders-bottomLeftCornerTopRightCorner seemore-button">Xem thêm hạnh đầu đà <i class="fas fa-arrow-right pl-3 text-dark"></i></button>
 		</div>
 	</div>
   
@@ -423,123 +516,135 @@
   </div>
   <div class="bg-white container-fluid">
 		<div class="w-1136 mx-auto py-sm-5">
-			<div class="d-flex justify-content-between align-items-center mx-n2 mx-xl-n3 pb-4 pb-xl-0">
+			<div class="d-flex justify-content-between align-items-center">
               <p class="section-title">Từ thiện</p>
-              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pe-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right ps-2 icon-right"></i></a> 
+              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pr-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right pl-2 icon-right"></i></a> 
 			</div>
-			<div class=" py-4 my-3">
+			<div class=" pt-4 mt-3">
 				<a href="" class="sub-title-16 fw-bold">Videos</a>
 				<span class="px-3 text-secondary">|</span>
 				<a href="" class="sub-title-16 fw-bold">Bài viết</a>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-2 g-sm-5 ">
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-6 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì </p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-6 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_15.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì </p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5 mt-0">
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_14.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_17.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_13.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			
-			<button class="d-flex align-items-center mx-auto btn btn-outline-secondary px-4 py-2 mt-5 mb-4 bg-white pwa-element pwa-borders-bottomLeftCornerTopRightCorner seemore-button">Xem thêm hạnh đầu đà <i class="fas fa-arrow-right ps-3 text-dark"></i></button>
+			<button class="d-flex align-items-center mx-auto btn btn-outline-secondary px-4 py-2 mt-5 mb-4 bg-white pwa-element pwa-borders-bottomLeftCornerTopRightCorner seemore-button">Xem thêm hạnh đầu đà <i class="fas fa-arrow-right pl-3 text-dark"></i></button>
 		</div>
 	</div>
 	<div class="">
@@ -552,117 +657,129 @@
 	</div>
 	<div class="bg-white container-fluid">
 		<div class="w-1136 mx-auto py-sm-5 border-bottom">
-			<div class="d-flex justify-content-between align-items-center mx-n2 mx-xl-n3 pb-4 pb-xl-0">
+			<div class="d-flex justify-content-between align-items-center">
               <p class="section-title">Phật pháp ứng dụng</p>
-              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pe-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right ps-2 icon-right"></i></a> 
+              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pr-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right pl-2 icon-right"></i></a> 
 			</div>
 			<div class="section-cate d-flex ">
 				<a href="" class="section-cate-item">Bộ kinh</a>
 				<a href="" class="section-cate-item">Bộ kinh</a>
 				<a href="" class="section-cate-item">Bộ kinh</a>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-2 g-sm-5 ">
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-6 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì </p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-6 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_15.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì </p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5 mt-0">
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_14.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_17.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_13.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -677,109 +794,120 @@
 				<a href="" class="section-cate-item">Bộ kinh</a>
 				<a href="" class="section-cate-item">Bộ kinh</a>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-2 g-sm-5 ">
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-6 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì </p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-6 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_15.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì </p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5 mt-0">
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_14.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_17.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_13.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -791,27 +919,22 @@
     <div class="w-1136 mx-auto px-0 px-md-3 px-0 px-xl-0">
       <div class="mx-sm-n3 mx-lg-0">
         <div class="d-flex flex-wrap align-items-center px-3 px-md-0 justify-content-between">
-			<div class="d-flex justify-content-between align-items-center pb-4 pb-xl-0 w-100">
+			<div class="d-flex justify-content-between align-items-center w-100">
               <p class="section-title">Phật pháp ứng dụng</p>
-              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pe-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right ps-2 icon-right"></i></a> 
+              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pr-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right pl-2 icon-right"></i></a> 
 			</div>
           <div class="d-flex flex-wrap">
             <div class="d-none d-md-flex align-items-center flex-wrap cate-list"> <a href="" class="cate-list_item text-white h4-font">Phật pháp ứng dụng</a> <a href="" class="cate-list_item text-white h4-font">Phật pháp với tuổi trẻ</a> <a href="" class="cate-list_item text-white h4-font">Phật pháp theo chủ đề</a> <a href="" class="cate-list_item text-white h4-font">Kinh pháp cú</a> </div>
           </div>
           <div class="d-flex align-items-center flex-wrap px-3 px-md-0 w-100 d-sm-none"> 
-            <!--
-                      <div class="align-items-center justify-content-xl-between d-none d-sm-flex col-lg-8 px-0 pt-2 pt-lg-0">
-						  	<a href="" class="h4-font pl-3 pl-xl-0 text-white">Tu Chuyên Nghiệp</a>
-							  <a href="" class="h4-font text-lightgray pl-3 pl-xl-0">Cầu Siêu</a>
-							  <a href="" class="h4-font text-lightgray pl-3 pl-xl-0">Cúng - Giỗ - Rằm - Mùng 1</a>
-							  <a href="" class="h4-font text-lightgray pl-3 pl-xl-0">Động Thổ</a>
-							  <a href="" class="h4-font text-lightgray pl-3 pl-xl-0">Bốc Mộ</a>
-							  <a href="" class="h4-font text-lightgray pl-3 pl-xl-0">Giao Thừa</a>
-                      </div>
--->
             <div class="w-100 expand-menu d-block d-sm-none">
               <div class="btn-group dropright w-100">
-                <div class="d-flex position-relative align-items-center justify-content-between py-3 mx-n3" style="overflow-x: scroll"> <a href="" class="h4-font text-white pl-sm-3 pr-sm-0 pr-3 expand-menu-cate-name">Phật pháp ứng dụng</a> <a href="" class="h4-font text-white pl-sm-3 pr-sm-0 pr-3 expand-menu-cate-name">Phật pháp với tuổi trẻ</a> <a href="" class="h4-font text-white pl-sm-3 pr-sm-0 pr-3 expand-menu-cate-name">Phật pháp theo chủ đề</a> <a href="" class="h4-font text-white pl-sm-3 pr-sm-0 pr-3 expand-menu-cate-name">Kinh pháp cú</a> </div>
+                <div class="d-flex position-relative align-items-center justify-content-between py-3 mx-n3" style="overflow-x: scroll"> 
+					<a href="" class="h4-font text-white pl-sm-3 pr-sm-0 pr-3 expand-menu-cate-name">Phật pháp ứng dụng</a> 
+					<a href="" class="h4-font text-white pl-sm-3 pr-sm-0 pr-3 expand-menu-cate-name">Phật pháp với tuổi trẻ</a> 
+					<a href="" class="h4-font text-white pl-sm-3 pr-sm-0 pr-3 expand-menu-cate-name">Phật pháp theo chủ đề</a> 
+					<a href="" class="h4-font text-white pl-sm-3 pr-sm-0 pr-3 expand-menu-cate-name">Kinh pháp cú</a> 
+				  </div>
                 <button type="button" class="btn dropdown-toggle-split mr-n3 px-4 border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-arrow-right text-white"></i> </button>
                 <div class="dropdown-menu bg-base">
                   <div class="d-flex flex-wrap"> <a href="" class="h4-font text-lightgray pl-3 text-nowrap " style=" display: inline-table">Tu Chuyên Nghiệp</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Cầu Siêu</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Cúng - Giỗ - Rằm - Mùng 1</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Động Thổ</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Bốc Mộ</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Giao Thừa</a> </div>
@@ -821,106 +944,118 @@
             </div>
           </div> 
 		  </div>
-		  <div class="row row-cols-1 row-cols-sm-3 g-sm-5">
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+		  <div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-4 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-4 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_17.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_13.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-4 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-			  <div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			  <div class="col-sm-4 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			  <div class="col-sm-4 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_13.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_13.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			  <div class="col-sm-4 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_12.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font text-white">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -930,81 +1065,89 @@
   </div>
 	<div class="bg-lightgray container-fluid">
 		<div class="w-1136 mx-auto py-sm-5 border-bottom">
-			<div class="d-flex justify-content-between align-items-center mx-n2 mx-xl-n3 pb-4 pb-xl-0">
+			<div class="d-flex justify-content-between align-items-center">
               <p class="section-title">Tâm linh và nghi lễ phật giáo</p>
-              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pe-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right ps-2 icon-right"></i></a> 
+              <a href="" class="d-none d-xl-block text-gold sub-title-16 seemore-button position-relative pr-xl-4">Xem thêm <i class="bi bi-arrow-right object move-right pl-2 icon-right"></i></a> 
 			</div>
-			<div class="section-cate d-flex ">
+			<div class="section-cate section-cate-p-0 d-flex ">
 				<a href="" class="section-cate-item">Bộ kinh</a>
 				<a href="" class="section-cate-item">Bộ kinh</a>
 				<a href="" class="section-cate-item">Bộ kinh</a>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5">
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_14.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-3 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_17.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_13.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1014,77 +1157,85 @@
 	</div>
 	<div class="bg-lightgray container-fluid">
 		<div class="w-1136 mx-auto pb-sm-5 pt-2">
-			<div class="section-cate d-flex ">
+			<div class="section-cate section-cate-p-0 d-flex ">
 				<a href="" class="section-cate-item">Bộ kinh</a>
 				<a href="" class="section-cate-item">Bộ kinh</a>
 				<a href="" class="section-cate-item">Bộ kinh</a>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-sm-5">
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_14.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì lợi ích chúng sinh</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-3 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_17.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_13.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="sub-title-14 text-secondary date-news">31 T10</p>
-						<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
-						<div class="d-flex">
-							<span class="count-cmt">24</span>
-							<span class="count-view">24</span>
+				<div class="col-sm-3 px-xl-4 mini-news-item">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_14.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="">
+							<p class="sub-title-14 text-secondary date-news">31 T10</p>
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+							<div class="d-flex">
+								<span class="count-cmt">24</span>
+								<span class="count-view">24</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1095,149 +1246,173 @@
   <div class="container-fluid bg-white">
 		<div class="w-1136 mx-auto pb-sm-5 pt-5">
 			<p class="section-title pb-5">Xem thêm chủ đề</p>
-			<div class="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-sm-5">
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_14.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="h5-font pt-4">Hiếu đạo</p>
-					</div>
-				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="h5-font pt-4">Tình bạn</p>
+			<div class="row mx-xl-n4 px-xl-1 mini-news">
+				<div class="col-sm-2 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-4">
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="h5-font pt-4">Tâm thức</p>
-					</div>
-				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_13.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="h5-font pt-4">Xã hội</p>
+				<div class="col-sm-2 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-4">
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_12.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="h5-font pt-4">Tuổi trẻ	</p>
-					</div>
-				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_11.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="h5-font pt-4">Gia đình</p>
+				<div class="col-sm-2 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-4">
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_14.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="h5-font pt-4">Hiếu đạo</p>
-					</div>
-				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_16.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="h5-font pt-4">Tình bạn</p>
+				<div class="col-sm-2 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-4">
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_15.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="h5-font pt-4">Tâm thức</p>
-					</div>
-				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_13.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="h5-font pt-4">Xã hội</p>
+				<div class="col-sm-2 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-4">
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_12.png" class="" alt="..."> 
-							</a> 
-						</p>
-					</div>
-					<div class="">
-						<p class="h5-font pt-4">Tuổi trẻ	</p>
+				<div class="col-sm-2 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-4">
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<p class="thumb-img"> 
-							<a href="" class="thumb-item thumb-5x3"> 
-								<img src="images/news_11.png" class="" alt="..."> 
-							</a> 
-						</p>
+				<div class="col-sm-2 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-4">
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
 					</div>
-					<div class="">
-						<p class="h5-font pt-4">Gia đình</p>
+				</div>
+				<div class="col-sm-2 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-4">
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-4">
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-4">
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-4">
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2 px-xl-4 mini-news-item ">
+					<div class="mx-xl-n1">
+						<div class="">
+							<p class="thumb-img"> 
+								<a href="" class="thumb-item thumb-5x3"> 
+									<img src="images/news_16.png" class="" alt="..."> 
+								</a> 
+							</p>
+						</div>
+						<div class="pt-4">
+							<p class="h5-font">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1273,79 +1448,17 @@
 		<p class="text-dark500 sub-title-12 pt-4">© 2020 Thich truc thai minh</p>
 	</div>
 </footer>
-<!--
-    <script>
-        
-window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-$(document.body).on('touchmove', onScroll); // for mobile
-$(window).on('scroll', onScroll); 
-
-// callback
-function onScroll(){ 
-    if( $(window).scrollTop() + window.innerHeight >= document.body.scrollHeight ) { 
-        track_page++; 
-        load_contents(track_page); 
-    }
-}
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
---> 
-<script>
-//        
-//      window.addEventListener("scroll", function () {
-//          let header = document.getElementById('myHeader');
-//          
-//          let headerH = header.offsetHeight;
-//          
-//        console.log(window.pageYOffset ,headerH);
-////          if(window.pageYOffset>headerH){
-////              header.classList.addClass('sticky');
-////          }
-//          
-//    }, true);
-//            function myFunction() {
-//  if (window.pageYOffset > sticky) {
-//    header.classList.add("sticky");
-//  } else {
-//    header.classList.remove("sticky");
-//  }
-//}
-    </script> 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 	
 <script src="js/header.js"></script> 
 <script src="owlcarousel/owl.carousel.min.js"></script> 
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
-<script>
-		$(document).ready(function(){
-	$(window).scroll(function () {
-			if ($(this).scrollTop() > 50) {
-				$('#back-to-top').fadeIn();
-			} else {
-				$('#back-to-top').fadeOut();
-			}
-		});
-		// scroll body to 0px on click
-		$('#back-to-top').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 400);
-			return false;
-		});
-});
-	</script> 
+
+<!--
 <script>
         $(function(){
   
@@ -1366,6 +1479,7 @@ function createSticky(sticky) {
 	}
 }
     </script> 
+-->
 <script>
 		var owl = $('.owl-carousel2');
 		$('.owl-carousel2').owlCarousel({
