@@ -268,7 +268,7 @@ p {
   font-size: 32px;
   line-height: 40px; }
 
-.h4-font, .news-category a, .section-cate .section-cate-item:first-child, .header-section-cate .section-cate-item:first-child {
+.h4-font, .news-category a, .section-cate .section-cate-name, .header-section-cate .section-cate-name {
   font-family: SVN-Gilroy;
   font-style: normal;
   font-weight: bold;
@@ -1332,6 +1332,7 @@ input[type="search"].sb-search-input {
     background-repeat: no-repeat; }
 
 .section-cate, .header-section-cate {
+  overflow-y: auto;
   position: relative;
   margin-top: 36px; }
   .section-cate::before, .header-section-cate::before {
@@ -1341,14 +1342,15 @@ input[type="search"].sb-search-input {
     background: #A46A14;
     top: 2px;
     position: absolute; }
+  .section-cate .section-cate-name, .header-section-cate .section-cate-name {
+    padding: 0 20px 0 12px;
+    white-space: nowrap; }
   .section-cate .section-cate-item, .header-section-cate .section-cate-item {
     color: black;
     padding: 0 20px;
     border-left: 1px solid #79797982;
+    white-space: nowrap;
     font-weight: 600; }
-    .section-cate .section-cate-item:first-child, .header-section-cate .section-cate-item:first-child {
-      border-left: none;
-      padding: 0 20px 0 12px; }
   .section-cate.section-cate-p-0, .section-cate-p-0.header-section-cate {
     padding-bottom: 0 !important; }
 
@@ -1372,14 +1374,36 @@ input[type="search"].sb-search-input {
     padding-bottom: 10px; }
 
 footer {
-  background: url("../images/Footer.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 60px 0 80px; }
+  padding: 60px 0 80px;
+  position: relative;
+  overflow: hidden; }
+  footer::before {
+    content: "";
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: -25%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-image: url(../images/icon/XMLID2.svg);
+    background-size: 100% 124%; }
+  footer::after {
+    content: "";
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: -25%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-image: url(../images/icon/XMLID2.svg);
+    background-size: 100% 124%; }
 
 .footer-cate {
-  width: 602px;
-  padding: 36px 0 24px; }
+  width: 610px;
+  padding: 36px 0 12px; }
+  .footer-cate .footer-cate-item {
+    padding: 0 14px 19px 14px;
+    display: block; }
   .footer-cate a {
     font-family: SVN-Gilroy;
     font-size: 14px;
