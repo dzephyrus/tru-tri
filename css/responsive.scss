@@ -1340,23 +1340,27 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 			line-height: 15px;
 		}	
 	}
-	.mansory {
-	  column-count: 1;
-	  column-gap: 0.5em;
-	  >div {
+	footer{
+		background-image: url("../images/Footer-res.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		padding: 60px 0 80px;
+		&::before{
+			content: none;
+		}
+		&::after{
+			content: none;
+		}
+	}
+	.bg-lead {
+		position: absolute;
+		z-index: 1;
 		width: 100%;
-		display: inline-block;
-		color: #ffffff;
-		&.mansory-item-small {
-		  height: auto;
-		  background: #1CAF9A;
-			margin-bottom: 10px;
-		}
-		&.mansory-item-big {
-		  height: auto;
-		  background: #EE6456;
-			margin-bottom: 10px;
-		}
-	  }
+		height: 100%;
+		top: 10%;
+		left: -50%;
+		background-image: url(../images/icon/XMLID2.svg);
+		background-repeat: no-repeat;
+		background-size: 100%;
 	}
 }
