@@ -404,7 +404,20 @@ p {
   height: 500px;
   right: 0; }
   .slide-main .carousel-indicators {
-    z-index: 2; }
+    z-index: 2;
+    position: absolute;
+    /* right: 0; */
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    /* margin-right: 15%; */
+    /* margin-left: 15%; */
+    list-style: none; }
   .slide-main .slide {
     width: 100%;
     height: 100%; }
@@ -427,9 +440,33 @@ p {
           width: 100%;
           height: 100%;
           object-fit: cover; }
-    .slide-main .slide .carousel-control-prev,
-    .slide-main .slide .carousel-control-next {
-      z-index: 2; }
+    .slide-main .slide .carousel-control-section {
+      position: absolute;
+      height: 100%;
+      width: 15%;
+      right: 0;
+      top: 0; }
+      .slide-main .slide .carousel-control-section .carousel-control-prev,
+      .slide-main .slide .carousel-control-section .carousel-control-next {
+        z-index: 2;
+        position: absolute;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 0.5px solid rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        color: #fff; }
+      .slide-main .slide .carousel-control-section .carousel-control-prev {
+        top: 50%;
+        left: 50%; }
+      .slide-main .slide .carousel-control-section .carousel-control-next {
+        top: 62%;
+        right: 34%; }
 
 .carousel-indicators li {
   width: 10px;
