@@ -401,13 +401,13 @@ p {
     transform: rotateX(0deg); } }
 .slide-main {
   width: 100%;
-  height: 600px;
+  height: 660px;
   right: 0; }
   .slide-main .carousel-indicators {
     z-index: 2;
     position: absolute;
     /* right: 0; */
-    bottom: 10px;
+    bottom: 5%;
     left: 0;
     z-index: 3;
     display: flex;
@@ -426,17 +426,20 @@ p {
       .slide-main .slide .carousel-inner .carousel-item {
         width: 100%;
         height: 100%; }
-        .slide-main .slide .carousel-inner .carousel-item .carousel-caption {
-          position: absolute;
-          left: 0px;
-          bottom: 0px;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.2); }
+        .slide-main .slide .carousel-inner .carousel-item .carousel-item-content {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
         .slide-main .slide .carousel-inner .carousel-item .carousel-item-image {
-          height: 100%; }
-          .slide-main .slide .carousel-inner .carousel-item .carousel-item-image img {
-            height: 100%; }
+          height: 100%;
+          display: flex;
+          align-items: center; }
+          .slide-main .slide .carousel-inner .carousel-item .carousel-item-image .carousel-item-image-detail {
+            width: 100%; }
+            .slide-main .slide .carousel-inner .carousel-item .carousel-item-image .carousel-item-image-detail img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover; }
         .slide-main .slide .carousel-inner .carousel-item a img {
           width: 100%;
           height: 100%;
@@ -445,7 +448,7 @@ p {
       position: absolute;
       height: 100%;
       width: 15%;
-      right: 0;
+      right: -130px;
       top: 0; }
       .slide-main .slide .carousel-control-section .carousel-control-prev,
       .slide-main .slide .carousel-control-section .carousel-control-next {
@@ -461,13 +464,13 @@ p {
         height: 44px;
         border: 0.5px solid rgba(0, 0, 0, 0.2);
         border-radius: 50%;
-        color: #fff; }
+        color: #7D7C83; }
       .slide-main .slide .carousel-control-section .carousel-control-prev {
         top: 50%;
         left: 50%; }
       .slide-main .slide .carousel-control-section .carousel-control-next {
-        top: 62%;
-        right: 34%; }
+        top: 59%;
+        right: 24%; }
 
 .carousel-indicators li {
   width: 10px;

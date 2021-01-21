@@ -865,7 +865,7 @@
     font-size: 1.1em; }
 
   .slide-main {
-    height: 98px; }
+    height: 812px; }
     .slide-main .carousel-indicators {
       position: absolute;
       right: 0;
@@ -884,6 +884,60 @@
       .slide-main .carousel-indicators li {
         width: 5px;
         height: 5px; }
+    .slide-main .carousel-item {
+      width: 100%;
+      height: 100%; }
+      .slide-main .carousel-item .carousel-item-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2; }
+      .slide-main .carousel-item .carousel-item-image {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        align-items: center; }
+        .slide-main .carousel-item .carousel-item-image .carousel-item-image-detail {
+          width: 100%;
+          height: 100%;
+          overflow: hidden; }
+          .slide-main .carousel-item .carousel-item-image .carousel-item-image-detail img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover; }
+      .slide-main .carousel-item a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .slide-main .slide .carousel-control-section {
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      right: 0;
+      top: 85%; }
+      .slide-main .slide .carousel-control-section .carousel-control-prev,
+      .slide-main .slide .carousel-control-section .carousel-control-next {
+        z-index: 3;
+        position: absolute;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.3);
+        border: 0.5px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        color: #FFFFFF; }
+      .slide-main .slide .carousel-control-section .carousel-control-prev {
+        top: 50%;
+        left: 65%; }
+      .slide-main .slide .carousel-control-section .carousel-control-next {
+        top: 50%;
+        right: 10%; }
 
   .top-news {
     height: auto; }
