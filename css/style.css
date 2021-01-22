@@ -408,7 +408,7 @@ p {
     position: absolute;
     /* right: 0; */
     bottom: 5%;
-    left: 0;
+    left: 65px;
     z-index: 3;
     display: flex;
     justify-content: flex-start;
@@ -1373,7 +1373,6 @@ input[type="search"].sb-search-input {
     background-repeat: no-repeat; }
 
 .section-cate, .header-section-cate {
-  overflow-y: auto;
   position: relative;
   margin-top: 36px; }
   .section-cate::before, .header-section-cate::before {
@@ -1413,6 +1412,15 @@ input[type="search"].sb-search-input {
   padding-top: 10px; }
   .header-cate-menu .header-cate-menu-item {
     padding-bottom: 10px; }
+
+.half-lead {
+  position: absolute;
+  margin: auto;
+  top: 40%;
+  height: 100%;
+  width: 100%; }
+  .half-lead img {
+    opacity: 0.05; }
 
 footer {
   padding: 60px 0 80px;

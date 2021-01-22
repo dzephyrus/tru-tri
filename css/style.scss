@@ -465,7 +465,7 @@ width: 212px;
 			position: absolute;
 			/* right: 0; */
 			bottom: 5%;
-			left: 0;
+			left: 65px;
 			z-index: 3;
 			display: flex;
 			justify-content: flex-start;
@@ -1800,7 +1800,7 @@ input[type="search"].sb-search-input {
 }
 
 .section-cate{
-	overflow-y: auto;
+//	overflow-y: auto;
 	&::before{
 		content: "";
     height: 19px;
@@ -1850,6 +1850,16 @@ input[type="search"].sb-search-input {
 	padding-top: 10px;
 	.header-cate-menu-item{
 		padding-bottom: 10px;
+	}
+}
+.half-lead{
+	position: absolute;
+	margin: auto;
+	    top: 40%;
+    height: 100%;
+	width: 100%;
+	img{
+		opacity: 0.05;
 	}
 }
 
