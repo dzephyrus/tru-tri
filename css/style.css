@@ -187,7 +187,7 @@ h6 {
   background-repeat: no-repeat; }
 
 .bg-opacity {
-  background-color: rgba(220, 220, 220, 0.7); }
+  background: linear-gradient(180deg, rgba(47, 30, 6, 0) 0%, #2F1E06 100%); }
 
 .bg-none {
   background-color: rgba(0, 0, 0, 0); }
@@ -212,6 +212,9 @@ h6 {
 
 .text-gold, .section-title a:hover {
   color: #A46A14; }
+
+.text-lightgold {
+  color: #F5D8AC; }
 
 .text-dark500, .count-cmt, .count-view {
   color: #7D7C83; }
@@ -251,6 +254,13 @@ p {
   font-weight: bold;
   font-size: 36px;
   line-height: 41px; }
+
+.h1-font-bold {
+  font-family: SVN-Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px; }
 
 .h2-font, .list-view .card .list-view-detail a, .list-grid-section .list .lead a {
   font-family: SVN-Gilroy;
@@ -401,14 +411,14 @@ p {
     transform: rotateX(0deg); } }
 .slide-main {
   width: 100%;
-  height: 600px;
+  height: 660px;
   right: 0; }
   .slide-main .carousel-indicators {
     z-index: 2;
     position: absolute;
     /* right: 0; */
-    bottom: 10px;
-    left: 0;
+    bottom: 5%;
+    left: 65px;
     z-index: 3;
     display: flex;
     justify-content: flex-start;
@@ -426,17 +436,20 @@ p {
       .slide-main .slide .carousel-inner .carousel-item {
         width: 100%;
         height: 100%; }
-        .slide-main .slide .carousel-inner .carousel-item .carousel-caption {
-          position: absolute;
-          left: 0px;
-          bottom: 0px;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.2); }
+        .slide-main .slide .carousel-inner .carousel-item .carousel-item-content {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
         .slide-main .slide .carousel-inner .carousel-item .carousel-item-image {
-          height: 100%; }
-          .slide-main .slide .carousel-inner .carousel-item .carousel-item-image img {
-            height: 100%; }
+          height: 100%;
+          display: flex;
+          align-items: center; }
+          .slide-main .slide .carousel-inner .carousel-item .carousel-item-image .carousel-item-image-detail {
+            width: 100%; }
+            .slide-main .slide .carousel-inner .carousel-item .carousel-item-image .carousel-item-image-detail img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover; }
         .slide-main .slide .carousel-inner .carousel-item a img {
           width: 100%;
           height: 100%;
@@ -445,7 +458,7 @@ p {
       position: absolute;
       height: 100%;
       width: 15%;
-      right: 0;
+      right: -130px;
       top: 0; }
       .slide-main .slide .carousel-control-section .carousel-control-prev,
       .slide-main .slide .carousel-control-section .carousel-control-next {
@@ -461,13 +474,13 @@ p {
         height: 44px;
         border: 0.5px solid rgba(0, 0, 0, 0.2);
         border-radius: 50%;
-        color: #fff; }
+        color: #7D7C83; }
       .slide-main .slide .carousel-control-section .carousel-control-prev {
         top: 50%;
         left: 50%; }
       .slide-main .slide .carousel-control-section .carousel-control-next {
-        top: 62%;
-        right: 34%; }
+        top: 59%;
+        right: 24%; }
 
 .carousel-indicators li {
   width: 10px;
@@ -1370,7 +1383,6 @@ input[type="search"].sb-search-input {
     background-repeat: no-repeat; }
 
 .section-cate, .header-section-cate {
-  overflow-y: auto;
   position: relative;
   margin-top: 36px; }
   .section-cate::before, .header-section-cate::before {
@@ -1410,6 +1422,25 @@ input[type="search"].sb-search-input {
   padding-top: 10px; }
   .header-cate-menu .header-cate-menu-item {
     padding-bottom: 10px; }
+
+.half-lead {
+  position: absolute;
+  margin: auto;
+  top: 63%;
+  height: 317px;
+  width: 264px; }
+  .half-lead img {
+    opacity: 0.05; }
+
+.head-background {
+  margin-top: -155px;
+  z-index: 2; }
+  .head-background .head-background-content {
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(180deg, rgba(47, 30, 6, 0) 0%, #2F1E06 100%); }
 
 footer {
   padding: 60px 0 80px;
