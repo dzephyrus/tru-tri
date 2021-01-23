@@ -187,7 +187,7 @@ h6 {
   background-repeat: no-repeat; }
 
 .bg-opacity {
-  background-color: rgba(220, 220, 220, 0.7); }
+  background: linear-gradient(180deg, rgba(47, 30, 6, 0) 0%, #2F1E06 100%); }
 
 .bg-none {
   background-color: rgba(0, 0, 0, 0); }
@@ -212,6 +212,9 @@ h6 {
 
 .text-gold, .section-title a:hover {
   color: #A46A14; }
+
+.text-lightgold {
+  color: #F5D8AC; }
 
 .text-dark500, .count-cmt, .count-view {
   color: #7D7C83; }
@@ -251,6 +254,13 @@ p {
   font-weight: bold;
   font-size: 36px;
   line-height: 41px; }
+
+.h1-font-bold {
+  font-family: SVN-Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px; }
 
 .h2-font, .list-view .card .list-view-detail a, .list-grid-section .list .lead a {
   font-family: SVN-Gilroy;
@@ -1416,11 +1426,21 @@ input[type="search"].sb-search-input {
 .half-lead {
   position: absolute;
   margin: auto;
-  top: 40%;
-  height: 100%;
-  width: 100%; }
+  top: 63%;
+  height: 317px;
+  width: 264px; }
   .half-lead img {
     opacity: 0.05; }
+
+.head-background {
+  margin-top: -155px;
+  z-index: 2; }
+  .head-background .head-background-content {
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(180deg, rgba(47, 30, 6, 0) 0%, #2F1E06 100%); }
 
 footer {
   padding: 60px 0 80px;
