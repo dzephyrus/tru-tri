@@ -216,7 +216,7 @@ h6 {
 .text-lightgold {
   color: #F5D8AC; }
 
-.text-dark500, .count-cmt, .count-view {
+.text-dark500, .count-cmt, .count-view, .site-lever i, .site-lever .site-lever-item {
   color: #7D7C83; }
 
 .gold-ul {
@@ -1441,6 +1441,11 @@ input[type="search"].sb-search-input {
   border: 1px solid #CCCCCC;
   margin-bottom: 8px;
   margin-right: 8px; }
+
+.site-lever .site-lever-item {
+  display: block; }
+  .site-lever .site-lever-item:first-child {
+    color: black; }
 
 footer {
   padding: 60px 0 80px;

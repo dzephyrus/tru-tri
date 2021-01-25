@@ -1886,6 +1886,18 @@ input[type="search"].sb-search-input {
 		margin-right: 8px;
 	}
 }
+.site-lever{
+	i{
+		@extend .text-dark500;
+	}
+	.site-lever-item{
+		display: block;
+		@extend .text-dark500;
+		&:first-child{
+			color: black;
+		}
+	}
+}
 
 footer{
 	padding: 60px 0 80px;
