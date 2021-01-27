@@ -161,6 +161,9 @@ h6 {
 .bg-base, .grid-container .card {
   background-color: #fff8f2; }
 
+.bg-white a {
+  color: black; }
+
 .bg-blue {
   background-color: #21c9f6; }
 
@@ -223,7 +226,7 @@ h6 {
 .text-lightgold {
   color: #F5D8AC; }
 
-.text-dark500, .count-cmt, .count-view, .site-lever i, .site-lever .site-lever-item {
+.text-dark500, .count-cmt, .count-view, .date-news, .site-lever i, .site-lever .site-lever-item {
   color: #7D7C83; }
 
 .gold-ul {
@@ -634,7 +637,6 @@ p {
 .play-button {
   width: 40px;
   height: 40px;
-  bottom: 0;
   left: 20px;
   bottom: 20px;
   display: flex;
@@ -643,7 +645,7 @@ p {
   position: absolute;
   background: #ffffff70;
   border-radius: 50%;
-  padding-left: 2px; }
+  padding-left: 4px; }
 
 .play-time {
   padding: 2px 6px;
@@ -1459,6 +1461,9 @@ input[type="search"].sb-search-input {
 .under-header {
   margin-top: -102px;
   padding-top: 102px; }
+
+.video-section-border {
+  border: 1px solid #69440D; }
 
 footer {
   padding: 60px 0 80px;
