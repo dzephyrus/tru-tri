@@ -220,7 +220,7 @@ h6 {
 .text-brown, .section-title a {
   color: #7A3E0C; }
 
-.text-gold, .section-title a:hover, .play-button {
+.text-gold, .section-title a:hover {
   color: #A46A14; }
 
 .text-lightgold {
@@ -642,8 +642,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
   position: absolute;
-  background: #ffffff70;
+  background: #e5b76485;
   border-radius: 50%;
   padding-left: 4px; }
 
@@ -1462,8 +1463,15 @@ input[type="search"].sb-search-input {
   margin-top: -102px;
   padding-top: 102px; }
 
-.video-section-border {
-  border: 1px solid #69440D; }
+.video-section .video-section-item .video-section-item-detail {
+  border-bottom: 1px solid #69440D;
+  padding-bottom: 40px;
+  padding-top: 40px; }
+.video-section .video-section-item:last-child .video-section-item-detail {
+  border-bottom: none; }
+
+.fixed-top {
+  z-index: 3 !important; }
 
 footer {
   padding: 60px 0 80px;
