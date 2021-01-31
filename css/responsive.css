@@ -1112,10 +1112,6 @@
   .mini-video-title {
     font-weight: normal; }
 
-  .play-button {
-    width: 20px;
-    height: 20px; }
-
   .play-time {
     font-size: 11px; }
 
@@ -1336,6 +1332,22 @@
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    line-height: 24px; } }
+    line-height: 24px; }
+
+  .head-background {
+    margin-top: -167px;
+    z-index: 2;
+    height: 100%; }
+    .head-background img {
+      height: 100%;
+      object-fit: cover; }
+    .head-background .head-background-content {
+      display: flex;
+      align-items: flex-end;
+      bottom: 0;
+      color: white;
+      background: linear-gradient(180deg, rgba(47, 30, 6, 0) 0%, #2F1E06 100%); }
+      .head-background .head-background-content .h1-font-bold {
+        font-size: 44px; } }
 
 /*# sourceMappingURL=responsive.css.map */
