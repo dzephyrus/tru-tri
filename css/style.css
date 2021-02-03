@@ -152,8 +152,20 @@ h6 {
 .fs-20 {
   font-size: 20px; }
 
+.fs-22 {
+  font-size: 22px; }
+
+.fs-24 {
+  font-size: 24px; }
+
 .fs-25 {
   font-size: 25px; }
+
+.fs-32 {
+  font-size: 32px; }
+
+.fs-40 {
+  font-size: 40px; }
 
 .fs-44 {
   font-size: 44px; }
@@ -178,6 +190,9 @@ h6 {
 
 .bg-darkgold {
   background: #A46A14; }
+
+.btn.bg-darkgold:hover {
+  background: #E5B764; }
 
 .bg-brown {
   background: #2F1E06; }
@@ -468,7 +483,7 @@ p {
       position: absolute;
       height: 100%;
       width: 15%;
-      right: -130px;
+      right: 130px;
       top: 0; }
       .slide-main .slide .carousel-control-section .carousel-control-prev,
       .slide-main .slide .carousel-control-section .carousel-control-next {
@@ -1508,14 +1523,19 @@ input[type="search"].sb-search-input {
       background: rgba(255, 255, 255, 0.04);
       color: white; }
 
-.comment-detail .comment-detail-item .comment-detail-item-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%; }
-  .comment-detail .comment-detail-item .comment-detail-item-img img {
-    object-fit: cover;
-    height: 100%;
+.comment-detail .comment-detail-item {
+  padding-top: 40px; }
+  .comment-detail .comment-detail-item .comment-detail-item-img {
+    width: 40px;
+    height: 40px;
     border-radius: 50%; }
+    .comment-detail .comment-detail-item .comment-detail-item-img img {
+      object-fit: cover;
+      height: 100%;
+      border-radius: 50%; }
+  .comment-detail .comment-detail-item .comment-detail-item-text {
+    color: #E3E3E4;
+    margin-top: 16px; }
 
 footer {
   padding: 60px 0 80px;

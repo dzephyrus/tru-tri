@@ -422,6 +422,31 @@
 											</div>
 										</div>
 									</div>
+									<div class="collapse" id="collapseVideo">
+										<div class="row pb-5 mb-n2 pb-sm-4 mb-sm-2">
+											<div class="col-sm-4 pr-xl-1">
+												<p class="thumb-img mr-xl-n3"> 
+													<a href="" class="thumb-item thumb-5x3"> 
+														<img src="images/news_16.png" class="" alt="..."> 
+														<span class="play-button"><span>&#9655;</span> </span>
+													</a> 
+												</p>
+											</div>
+											<div class="col-sm-8 pl-xl-3">
+												<div class="pl-xl-4">
+													<p class="sub-title-14 date-news pt-0">31 T10</p>
+													<a href="" class="h5-font fix-text3">Chư Tăng Chùa Ba Vàng tu tập trong rừng vì asd  asd á dsad á dsa dsa dsad asd sa dá dsa dsad á đá asd a dá da da dá da da da da a dá a dá dá da dá da da dá a dá da</a>
+													<div class="d-flex">
+														<span class="count-cmt">24</span>
+														<span class="count-view">24</span>
+													</div>
+												</div>
+											</div>
+										</div>  
+									</div>
+									<button class="btn bg-darkgold seemore-button text-white border-0 focus-none" type="button" data-toggle="collapse" data-target="#collapseVideo" aria-expanded="false" aria-controls="collapseExample">
+									Xem thêm
+								  </button>
 								</div>
 							</div>
 						</div>
@@ -444,16 +469,45 @@
 									<textarea name="" class="w-100 text-white" placeholder="Nội dung tin nhắn" id="" cols="" rows="4"></textarea>
 									<input type="email" class="form-control" placeholder="Email">
 									<input type="text" class="form-control" placeholder="Họ và tên">
-									<button type="submit" class="d-flex align-items-center btn btn-outline-secondary px-4 py-2 mt-5 bg-darkgold seemore-button text-white border-0">Xem thêm</button>
+									<button type="submit" class="d-flex align-items-center btn px-4 py-2 mt-5 bg-darkgold seemore-button text-white border-0">Gửi bình luận</button>
 								</div>
 								<div class="comment-detail">
 									<div class="comment-detail-item">
 										<div class="d-flex">
 											<div class="comment-detail-item-img">
-													<img src="../ba_vang/images/news_01.png" alt="">
+													<img src="images/news_07.png" alt="">
 											</div>
-											<div class="">
-												
+											<div class="pl-2 ml-1">
+												<p class="text-white sub-title-16">Nguyễn Sơn</p>
+												<p class="text-dark500 sub-title-12">12/07/2020 • 8:20 pm</p>
+											</div>
+										</div>
+										<div class="">
+											<p class="sub-title-14 comment-detail-item-text fix-text4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quibusdam ipsum, quasi accusamus in harum, suscipit dolore provident nemo ullam quidem recusandae itaque officia doloremque, autem quia adipisci, vero vel.</p>
+											<div class="d-flex">
+												<span class="count-like">16</span>
+												<span class="count-cmt">24</span>
+												<span class="count-view">24</span>
+											</div>
+										</div>
+									</div>
+									<div class="comment-detail-item">
+										<div class="d-flex">
+											<div class="comment-detail-item-img">
+													<img src="images/news_07.png" alt="">
+											</div>
+											<div class="pl-2 ml-1">
+												<p class="text-white sub-title-16">Nguyễn Sơn</p>
+												<p class="text-dark500 sub-title-12">12/07/2020 • 8:20 pm</p>
+											</div>
+										</div>
+										<div class="">
+											<p class="sub-title-14 comment-detail-item-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quibusdam ipsum, quasi accusamus in harum,  suscipit dolore provident nemo ullam quidem recusandae itaque officia doloremque, autem quia adipisci, vero vel.</p>
+											
+											<div class="d-flex">
+												<span class="count-like">16</span>
+												<span class="count-cmt">24</span>
+												<span class="count-view">24</span>
 											</div>
 										</div>
 									</div>
@@ -964,6 +1018,14 @@ $(document).ready(function(){
 		  ]
 		});
 	</script> 
+	<script>
+	$('.article').readmore({
+  speed: 75, //Açılma Hızı
+  collapsedHeight: 80, // 100px sonra yazının kesileceğini belirtir.
+  moreLink: '<a class="ac" href="#">Show more</a>', // açma linki yazısı
+  lessLink: '<a class="kapat" href="#">Show Less</a>', // kapatma linki yazısı
+});
+	</script>
 	
 <!--
 	<script>
