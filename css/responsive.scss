@@ -1924,5 +1924,27 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 		max-width: 940px;
 		margin: auto;
 	}
-	
+	.top-main-carousel{
+		height: 812px;
+		.slick-prev-custom {
+			right: 30%;
+		}
+		.slideshow-item{
+			.slideshow-item-content {
+				position: absolute;
+				left: 0px;
+				right: 0px;
+				width: 100%;
+				margin: 0px auto;
+			}
+			.slideshow-item-text {
+				font-size: 44px;
+				font-weight: 600;
+			}
+		} 	
+	}
+	.slide-main {
+		padding: 0px 0;
+		right: 0;
+	}
 }
