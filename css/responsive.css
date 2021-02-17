@@ -1684,6 +1684,24 @@
     padding-top: 50px;
     padding-bottom: 50px;
     max-width: 940px;
-    margin: auto; } }
+    margin: auto; }
+
+  .top-main-carousel {
+    height: 812px; }
+    .top-main-carousel .slick-prev-custom {
+      right: 30%; }
+    .top-main-carousel .slideshow-item .slideshow-item-content {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      width: 100%;
+      margin: 0px auto; }
+    .top-main-carousel .slideshow-item .slideshow-item-text {
+      font-size: 44px;
+      font-weight: 600; }
+
+  .slide-main {
+    padding: 0px 0;
+    right: 0; } }
 
 /*# sourceMappingURL=responsive.css.map */
