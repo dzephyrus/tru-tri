@@ -20,13 +20,63 @@
 
 </head>
 
-<body>
+<body >
 <header class="cd-auto-hide-header">
+<!-- menu-mobile -->
+<div class="menu-mobile d-block d-lg-none">
+	<div class="d-flex align-items-center justify-content-between pt-2" style="padding-left: 16px;">
+		<div>
+			<label for="chk" class="hide-menu-btn fs-24 text-">
+		        <i class="fas fa-times" style="font-size: 20px;"></i>
+		    </label>
+		</div>
+		<div class="col-7 col-sm-5 mx-auto px-0">
+            <a href="/" class="d-flex align-items-center justify-content-center">
+                <div class="mob-logo">
+                    <img src="<?= URL_IMAGES ?>/icon/logo-1.png" class="w-auto h-100" alt="">
+                </div>
+                <p class="text-center h2-mon text-brown">Chùa Ba Vàng</p>
+            </a>
+        </div>
+	</div>
+    <!-- search menu mobile -->
+    <form class="" style="z-index: 15" action="/?mod=archive&amp;act=search" method="GET">
+        <div class="input-group dropdown-item bg-white pb-3 px-3">
+            <input type="hidden" name="mod" value="archive">
+            <input type="hidden" name="act" value="search">
+            <input type="text" name="search" class="form-control shadow-none" placeholder="Tìm kiếm..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </form>
+    <!-- end search menu mobile -->
+    <!-- menu mobile -->
+	<nav class="navigation">
+    	<ul class="nav-list">
+    		<li class="dropdown-list">
+    			<div class="d-flex justify-content-between align-items-center">
+    				<a href="#" class="dropdown-list__title">Trag chu</a>
+    				<span><i class="fas fa-angle-down" style="font-size: 25px"></i></span>
+    			</div>
+    			<ul class="dropdown-list__menu">
+				    <li class="openlistnewsmn_mb">
+                        <a href="#">Gioi thieu</a>
+                    </li>
+    			</ul>
+    		</li>
+    		<li>xfd</li>
+    	</ul>
+    </nav>
+    <!-- end menu-mobile -->
+</div>
+<!-- menu-mobile -->
 <!--	<div class="position-absolute w-100 h-100 bg-white" style="z-index: 1"></div>-->
   <div class="w-100 d-none d-lg-block position-relative" style="z-index: 3; background: linear-gradient(180deg, rgb(0 0 0 / 48%) 0%, rgb(251 251 251 / 0%) 100%);">
     <div class="w-1136 mx-auto row py-4  align-items-center">
       <div class="col-4 d-flex align-items-center px-0">
-        <div class="d-flex align-items-center px-sm-3 col-2"><a href=""><img src="images/icon/XMLID.svg" alt=""></a> </div>
+        <div class="d-flex align-items-center px-sm-3 col-2"><a href=""><img src="images/icon/XMLID.svg" alt=""></a></div>
+
 		  <div class="d-flex flex-wrap pl-2 pt-1 ml-sm-n1">
 		  		<a href="" class="sub-title-16 text-white text-nowrap ">Thầy<br>
 					Thích Trúc Thái Minh
@@ -222,130 +272,40 @@
 		  </div>
 		</div>
 	  </div>
-<!--
-	  <div class="position-absolute w-100 bg-white">
-	  	
-	  </div>
--->
-    </div>
-	
-	
-<!-- menu cũ
-
-    <div class="">
-      <div class="w-1136 mx-auto d-flex pt-xl-1 justify-content-between">
-        <ul class="d-flex nav_desktop bg-transparent justify-content-between w-100">
-          <li class="nav_item active bg-transparent pb-1"><a href="" class="pb-1"><img src="images/icon/Home 1.svg" alt=""></a></li>
-          <li class="nav_item h3-font"> <a href="" class="">Giới thiệu <span><i class="fas fa-chevron-down fs-14"></i></span></a>
-            <ul class="dropdown-menu fade-up">
-              <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-              <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-              <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
-            </ul>
-          </li>
-          <li class="nav_item h3-font"><a href="" class="">Tin tức</a></li>
-          <li class="nav_item h3-font"><a href="" class="">Pháp âm</a></li>
-          <li class="nav_item h3-font"><a href="" class="">Bài cúng</a></li>
-          <li class="nav_item h3-font"><a href="" class="">Đạo tràng</a></li>
-          <li class="nav_item h3-font"><a href="" class="">Văn kinh</a></li>
-          <li class="nav_item h3-font"><a href="" class="">Trực tuyến</a></li>
-          <li class="nav_item h3-font"><a href="" class="">E-Magazine</a></li>
-          <li class="nav_item bg-transparent"><a href="" class="pb-1"><img src="images/icon/Hamburger.svg" alt=""></a></li>
-        </ul>
-      </div>
-    </div></div>
--->
-  
-  <!--
-        <div class="" id="header">
-            <img src="images/Ad.png" alt="">
-        </div>
--->
-  
-  <div class="d-block d-lg-none " >
-    <div class="header bg-white d-flex align-items-center justify-content-between ">
-      <div class="col-7 col-sm-5 mx-auto ">
-        <p class="text-center h2-font">Chùa Ba Vàng</p>
-      </div>
-      <div class="d-flex justify-content-end position-fixed " style="z-index: 3; right: 0">
-        <div class="btn-group mt-1" style="z-index: 15">
-          <button type="button" class="btn shadow-none text-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-search"></i> </button>
-          <div class="dropdown-menu dropdown-menu-right shadow-none" style="width: 345px!important; left: -184px!important;">
-            <div class="input-group dropdown-item bg-white">
-              <input type="text" class="form-control shadow-none" placeholder="..." aria-label="Recipient's username" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">tìm kiếm</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--
-					<div class="">
-						<div class="dropdown">
-						  <button class="btn border-0 shadow-none px-0 text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Drop
-						  </button>
-						  <div class="dropdown-menu border-0 position-relative pt-0 mt-0" style="z-index: 10" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item text-dark font-weight-normal" href="#">Action</a>
-							<a class="dropdown-item text-dark font-weight-normal" href="#">Another action</a>
-							<a class="dropdown-item text-dark font-weight-normal" href="#">Something else here</a>
-						  </div>
-						</div>
-					</div>
---> 
-      
-    </div>
-    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-    <label for="openSidebarMenu" class="sidebarIconToggle">
-    <div class="spinner diagonal part-1"></div>
-    <div class="spinner horizontal"></div>
-    <div class="spinner diagonal part-2"></div>
-    </label>
-    <div id="sidebarMenu" style="z-index: 2">
-      <ul class="sidebarMenuInner bg-white">
-        <li>công luận 24h</li>
-        <!--
-					  <li>
-						<div class="dropdown">
-				  <button class="btn dropdown-toggle border-0 shadow-none px-0 text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Dropdown button
-				  </button>
-				  <div class="dropdown-menu border-0 position-relative pt-0 mt-0" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item text-dark font-weight-normal" href="#">Action</a>
-					<a class="dropdown-item text-dark font-weight-normal" href="#">Another action</a>
-					<a class="dropdown-item text-dark font-weight-normal" href="#">Something else here</a>
-				  </div>
-				</div>
-					  </li>
-				-->
-        
-        <li class="active"> <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="d-flex justify-content-between text-dark font-weight-normal">NGÂN HÀNG<em class="fa fa-chevron-down" aria-hidden="true"></em></a>
-          <ul class="collapse list-unstyled sidebar-submenu" id="homeSubmenu">
-            <li class="sidebar-submenu_item "> <a href="#" class="text-dark font-weight-normal">Home 1</a> </li>
-            <li> <a href="#" class="text-dark font-weight-normal">Home 2</a> </li>
-            <li> <a href="#" class="text-dark font-weight-normal">Home 3</a> </li>
-          </ul>
-        </li>
-        <li><a href="https://twitter.com/plavookac" class="text-dark font-weight-normal" target="_blank">Twitter</a></li>
-        <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" class="text-dark font-weight-normal" target="_blank">YouTube</a></li>
-        <li><a href="https://www.linkedin.com/in/plavookac/" class="text-dark font-weight-normal" target="_blank">Linkedin</a></li>
-      </ul>
-    </div>
-  </div>
+    </div> 
 </header>
-<div class="w-100 expand-menu d-block d-lg-none border-top">
-  <div class="btn-group dropright w-100 d-flex justify-content-between pl-3 pr-4 px-sm-0">
-    <div class="d-flex position-relative align-items-center justify-content-between py-2 mx-n3" style="overflow-x: scroll"> 
-      <!--							<a href="" class="h4-font text-lightgray px-3 expand-menu-cate-name"><i class="fas fa-home text-brown fs-20"></i></a>--> 
-      <a href="" class="pb-1 col-1 pr-0 pl-2 pl-sm-4"><img src="images/icon/Home 1.svg" alt=""></a> <a href="" class="h4-font text-lightgray pl-3 expand-menu-cate-name">Giới thiu</a> <a href="" class="h4-font text-lightgray pl-3 expand-menu-cate-name">Cúng - Giỗ - Rằm - Mùng 1</a> <a href="" class="h4-font text-lightgray pl-3 expand-menu-cate-name">Động Thổ</a> <a href="" class="h4-font text-lightgray pl-3 expand-menu-cate-name">Bốc Mộ</a> <a href="" class="h4-font text-lightgray pl-3 expand-menu-cate-name">Giao Thừa</a> </div>
-    <button type="button" class="btn dropdown-toggle-split mr-n4 mr-sm-0 px-4 border-0 col-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-arrow-right"></i> </button>
-    <div class="dropdown-menu bg-base">
-      <div class="d-flex flex-wrap"> <a href="" class="h4-font text-lightgray pl-3 text-nowrap" style=" display: inline-table">Tu Chuyên Nghiệp</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Cầu Siêu</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Cúng - Giỗ - Rằm - Mùng 1</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Động Thổ</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Bốc Mộ</a> <a href="" class="h4-font text-lightgray pl-3 pb-2">Giao Thừa</a> </div>
-      <!-- Dropdown menu links --> 
-    </div>
-  </div>
-</div>
+	<div >
+		<div class="d-block d-lg-none">
+			<div class="d-flex position-relative align-items-center justify-content-between py-2 px-3" style="z-index: 2;background: rgba(0,0,0,0.4);">
+				<div class="d-flex align-items-center ">
+					<div class="show-menu-btn"><i class="fas fa-bars fs-25 text-white"></i></div>
+					<div class="d-flex align-items-center pl-2">
+						<div class="d-flex align-items-center col-2 pr-1" ><a href=""><img src="images/icon/XMLID.svg" alt=""></a></div>
+						<div class="d-flex flex-wrap">
+							<a href="" class="sub-title-14t text-white text-nowrap ">Thầy<br>
+								Thích Trúc Thái Minh
+							</a>	
+						</div>
+					  </div>
+					</div>
+				<div class="fs-25 text-white show-menu-btn">
+					<i class="fas fa-search"></i>
+				</div>
+			</div>
+		</div>
+		<div class="w-100 expand-menu d-block d-lg-none border-top">
+		  <div class="btn-group dropright w-100 d-flex justify-content-between pl-3 pr-3 px-sm-0">
+			<div class="d-flex position-relative align-items-center justify-content-between py-2 mx-n3 menu-mobile__t overflow-auto" style=" background: rgba(0,0,0,0.4);"> 
+			  <a href="" class="pb-1 col-1 pr-0 pl-2 pl-sm-4"><img src="images/icon/circle-arrow-right 111.png" alt=""></a> 
+			  <a href="" class="sub-title-14 text-lightgray pl-3 expand-menu-cate-name">Giới thiệu</a> 
+			  <a href="" class="sub-title-14 text-lightgray pl-3 expand-menu-cate-name">Hạnh đầu đà</a> 
+			  <a href="" class="sub-title-14 text-lightgray pl-3 expand-menu-cate-name">Phật pháp ứng dụng</a> 
+			  <a href="" class="sub-title-14 text-lightgray pl-3 expand-menu-cate-name">Bốc Mộ</a> 
+			  <a href="" class="sub-title-14 text-lightgray pl-3 expand-menu-cate-name">Giao Thừa</a> 
+			</div>
+		  </div>
+		</div>
+	</div>
 <!--<article class="bg-white pt-md-0 px-md-0 container-fluid position-relative"> -->
   
   <!--		<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>-->
@@ -1622,8 +1582,67 @@
 	  $( ".live-text" ).remove();
 	});
 	</script> 
- 
-	
+<script>
+		$('.slick-carousel-2').slick({
+		  dots: false,
+//		  infinite: false,
+		  speed: 300,
+//		  autoplay: true,
+//		  autoplaySpeed: 2000,
+		  nextArrow: '.next',
+		  prevArrow: '.previous',
+		  slidesToShow: 2,
+		  slidesToScroll: 1,
+		  responsive: [
+			{
+			  breakpoint: 1024,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			  }
+			},
+			{
+			  breakpoint: 600,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 480,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			}
+		  ]
+		});
+	</script>
+<script>
+	$(document).ready(function(){
+    //when dropdown is clicked add class "open" to open the dropdown menu
+    $(".dropdown-list").click(function(){
+        $(this).siblings().removeClass("open");
+        $(this).toggleClass("open");
+    });
+    $(".show-menu-btn").click(function(){
+        $('.menu-mobile').addClass('open_nav_mb');
+    });
+    $(".hide-menu-btn").click(function(){
+        $('.menu-mobile').removeClass('open_nav_mb');
+    });
+    //when document is clicked and it's not in the dropdown, close menu
+    $(document).click(function(e){
+        if(!$(e.target).parents(".navigation").length){
+            $(".dropdown-list").removeClass("open");
+        }
+    });
+    $('.dropdown-list').on('click',function(){
+        $('.dropdown-list').removeClass('active-mobile');
+        $(this).addClass('active-mobile');
+    });
+});
+</script>
 <!--
 	<script>
 		$(document).ready(function() {

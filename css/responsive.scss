@@ -1807,6 +1807,63 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 			}
 		}
 	}
+	.navigation {
+        padding: 0px 16px;
+        height: calc(100% - 100px);
+        overflow: scroll;
+        padding-bottom: 100px;
+    }
+    .dropdown-list {
+        padding: 6px 0;
+    }
+    .dropdown-list__menu a:hover {
+        color: #7A3E0C;
+    }
+    .dropdown-list {
+        position: relative;
+        z-index: 100;
+    }
+    .dropdown-list.open .dropdown-list__menu {
+        height: auto;
+        opacity: 1;
+    }
+    .dropdown-list__menu {
+        position: relative;
+        z-index: 99;
+        align-items: stretch;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .dropdown-list__menu a {
+        display: block;
+        padding:6px 16px;
+    }
+    .menu-mobile {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        z-index: 1000;
+        left: -100%;
+        transition: 0.7s;
+    }
+    .menu-mobile.open_nav_mb {
+        left: 0;
+    }
+    .dropdown-list.open .fa-angle-down{
+        transform: rotate(180deg);
+    } 
+    .active-mobile {
+        color: blue;
+    }
+    li.dropdown-list.open.active-mobile .dropdown-list__title {
+    color: blue;
+    }
 	
 	// ngo van tien //
 	
