@@ -274,7 +274,7 @@
 	  </div>
     </div> 
 </header>
-	<div >
+	<div class="position-sticky" style="z-index: 3; top: 0">
 		<div class="d-block d-lg-none">
 			<div class="d-flex position-relative align-items-center justify-content-between py-2 px-3" style="z-index: 2;background: rgba(0,0,0,0.4);">
 				<div class="d-flex align-items-center ">
@@ -294,8 +294,8 @@
 			</div>
 		</div>
 		<div class="w-100 expand-menu d-block d-lg-none border-top">
-		  <div class="btn-group dropright w-100 d-flex justify-content-between pl-3 pr-3 px-sm-0">
-			<div class="d-flex position-relative align-items-center justify-content-between py-2 mx-n3 menu-mobile__t overflow-auto" style=" background: rgba(0,0,0,0.4);"> 
+		  <div class="btn-group dropright w-100 d-flex ">
+			<div class="d-flex position-relative align-items-center py-2 menu-mobile__t overflow-auto w-100" style=" background: rgba(0,0,0,0.4);"> 
 			  <a href="" class="pb-1 col-1 pr-0 pl-2 pl-sm-4"><img src="images/icon/circle-arrow-right 111.png" alt=""></a> 
 			  <a href="" class="sub-title-14 text-lightgray pl-3 expand-menu-cate-name">Giới thiệu</a> 
 			  <a href="" class="sub-title-14 text-lightgray pl-3 expand-menu-cate-name">Hạnh đầu đà</a> 
@@ -1643,6 +1643,52 @@
     });
 });
 </script>
+	<script>
+            function buttonUp(){
+         var valux = $('.sb-search-input').val(); 
+            valux = $.trim(valux).length;
+            if(valux !== 0){
+                $('.sb-search-submit').css('z-index','99');
+            } else{
+                $('.sb-search-input').val(''); 
+                $('.sb-search-submit').css('z-index','-999');
+            }
+    }
+    
+    $(document).ready(function(){
+        var submitIcon = $('.sb-icon-search');
+        var submitInput = $('.sb-search-input');
+        var searchBox = $('.sb-search');
+        var isOpen = false;
+        
+        $(document).mouseup(function(){
+            if(isOpen == true){
+            submitInput.val('');
+            $('.sb-search-submit').css('z-index','-999');
+            submitIcon.click();
+            }
+        });
+        
+        submitIcon.mouseup(function(){
+            return false;
+        });
+        
+        searchBox.mouseup(function(){
+            return false;
+        });
+                
+        submitIcon.click(function(){
+            if(isOpen == false){
+                searchBox.addClass('sb-search-open');
+                isOpen = true;
+            } else {
+                searchBox.removeClass('sb-search-open');
+                isOpen = false;
+            }
+    });
+
+});
+    </script> 
 <!--
 	<script>
 		$(document).ready(function() {
