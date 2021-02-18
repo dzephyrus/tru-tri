@@ -1892,7 +1892,7 @@ input[type="search"].sb-search-input {
 .top-main-carousel{
     width: 100%;
     height: 900px;
-    margin-top: -126px;
+    margin-top: -135px;
     z-index: 2;
     overflow: hidden;
     position: relative;
@@ -2677,7 +2677,6 @@ button.btn-2.active {
 .posts-icon-fixed {
 	position: fixed;
 	top: 50%;
-	left: 16%;
 }
 .posts-icon-fixed > div {
 	padding-bottom: 15px;
@@ -2943,6 +2942,9 @@ button.btn-2.active {
 }
 .fw-400 {
 	font-weight: 400;
+}
+.menu-mobile__t > a:last-child {
+  padding-right: 16px;
 }
 
 

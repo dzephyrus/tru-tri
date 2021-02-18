@@ -752,6 +752,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 		max-width: 940px;
 		margin: auto;
 	}
+	.home-icon{
+		width: 20px;
+		padding:0 5px ;
+	}
 }
 
 @media (max-width: 769px) {
