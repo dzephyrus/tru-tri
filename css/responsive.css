@@ -1628,7 +1628,8 @@
     color: blue; }
 
   li.dropdown-list.open.active-mobile .dropdown-list__title {
-    color: blue; } }
+    color: blue; }
+
   .from-row {
     display: grid;
     grid-template-columns: none;
