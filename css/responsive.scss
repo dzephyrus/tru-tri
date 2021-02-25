@@ -446,6 +446,9 @@
     li.dropdown-list.open.active-mobile .dropdown-list__title {
     color: blue;
     }
+	.top-main-carousel .slick-prev-custom {
+		right: 18%;
+	}
 }
 @media (max-width: 991px) {
 
@@ -1989,7 +1992,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 	.top-main-carousel{
 		height: 812px;
 		.slick-prev-custom {
-			right: 30%;
+			right: 20%;
+		}
+		.slick-next-custom {
+			right: 4%;
 		}
 		.slideshow-item{
 			.slideshow-item-content {
@@ -2008,5 +2014,12 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 	.slide-main {
 		padding: 0px 0;
 		right: 0;
+	}
+	.top-main-carousel .slick-prev-custom, .top-main-carousel .slick-next-custom {
+		width: 44px;
+		height: 44px;
+	}
+	.pagingInfo {
+		left: 4%;
 	}
 }
