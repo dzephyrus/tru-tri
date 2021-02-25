@@ -1435,6 +1435,23 @@ input[type="search"].sb-search-input {
     color: #E3E3E4;
     margin-top: 16px; }
 
+.top-main .social-list {
+  width: 150px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3; }
+  .top-main .social-list ul {
+    display: flex;
+    flex-direction: column; }
+    .top-main .social-list ul li {
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: center; }
+
 .top-main-carousel {
   width: 100%;
   height: 900px;
@@ -1454,7 +1471,7 @@ input[type="search"].sb-search-input {
     background: rgba(255, 255, 255, 0.3);
     border: 0.5px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    top: 89%;
+    bottom: 12%;
     color: white;
     font-size: 22px; }
     .top-main-carousel .slick-prev-custom:focus, .top-main-carousel .slick-next-custom:focus {
@@ -1481,11 +1498,19 @@ input[type="search"].sb-search-input {
       font-size: 44px; }
 
 .slide-count {
-  top: 91%;
+  bottom: 0;
   z-index: 2;
   width: 100%;
-  padding: 30px 0;
+  padding: 52px 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%); }
+
+.pagingInfo {
+  position: absolute;
+  width: 150px;
+  bottom: 12%;
+  left: 14%;
+  color: white;
+  z-index: 4; }
 
 footer {
   padding: 60px 0 80px;

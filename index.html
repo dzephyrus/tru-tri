@@ -311,10 +311,28 @@
   <!--		<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>-->
 
 <div class="top-main position-relative">
+	<div class="position-absolute slide-count" style="z-index: 3">
+    </div>
+	<div class="social-list d-none d-xl-flex">
+		<ul>
+			<li>
+				<a href=""><i class="fab fa-youtube text-white"></i></a>
+			</li>
+			<li>
+				<a href=""><i class="fab fa-facebook-f text-white"></i></a>
+			</li>
+			<li>
+				<a href=""><i class="fab fa-soundcloud text-white"></i></a>
+			</li>
+			<li>
+				<a href=""><i class="fab fa-instagram text-white"></i></a>
+			</li>
+		</ul>
+	</div>
     <div class="top-main-carousel">
         <div class="slideshow-item">
             <img src="images/CNH05003 5.png" class="top-main-carousel-img" alt="">
-            <div class="slideshow-item-content">
+            <div class="slideshow-item-content px-sm-5 px-xl-0">
 				<div class="row">
 					<div class="col-sm-6">
 						<p class="text-white px-3 px-sm-0 slideshow-item-text" >Nguyện dành cả đời là người ươm mầm đạo đức và trí tuệ cho tuổi trẻ.</p>
@@ -329,9 +347,8 @@
             <img src="images/3.png" class="top-main-carousel-img" alt="">
         </div>
     </div>
-	<div class="position-absolute slide-count">
-		<span class="pagingInfo"></span>
-    </div>
+	<span class="pagingInfo"></span>
+	
 	
 </div>
   <div class="bg-lightgray d-flex align-items-center position-relative overflow-hidden lightgray-section " >
@@ -1562,7 +1579,7 @@
 			$gallery.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
 			  //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
 			  var i = (currentSlide ? currentSlide : 0) + 1;
-			  $status.text(i + '/' + slick.slideCount);
+			  $status.text('0' +i + ' / 0' + slick.slideCount);
 			});
 			$gallery.slick({
 			  infinite: true,
