@@ -410,33 +410,9 @@ p {
 //
 //  }
 //}
-.main-aside{
-    width: 330px;
-}
-.search-bar {
-    border: 1px solid #7A3E0C;
-    box-sizing: border-box;
-    border-radius: 5px;
-    width: 174px;
-			.input-group-prepend{
-				
-				border-right: none;
-			}
-            .search-bar_input {
-                padding: 8px 0px;
-                box-shadow: none;
-                margin-top: .2px;
-				border: 2px solid #31B6E8;
-                border-radius: 5px 0 0 5px;
-				border-right: none;
-            }
-            .search-bar_input:hover {
-                box-shadow: none;
-            }
-        }
-.site-logo{
-width: 212px;
-}
+
+
+
 .nav_desktop{
     background-color: #a00106;
     .nav_item{
