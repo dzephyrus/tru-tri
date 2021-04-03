@@ -1991,6 +1991,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 	}
 	.top-main-carousel{
 		height: 812px;
+		margin-top: -30%;
 		.slick-prev-custom {
 			right: 20%;
 		}
@@ -2021,5 +2022,9 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 	}
 	.pagingInfo {
 		left: 4%;
+	}
+	.half-lead{
+		left: 0;
+		right: 0;
 	}
 }

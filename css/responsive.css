@@ -1751,7 +1751,8 @@
     margin: auto; }
 
   .top-main-carousel {
-    height: 812px; }
+    height: 812px;
+    margin-top: -30%; }
     .top-main-carousel .slick-prev-custom {
       right: 20%; }
     .top-main-carousel .slick-next-custom {
@@ -1775,6 +1776,10 @@
     height: 44px; }
 
   .pagingInfo {
-    left: 4%; } }
+    left: 4%; }
+
+  .half-lead {
+    left: 0;
+    right: 0; } }
 
 /*# sourceMappingURL=responsive.css.map */

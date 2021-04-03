@@ -173,8 +173,8 @@ h6 {
 .bg-base, .grid-container .card {
   background-color: #fff8f2; }
 
-.bg-white a {
-  color: black; }
+.bg-white a.text-dark:hover, .bg-lightgray a.text-dark:hover {
+  color: #A46A14 !important; }
 
 .bg-blue {
   background-color: #21c9f6; }
@@ -357,28 +357,28 @@ p {
   height: 100%;
   overflow: hidden; }
 
-.main-aside {
-  width: 330px; }
+.header-pc {
+  z-index: 3;
+  background: #ffffff00; }
+  .header-pc .white-menu {
+    display: block; }
+  .header-pc .black-menu {
+    display: none; }
 
-.search-bar {
-  border: 1px solid #7A3E0C;
-  box-sizing: border-box;
-  border-radius: 5px;
-  width: 174px; }
-  .search-bar .input-group-prepend {
-    border-right: none; }
-  .search-bar .search-bar_input {
-    padding: 8px 0px;
-    box-shadow: none;
-    margin-top: .2px;
-    border: 2px solid #31B6E8;
-    border-radius: 5px 0 0 5px;
-    border-right: none; }
-  .search-bar .search-bar_input:hover {
-    box-shadow: none; }
-
-.site-logo {
-  width: 212px; }
+.header-pc.active {
+  background: white;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); }
+  .header-pc.active a {
+    color: black !important;
+    text-shadow: none !important; }
+  .header-pc.active .text-white {
+    color: black !important; }
+  .header-pc.active .white-menu {
+    display: none; }
+  .header-pc.active .black-menu {
+    display: block; }
 
 .nav_desktop {
   background-color: #a00106; }
@@ -1454,8 +1454,8 @@ input[type="search"].sb-search-input {
 
 .top-main-carousel {
   width: 100%;
-  height: 800px;
-  margin-top: -135px;
+  height: 900px;
+  margin-top: -6%;
   z-index: 2;
   overflow: hidden;
   position: relative; }
@@ -1506,9 +1506,11 @@ input[type="search"].sb-search-input {
 
 .pagingInfo {
   position: absolute;
-  width: 150px;
-  bottom: 12%;
-  left: 14%;
+  width: 1136px;
+  bottom: 13%;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
   color: white;
   z-index: 4; }
 
